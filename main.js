@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const {Client, MessageEmbed, Intents} = require('discord.js');
 const commandList = require('./commands.js');
 const client = new Discord.Client({intents: [Intents.FLAGS.GUILDS, "GUILDS", "GUILD_MESSAGES"]});
-
+require ("dotenv").config();
 var Jimp = require('jimp');
 var fs = require('fs');
 const { waitForDebugger } = require('inspector');
@@ -390,5 +390,5 @@ client.on('interactionCreate', async interaction => {
 
 
 
-client.login(process.env.TOKEN);
+client.login(process.env.TOKEN)
 
