@@ -389,5 +389,5 @@ client.on('interactionCreate', async interaction => {
 
 
 
-client.login('NDk3NTQxNzQxMDM0MDc4MjI4.W7aZ2g.sCuZm8WZN0lWU1SZhKtzpjoXiww');
-//('NDk3NTQxNzQxMDM0MDc4MjI4.W7aZ2g.sCuZm8WZN0lWU1SZhKtzpjoXiww');
+client.login();
+
