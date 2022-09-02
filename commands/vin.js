@@ -3,7 +3,7 @@ module.exports = {
     description:"this is a gavin command!",
     execute(interaction, args){
         var randomizer2 = 0;
-        number = 42;
+        number = 43;
         //message.react('<:Pogvin:707040384613613588>');
         imageNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (imageNumber === 9){

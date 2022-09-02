@@ -4,7 +4,7 @@ module.exports = {
     execute(interaction, args){
 
         var randomizer = 0;
-        number = 363;
+        number = 380;
         imageNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (imageNumber === 69){
             interaction.reply({content: "I am all of you.",
@@ -14,6 +14,14 @@ module.exports = {
         else if (imageNumber === 70){
             interaction.reply({content: "Even you.",
             files:["./FriendlyMeme/"+imageNumber+".png"]});
+            randomizer = imageNumber;
+        }
+        else if (imageNumber === 371){
+            interaction.reply({files:["./FriendlyMeme/"+imageNumber+".gif"]});
+            randomizer = imageNumber;
+        }
+        else if (imageNumber === 373){
+            interaction.reply({files:["./FriendlyMeme/"+imageNumber+".gif"]});
             randomizer = imageNumber;
         }
         else if (imageNumber === randomizer){

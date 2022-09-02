@@ -28,6 +28,8 @@ var pizzaFirst = 134;
 var pizzaSecond = 0;
 var pizzaThird = 0;
 
+var Kpoop = 1;
+
 
 
 client.once('ready', () => {
@@ -59,6 +61,21 @@ client.on('messageCreate', (message) =>{
     if(message.content === 'pogchamp' && !message.author.bot || message.content === 'Pogchamp' && !message.author.bot || message.content === 'Pog' && !message.author.bot || message.content === 'pog' && !message.author.bot || message.content === 'poggers' && !message.author.bot || message.content === 'Poggers' && !message.author.bot || message.content === '<a:Pogvin:707040384613613588>' && !message.author.bot )
     {
         message.react('<a:Pogvin:707040384613613588>');
+    }
+    if(Kpoop === 1 && !message.author.bot)
+    {
+      let Kwords = ['Jhope', 'J-hope', 'Hobi', 'Hoseok','Jung hoseok','Kim namjoon ','Joon','Namjoon','Joonie','Park Jimin','Jimin','Jiminie','BTS'];
+      let foundInText = false;
+
+      for (var i in Kwords) {
+        if (message.content.toLowerCase().includes(Kwords[i].toLowerCase())) foundInText = true;
+      }
+      if (foundInText) {
+        message.reply("KPOP CRINGE!");
+      }
+      else{
+        Kpoop = Kpoop;
+      }
     }
 
 

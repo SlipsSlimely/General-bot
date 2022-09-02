@@ -3,7 +3,7 @@ module.exports = {
     description:"this is a quote command!",
     execute(interaction, args){
 
-        number = 122;
+        number = 177;
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (quoteNumber === 1){
             interaction.reply('"RETARD" - Everyone');
@@ -372,5 +372,173 @@ module.exports = {
         else if (quoteNumber === 122){
             interaction.reply("'Mans doesn't season eggs. That's cringe asf' - AJ");
         }
+        else if (quoteNumber === 123){
+            interaction.reply("'well i didnt want to be white either but here we are' - Gavin");
+        }  
+        else if (quoteNumber === 124){
+            interaction.reply("'IM GONNA COMMIT HOMICIDE' - Gavin");
+        }  
+        else if (quoteNumber === 125){
+            interaction.reply("'My little Poussy' - JT");
+        }  
+        else if (quoteNumber === 126){
+            interaction.reply("'Neigh, replies God' - Fug");
+        }  
+        else if (quoteNumber === 127){
+            interaction.reply("'Thank God almighty, I can have peace at last gavin' - Gavin");
+        }  
+        else if (quoteNumber === 128){
+            interaction.reply("'What if you killed yourself, but god said: Sussy houssy mare stalionvin' - JT");
+        }  
+        else if (quoteNumber === 129){
+            interaction.reply("'Sweet horse dreams, Marevin' - AJ");
+        }  
+        else if (quoteNumber === 130){
+            interaction.reply("'I crave the sweet release of death' - Gavin");
+        }  
+        else if (quoteNumber === 131){
+            interaction.reply("'The void beckons me closer every day' - Gavin");
+        }  
+        else if (quoteNumber === 132){
+            interaction.reply("'It calls to me and I must answer' - Gavin");
+        }  
+        else if (quoteNumber === 133){
+            interaction.reply("'what's the matter gavin, no bitches?' - JT");
+        }  
+        else if (quoteNumber === 134){
+            interaction.reply("you see that lizard? get him' - Fug");
+        }  
+        else if (quoteNumber === 135){
+            interaction.reply("'You're dead. Stay dead' - AJ");
+        }  
+        else if (quoteNumber === 136){
+            interaction.reply("'gotta get someone who looks at me like colton looks at gavin killing himself' - Kaleb");
+        }  
+        else if (quoteNumber === 137){
+            interaction.reply("'i will personally fucking suffocate people with my obesity who dare to tell me they use these around me' - JT");
+        }  
+        else if (quoteNumber === 138){
+            interaction.reply("'February 28th is the server's anniversary' - JT");
+        }  
+        else if (quoteNumber === 139){
+            interaction.reply("'Vore is Paul's favorite, Choose something else' - Schank");
+        }  
+        else if (quoteNumber === 140){
+            interaction.reply("'Just make a bowl of ice and water, Like a sad version of cereal' - Schank");
+        }  
+        else if (quoteNumber === 141){
+            interaction.reply("'Oliver has 15 uncles. I split JT into 42 pieces and unfortunately some survived' - Paul");
+        }  
+        else if (quoteNumber === 142){
+            interaction.reply("'IGNORE MY FAT FINGERING' - JT");
+        }          
+        else if (quoteNumber === 143){
+            interaction.reply("'Do it fatty no balls' - JT");
+        }  
+        else if (quoteNumber === 144){
+            interaction.reply("'everything I say makes zero sense and is so fucking stupid that it's funny' - Gavin");
+        }  
+        else if (quoteNumber === 145){
+            interaction.reply("you people are degenerate incels :FD_CheemsWeird:' - Kaleb");
+        }  
+        else if (quoteNumber === 146){
+            interaction.reply("'But to be fair, the rear meat is something I'm more partial to' - JT");
+        }          
+        else if (quoteNumber === 147){
+            interaction.reply("'Man I'm about to get my sinussy penetrated and man I don't wanna' - The Wood");
+        }  
+        else if (quoteNumber === 148){
+            interaction.reply("'says the man who said his anal limit was nothing' - JT");
+        }  
+        else if (quoteNumber === 149){
+            interaction.reply("'Schank-Senpai at your service' - Schank");
+        }  
+        else if (quoteNumber === 150){
+            interaction.reply("'Colton if I die you can have my switch' - matt");
+        }  
+        else if (quoteNumber === 151){
+            interaction.reply("'Welcome to Cultural Geography 101 with Paul' - Gavin");
+        }  
+        else if (quoteNumber === 152){
+            interaction.reply("'Did you know they're singing in Black?' - Paul");
+        }  
+        else if (quoteNumber === 153){
+            interaction.reply("'I just walk' - The Wood");
+        }  
+        else if (quoteNumber === 154){
+            interaction.reply("'bananas a fucking weird' - JT");
+        }  
+        else if (quoteNumber === 155){
+            interaction.reply("'Had a dream where I ate a whole box of pencils' - JT");
+        }  
+        else if (quoteNumber === 156){
+            interaction.reply("'sorry we don't know obscure porn' - Akira");
+        }  
+        else if (quoteNumber === 157){
+            interaction.reply("'gay people 🙄' - JT");
+        }  
+        else if (quoteNumber === 158){
+            interaction.reply("'this is NOT going to end well' - JT");
+        }  
+        else if (quoteNumber === 159){
+            interaction.reply("'unfortunately, steven is a real person' - Akira");
+        }  
+        else if (quoteNumber === 160){
+            interaction.reply("'put the minor in a maid outfit' - Ali");
+        }  
+        else if (quoteNumber === 161){
+            interaction.reply("'sensitive' - Akira");
+        }  
+        else if (quoteNumber === 162){
+            interaction.reply("'ey yo sounding is pretty underrated' - JT");
+        }  
+        else if (quoteNumber === 163){
+            interaction.reply("'Why is everyone except me getting pizza' - Gavin");
+        }  
+        else if (quoteNumber === 164){
+            interaction.reply("'What did the cheese do' - The Wood");
+        }  
+        else if (quoteNumber === 165){
+            interaction.reply("'I just got karma'd by the block of cheese I'm eating fuck' - Paul");
+        }  
+        else if (quoteNumber === 166){
+            interaction.reply("'Neigh, replies God' - Fug");
+        }  
+        else if (quoteNumber === 167){
+            interaction.reply("'IM GONNA COMMIT HOMICIDE' - Gavin");
+        }  
+        else if (quoteNumber === 168){
+            interaction.reply("'My little Poussy' - JT");
+        }  
+        else if (quoteNumber === 169){
+            interaction.reply("'the spirit of mental retardation :FD_SuperTardvin:' - Gavin");
+        }  
+        else if (quoteNumber === 170){
+            interaction.reply("'Cars is unironically better than all of those movies' - Fug");
+        }  
+        else if (quoteNumber === 171){
+            interaction.reply("'grug eat cheese. grug like taste.' - Fug");
+        }  
+        else if (quoteNumber === 172){
+            interaction.reply("'You know, I wanted to meme on Paul about caring too much about Pokemon Lore. And then we do shit like this and I start thinking Paul is the normal one here.' - Fug");
+        }  
+        else if (quoteNumber === 173){
+            interaction.reply("'You could make a carpet out of your leg hair' - JT");
+        }  
+        else if (quoteNumber === 174){
+            interaction.reply("'god fucking chimps is so hard :FD_godwhy:' - Akira");
+        }  
+        else if (quoteNumber === 175){
+            interaction.reply("'Mare Gavin omg he's a female horse' - Fug");
+        }
+        else if (quoteNumber === 176){
+            interaction.reply("'im gonna do your mom on purpose' - Kaleb");
+        }
+        else if (quoteNumber === 177){
+            interaction.reply("'I was only pretending to be retarded' - Downes");
+        }
+
+        
+ 
     }
 }
