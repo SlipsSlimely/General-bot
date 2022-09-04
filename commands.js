@@ -31,6 +31,11 @@ const commandRegister = (client) => {
         new SlashCommandBuilder().setName('pizzatime').setDescription('Starts pizza time!'),
         new SlashCommandBuilder().setName('pizzaboard').setDescription('Posts the current pizza time leaderboard!'),
         new SlashCommandBuilder().setName('serebii').setDescription('Posts the current news from Serebii!'),
+        new SlashCommandBuilder().setName('kill').setDescription('Replies with a unique murder.')
+        .addStringOption(option =>
+            option.setName('person')
+            .setDescription('This is the person you want to kill')
+            .setRequired(false)),
         /* new SlashCommandBuilder()
         .setName('ticket')
         .setDescription('this command makes a ticket and gives you a link to it')

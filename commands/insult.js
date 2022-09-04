@@ -18,34 +18,29 @@ module.exports = {
             interaction.reply({content: `You Polynigmeon! ${person}` 
             ,files:["Polynigmeon.jpg"]});
         }
-/*         else if (insultNumber === 2)
+         else if (insultNumber === 2)
         {
             
-            interaction.reply({content:`Your face looks like a buttcrack! ${person}`
-            ,files: ["buttcrack.gif"]});
-        } */
+            interaction.reply({content:`I hope your dick falls off in the next person you fuck ${person}`});
+        } 
         else if (insultNumber === 3)
         {
-            interaction.reply({content:`You Polynigmeon! ${person}`
-            ,files:["Polynigmeon.jpg"]});
+            interaction.reply({content:`You absolute fucking doorknob ${person}`});
         }
-/*         else if (insultNumber === 4)
+        else if (insultNumber === 4)
         {
             
-            interaction.reply({content:`Your face looks like a buttcrack! ${person}`
-            ,files: ["buttcrack.gif"]});
-        } */
+            interaction.reply({content:`Hey,${person} your moms a hoe`});
+        }
         else if (insultNumber === 6)
         {
-            interaction.reply({content:`You Polynigmeon! ${person}`
-            ,files:["Polynigmeon.jpg"]});
+            interaction.reply({content:`I bet you place doors backwards in Minecraft ${person}`});
         }
-/*         else if (insultNumber === 7)
+        else if (insultNumber === 7)
         {
             
-            interaction.reply({content:`Your face looks like a buttcrack! ${person}`
-            ,files: ["buttcrack.gif"]});
-        } */
+            interaction.reply({content:`I bet you eat sugar cookies, fatass ${person}`});
+        } 
         else if (insultNumber === 5)
         {
             interaction.reply({content:`Can the baby not find the stones of barenziah without mods? ${person}`

@@ -17,7 +17,7 @@ module.exports ={
             .setDescription('This here lists all current commands of the bot')
             .addField('Commands: ','hello, help, birthday, coinflip, futurama, insult, monday, ping, quote, todd, cumzone, sneed, friendlywiki, jeter, gigachad, vin, wood, and pufferfish', true)
             .addField('\u200b', '\u200b')
-            .addField('In testing: ','mememaker, woodermark, zawarudo, pizzatime', true)
+            .addField('In testing: ','mememaker, woodermark, zawarudo', true)
             .addField('\u200b', '\u200b')
             .setFooter('Make sure to use $ before typing in your command')
 
