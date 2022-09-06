@@ -194,6 +194,9 @@ client.on('interactionCreate', async interaction => {
       case 'pufferfish':
         client.commands.get('pufferfish').execute(interaction, options);
         break;
+      case 'kill':
+        client.commands.get('kill').execute(interaction, options);
+        break;
       case 'pizzatime':
         pizzaTime = 1;
         interaction.reply({content: 'Make sure you say "Pizza time"!', files:["PizzaTime.png"]});

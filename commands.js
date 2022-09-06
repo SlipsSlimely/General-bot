@@ -35,7 +35,11 @@ const commandRegister = (client) => {
         .addStringOption(option =>
             option.setName('person')
             .setDescription('This is the person you want to kill')
-            .setRequired(false)),
+            .setRequired(true))
+        .addStringOption(option =>
+            option.setName('killer')
+            .setDescription('This is the killer')
+            .setRequired(true)),
         /* new SlashCommandBuilder()
         .setName('ticket')
         .setDescription('this command makes a ticket and gives you a link to it')
@@ -65,6 +69,12 @@ const commandRegister = (client) => {
 
     try {
         console.log('Started refreshing application (/) commands.');
+
+        // add another one of these for each unique server skelebot goes to, replace the 2nd number with the server ID
+        rest.put(
+            Routes.applicationGuildCommands("497541741034078228", "590247114211197060"),
+            { body: commands }
+        );
 
         rest.put(
             Routes.applicationGuildCommands("497541741034078228", "418600278489694218"),
