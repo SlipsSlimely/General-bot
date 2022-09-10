@@ -31,6 +31,7 @@ const commandRegister = (client) => {
         new SlashCommandBuilder().setName('pizzatime').setDescription('Starts pizza time!'),
         new SlashCommandBuilder().setName('pizzaboard').setDescription('Posts the current pizza time leaderboard!'),
         new SlashCommandBuilder().setName('serebii').setDescription('Posts the current news from Serebii!'),
+        new SlashCommandBuilder().setName('counter').setDescription('Posts the total number of times most things have been called'),
         new SlashCommandBuilder().setName('kill').setDescription('Replies with a unique murder.')
         .addStringOption(option =>
             option.setName('person')

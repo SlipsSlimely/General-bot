@@ -21,6 +21,19 @@ var export1 = 'madememes/mememaker.jpg';
 var export2 = 'madememes/woodermark.jpg';
 var imgActive = 'madememes/image.jpg';
 
+var killCount = 0;
+var memeCount = 0;
+var quoteCount = 0;
+var familyCount = 0;
+var futuramaCount = 0;
+var vinCount = 0;
+var woodCount = 0;
+var jeterCount = 0;
+var trueCount = 0;
+var pogCount = 0;
+var reCount = 0;
+var kCount = 0;
+
 var pizzaTime = 0;
 var pizzaScore = 0;
 
@@ -44,6 +57,7 @@ client.on('messageCreate', (message) =>{
     if(message.content === 'RETARD' && !message.author.bot)
     {
         message.reply('THE RETARD MADE A TYPO!');
+        reCount = reCount + 1;
     }
 
     if(message.content === 'STFU' && !message.author.bot)
@@ -53,6 +67,7 @@ client.on('messageCreate', (message) =>{
     if(message.content === 'True!' && !message.author.bot || message.content === 'TRUE!' && !message.author.bot || message.content === 'True' && !message.author.bot || message.content === 'TRUE' && !message.author.bot)
     {
         message.reply("TRUE! - JT");
+        trueCount = trueCount + 1;
     }
     if(message.content === 'sneed' && !message.author.bot || message.content === 'Sneed' && !message.author.bot || message.content === '<a:Sneed:783268747061362699>' && !message.author.bot )
     {
@@ -61,10 +76,11 @@ client.on('messageCreate', (message) =>{
     if(message.content === 'pogchamp' && !message.author.bot || message.content === 'Pogchamp' && !message.author.bot || message.content === 'Pog' && !message.author.bot || message.content === 'pog' && !message.author.bot || message.content === 'poggers' && !message.author.bot || message.content === 'Poggers' && !message.author.bot || message.content === '<a:Pogvin:707040384613613588>' && !message.author.bot )
     {
         message.react('<a:Pogvin:707040384613613588>');
+        pogCount = pogCount + 1;
     }
     if(Kpoop === 1 && !message.author.bot)
     {
-      let Kwords = ['Jhope', 'J-hope', 'Hobi', 'Hoseok','Jung hoseok','Kim namjoon ','Joon','Namjoon','Joonie','Park Jimin','Jimin','Jiminie','BTS'];
+      let Kwords = ['Jhope', 'J-hope', 'Hobi', 'Hoseok','Jung hoseok','Kim namjoon ','Joon','Namjoon','Joonie','Park Jimin','Jimin','Jiminie','BTS', 'Kpop'];
       let foundInText = false;
 
       for (var i in Kwords) {
@@ -72,6 +88,7 @@ client.on('messageCreate', (message) =>{
       }
       if (foundInText) {
         message.reply("KPOP CRINGE!");
+        kCount = kCount + 1;
       }
       else{
         Kpoop = Kpoop;
@@ -147,9 +164,11 @@ client.on('interactionCreate', async interaction => {
         client.commands.get('coinflip').execute(interaction);
         break;
       case 'familyguy':
+        familyCount = familyCount + 1;
         client.commands.get('familyguy').execute(interaction);
         break;
       case 'futurama':
+        futuramaCount = futuramaCount + 1;
         client.commands.get('futurama').execute(interaction);
         break;
       case 'hello':
@@ -159,9 +178,11 @@ client.on('interactionCreate', async interaction => {
         client.commands.get('monday').execute(interaction);
         break;
       case 'quote':
+        quoteCount = quoteCount + 1;
         client.commands.get('quote').execute(interaction);
         break;
       case 'friendlymeme':
+        memeCount = memeCount + 1;
         client.commands.get('friendlymeme').execute(interaction);
         break;
       case 'cumzone':
@@ -180,12 +201,15 @@ client.on('interactionCreate', async interaction => {
         client.commands.get('sneed').execute(interaction, options);
         break;
       case 'vin':
+        vinCount = vinCount + 1;
         client.commands.get('vin').execute(interaction, options);
         break;
       case 'wood':
+        woodCount = woodCount + 1;
         client.commands.get('wood').execute(interaction, options);
         break;
       case 'jeter':
+        jeterCount = jeterCount + 1;
         client.commands.get('jeter').execute(interaction, options);
         break;
       case 'todd':
@@ -195,7 +219,8 @@ client.on('interactionCreate', async interaction => {
         client.commands.get('pufferfish').execute(interaction, options);
         break;
       case 'kill':
-        client.commands.get('kill').execute(interaction, options);
+        killCount = killCount + 1;
+        client.commands.get('kill').execute(interaction, options, killCount);
         break;
       case 'pizzatime':
         pizzaTime = 1;
@@ -215,6 +240,9 @@ client.on('interactionCreate', async interaction => {
         break;
       case 'serebii':
           client.commands.get('serebii').execute(interaction, options);
+        break;
+      case 'counter':
+          client.commands.get('counter').execute(interaction, options, killCount, kCount, jeterCount, woodCount, memeCount, quoteCount, vinCount, trueCount, familyCount, pogCount, reCount, futuramaCount);
         break;
     
     }

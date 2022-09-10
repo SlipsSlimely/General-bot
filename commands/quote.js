@@ -4,7 +4,17 @@ module.exports = {
     execute(interaction, args){
 
         number = 177;
+        quoteRepeater = 0;
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
+        if (quoteNumber === quoteRepeater){
+            quoteNumber = quoteNumber + 5;
+            if (quoteNumber === number){
+                quoteNumber = quoteNumber - 6;
+            }
+        }
+        quoteRepeater = quoteNumber;
+
+
         if (quoteNumber === 1){
             interaction.reply('"RETARD" - Everyone');
             ///randomizer3 = quoteNumber;
