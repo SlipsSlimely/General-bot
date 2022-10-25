@@ -1,9 +1,10 @@
 const Discord = require('discord.js');
-const {Client, MessageEmbed, Intents} = require('discord.js');
+const {AttachmentBuilder, Client, MessageEmbed, Intents} = require('discord.js');
 const commandList = require('./commands.js');
 const client = new Discord.Client({intents: [Intents.FLAGS.GUILDS, "GUILDS", "GUILD_MESSAGES"]});
 require ("dotenv").config();
-var Jimp = require('jimp');
+const Canvas = require('@napi-rs/canvas');
+
 var fs = require('fs');
 const { waitForDebugger } = require('inspector');
 const { SSL_OP_EPHEMERAL_RSA } = require('constants');
@@ -37,8 +38,11 @@ var kCount = 0;
 var pizzaTime = 0;
 var pizzaScore = 0;
 
-var pizzaFirst = 134;
-var pizzaSecond = 0;
+var dementiaTime = 0;
+var dementiaScore = 0;
+
+var pizzaFirst = 203;
+var pizzaSecond = 134;
 var pizzaThird = 0;
 
 var Kpoop = 1;
@@ -100,6 +104,16 @@ client.on('messageCreate', (message) =>{
     {
         let pizzaVariance = ['pizza time', 'pizza time!', 'pizza time?', 'pizza time.'];
         let foundInText = false;
+/* 
+        fs.write('saveData.txt', `${pizzaFirst}`, function(err) {
+          console.log("Data written successfully!");
+          console.log("Let's read newly written data");
+       
+          // Read the newly written file and print all of its content on the console
+          fs.readFile('saveData.txt', function (err, data) {
+             console.log("First place is currently at: " + data.toString());
+          });
+       }); */
 
         for (var i in pizzaVariance) {
             if (message.content.toLowerCase().includes(pizzaVariance[i].toLowerCase())) foundInText = true;
@@ -141,7 +155,22 @@ client.on('messageCreate', (message) =>{
                 pizzaTime = 0;
               }
           }
-        
+    }
+    if(dementiaTime === 1 && !message.author.bot)
+    {
+      let muscleWords = ['you know who else has dementia'];
+      let foundInText = false;
+
+      for (var i in muscleWords) {
+        if (message.content.toLowerCase().includes(muscleWords[i].toLowerCase())) foundInText = true;
+      }
+      if (foundInText) {
+        dementiaScore = dementiaScore + 1;
+      }
+      else{
+        message.reply({content: "MY MOM! Final score: " + dementiaScore})
+        dementiaTime = 0;
+      }
     }
 
 
@@ -243,6 +272,23 @@ client.on('interactionCreate', async interaction => {
         break;
       case 'counter':
           client.commands.get('counter').execute(interaction, options, killCount, kCount, jeterCount, woodCount, memeCount, quoteCount, vinCount, trueCount, familyCount, pogCount, reCount, futuramaCount);
+        break;
+      case 'dementia':
+        dementiaTime = 1;
+        interaction.reply({content: 'You know who else has dementia?'});
+        break;
+      case 'woodermark':
+        //client.commands.get('woodermark').execute(interaction, Canvas);
+        const background = await Canvas.loadImage('./WoodFunnyMomentsGold.png');
+        const canvas = Canvas.createCanvas(700, 250);
+        const context = canvas.getContext('2d');
+        context.drawImage(background, 0, 0, canvas.width, canvas.height);
+        const attachment = new AttachmentBuilder(await canvas.encode('png'), { name: 'profile-image.png' });
+    
+        interaction.reply({ files: [attachment] });
+        break;
+      case 'reactionrole':
+          client.commands.get('reactionrole').execute(interaction, options);
         break;
     
     }

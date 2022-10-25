@@ -21,6 +21,7 @@ const commandRegister = (client) => {
             .setDescription('This is the person you want to insult')
             .setRequired(false)),
         new SlashCommandBuilder().setName('wiki').setDescription('Replies with the friendly discord wiki!'),
+        new SlashCommandBuilder().setName('woodermark').setDescription('Creates a cool meme!'),
         new SlashCommandBuilder().setName('sneed').setDescription('Replies with a sneed meme'),
         new SlashCommandBuilder().setName('gigachad').setDescription('Replies with a gigachad meme'),
         new SlashCommandBuilder().setName('vin').setDescription('Replies with a gavin meme'),
@@ -32,6 +33,7 @@ const commandRegister = (client) => {
         new SlashCommandBuilder().setName('pizzaboard').setDescription('Posts the current pizza time leaderboard!'),
         new SlashCommandBuilder().setName('serebii').setDescription('Posts the current news from Serebii!'),
         new SlashCommandBuilder().setName('counter').setDescription('Posts the total number of times most things have been called'),
+        new SlashCommandBuilder().setName('dementia').setDescription('Starts a new game of dementia'),
         new SlashCommandBuilder().setName('kill').setDescription('Replies with a unique murder.')
         .addStringOption(option =>
             option.setName('person')
@@ -41,6 +43,7 @@ const commandRegister = (client) => {
             option.setName('killer')
             .setDescription('This is the killer')
             .setRequired(true)),
+        new SlashCommandBuilder().setName('reactionrole').setDescription('Replies with buttons!'),
         /* new SlashCommandBuilder()
         .setName('ticket')
         .setDescription('this command makes a ticket and gives you a link to it')

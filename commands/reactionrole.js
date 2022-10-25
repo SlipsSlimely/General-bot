@@ -1,9 +1,10 @@
+const { ActionRowBuilder, MessageButton, ButtonStyle, MessageActionRow, MessageEmbed } = require('discord.js');
 module.exports = {
     name: 'reactionrole',
     description: "Sets up a reaction role message!",
     async execute(interaction, args, Discord, client) {
-        const channel = '855183208962719824'; //Change this
-        const acRole = message.guild.roles.cache.find(role => role.name === "Animal Crossing");
+        const channel = '1034327914977689650'; //Change this
+/*         const acRole = message.guild.roles.cache.find(role => role.name === "Animal Crossing");
         const apexRole = message.guild.roles.cache.find(role => role.name === "Apex");
         const coreRole = message.guild.roles.cache.find(role => role.name === "Core Audience");
         const streamRole = message.guild.roles.cache.find(role => role.name === "Stream Team");
@@ -12,9 +13,9 @@ module.exports = {
         const waifuRole = message.guild.roles.cache.find(role => role.name === "Waifu 4 U");
         const minecraftRole = message.guild.roles.cache.find(role => role.name === "Block Heads");
         const uniteRole = message.guild.roles.cache.find(role => role.name === "Uniters");
-        const kartRole = message.guild.roles.cache.find(role => role.name === "Karters");
+        const kartRole = message.guild.roles.cache.find(role => role.name === "Karters"); */
 
-                                         //855231682457370696               
+/*                                          //855231682457370696               
         
         const acEmoji = '🔵';  //855231682751889418
         const apexEmoji = '🟤';                //855231682566029345
@@ -26,25 +27,52 @@ module.exports = {
         const minecraftEmoji = '🟣';  //855231682311356467
         const uniteEmoji = '🔴';
         const kartEmoji = '🔴';
+ */
+        const row = new MessageActionRow()
+        .addComponents(
+            new MessageButton()
+                .setCustomId('1')
+                .setLabel('Animal Crossing')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('2')
+                .setLabel('Apex')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('3')
+                .setLabel('Core Audience')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('4')
+                .setLabel('Karters')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('5')
+                .setLabel('Splatters')
+                .setStyle('SUCCESS'),
+            /* new MessageButton()
+                .setCustomId('6')
+                .setLabel('Trainer')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('7')
+                .setLabel('Stream Team')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('8')
+                .setLabel('Smash Boys')
+                .setStyle('SUCCESS'), */
+        );
         
-    
+        const roleEmbed = new MessageEmbed()
+        .setTitle('Role selection buttons!')
+        .setDescription('Click a button get the named role!')
+        .setTimestamp();
+            
+        interaction.reply({embeds: [roleEmbed], components: [row]});
+
  
-        let embed = new Discord.MessageEmbed()
-            .setColor('#edad1f')
-            //.setTitle('Select Your roles!')
-            .setDescription('**Select an emote below to set your pingable roles:**\n\n'
-                + `${acEmoji} this lets others ping you for animal crossing\n`
-                + `${apexEmoji} for fun with guns!\n`
-                + `${coreEmoji} for those in the know\n`
-                + `${streamEmoji} aka Gavin's onlyfans subs\n`
-                + `${smashEmoji} for those that enjoy smash bros\n`
-                + `${trainerEmoji} for pokemon shenanigans (trading, battling, raids, etc)\n`
-                + `${waifuEmoji} for waifu wars\n`
-                + `${minecraftEmoji} for minecraft fans\n`
-                + `${uniteEmoji} for those that wish to unite for some pokemon\n`
-                + `${kartEmoji} only for those who enjoy wacky races!\n`);
- 
-        let messageEmbed = await message.channel.send(embed);
+       /*  let messageEmbed = await message.channel.send(embed);
         messageEmbed.react(acEmoji);
         messageEmbed.react(apexEmoji);
         messageEmbed.react(coreEmoji);
@@ -143,7 +171,7 @@ module.exports = {
             } else {
                 return;
             }
-        });
+        }); */
     }
  
 }
