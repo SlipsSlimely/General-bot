@@ -3,7 +3,7 @@ module.exports = {
     description:"this is a quote command!",
     execute(interaction, args){
 
-        number = 177;
+        number = 218;
         quoteRepeater = 0;
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (quoteNumber === quoteRepeater){
@@ -547,6 +547,131 @@ module.exports = {
         else if (quoteNumber === 177){
             interaction.reply("'I was only pretending to be retarded' - Downes");
         }
+        else if (quoteNumber === 178){
+            interaction.reply("'My favorite part of Pokemon Unite was when Schank said 'Its Pupin time!' And proceeded to Pupe all over the enemy team' - Downes");
+        }
+        else if (quoteNumber === 179){
+            interaction.reply("'MOMMY' - Downes");
+        }
+        else if (quoteNumber === 180){
+            interaction.reply("'Sure thing diversity hire' - The Wood");
+        }
+        else if (quoteNumber === 181){
+            interaction.reply("'I wanna slurp Downes' mustache' - Akira");
+        }
+        else if (quoteNumber === 182){
+            interaction.reply("'croak before you stroke' - Gaver");
+        }
+        else if (quoteNumber === 183){
+            interaction.reply("'I make good choices' - Paul");
+        }
+        else if (quoteNumber === 184){
+            interaction.reply("'This really says a lot about society' - Downes");
+        }
+        else if (quoteNumber === 185){
+            interaction.reply("'the sleep you dumb' - Akira");
+        }
+        else if (quoteNumber === 186){
+            interaction.reply("'i dont read' - Gaver");
+        }
+        else if (quoteNumber === 187){
+            interaction.reply("'JT is the honorary horseman of the retardpocalypse for this take' - Gaver");
+        }
+        else if (quoteNumber === 188){
+            interaction.reply("'fake news, Downes is incel' - Akira");
+        }
+        else if (quoteNumber === 189){
+            interaction.reply("'i sure do love loli porn' - Paul");
+        }
+        else if (quoteNumber === 190){
+            interaction.reply("'AJ was suducing jt' - Akira");
+        }
+        else if (quoteNumber === 191){
+            interaction.reply("'Paul is to be antagonized by his past sins forever' - Downes");
+        }
+        else if (quoteNumber === 192){
+            interaction.reply("'do not throw my son into a camp fire' - AJ");
+        }
+        else if (quoteNumber === 193){
+            interaction.reply("'Jt do you know how dicks form' - AJ");
+        }
+        else if (quoteNumber === 194){
+            interaction.reply("'do i look like i've grown any dicks recently?' - JT");
+        }
+        else if (quoteNumber === 195){
+            interaction.reply("'YOU LAUGH LOUD AS FUCK' - Paul");
+        }
+        else if (quoteNumber === 196){
+            interaction.reply("'HELP HES HITTING ME' - AJ");
+        }
+        else if (quoteNumber === 197){
+            interaction.reply("'get to banging, fat boy' - AJ");
+        }
+        else if (quoteNumber === 198){
+            interaction.reply("'this is out of my comfort zone' - JT");
+        }
+        else if (quoteNumber === 199){
+            interaction.reply("'This gives me an idea for a kill command' - Paul");
+        }
+        else if (quoteNumber === 200){
+            interaction.reply("'i have my own desk to bang god damn it' - JT");
+        }
+        else if (quoteNumber === 201){
+            interaction.reply("'lemme see your dick' - JT");
+        }
+        else if (quoteNumber === 202){
+            interaction.reply("'So let's let you keep the government away while the men get the work done' - The Wood");
+        }
+        else if (quoteNumber === 203){
+            interaction.reply("'God I hate that so much Your a fucking retard that should have there life subscription cancelled' - Schank");
+        }
+        else if (quoteNumber === 204){
+            interaction.reply("'I'm homie-sexual' - JT");
+        }
+        else if (quoteNumber === 205){
+            interaction.reply("'Please sir, a singular pog?' - AJ");
+        }
+        else if (quoteNumber === 206){
+            interaction.reply("'Your cousin killed the cheese' - The Wood");
+        }
+        else if (quoteNumber === 207){
+            interaction.reply("'We love racism here' - Gaver");
+        }
+        else if (quoteNumber === 208){
+            interaction.reply("'but legality ruins them' - AJ");
+        }
+        else if (quoteNumber === 209){
+            interaction.reply("'IM RETARDED NOOOOOOOOO' - Gaver");
+        }
+        else if (quoteNumber === 210){
+            interaction.reply("'im not a smasher' - Akira");
+        }
+        else if (quoteNumber === 211){
+            interaction.reply("'Remember when JTs hair literally came to life and ran across the floor' - Schank");
+        }
+        else if (quoteNumber === 212){
+            interaction.reply("'IM ONOBILE' - Akira");
+        }
+        else if (quoteNumber === 213){
+            interaction.reply("'Unless in the unlikely event any other member of this server that has penis has a sexual interaction with a female' - Schank");
+        }
+        else if (quoteNumber === 214){
+            interaction.reply("'he's challenged a lot in life, gotta take the small victories' - JT");
+        }
+        else if (quoteNumber === 215){
+            interaction.reply("'please stop spreading your horny' - JT");
+        }
+        else if (quoteNumber === 216){
+            interaction.reply("'imma eat thousands of raw almonds and apple seeds' - AJ");
+        }
+        else if (quoteNumber === 217){
+            interaction.reply("'OH NO CONFLICTING POINTS OF INTEREST' - JT");
+        }
+        else if (quoteNumber === 218){
+            interaction.reply("'GOD GAVE ME FORKS THEYRE CALLED FINGERS' - AJ");
+        }
+     
+
 
         
  

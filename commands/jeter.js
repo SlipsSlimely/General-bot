@@ -4,7 +4,7 @@ module.exports = {
     execute(interaction, args){
         
         var randomizer1 = 0;
-        number = 55;
+        number = 58;
         //message.react('<:wokesmugjt:432811507588268043>');
         imageNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (imageNumber === 31){
