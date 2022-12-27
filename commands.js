@@ -21,7 +21,7 @@ const commandRegister = (client) => {
             .setDescription('This is the person you want to insult')
             .setRequired(false)),
         new SlashCommandBuilder().setName('wiki').setDescription('Replies with the friendly discord wiki!'),
-        new SlashCommandBuilder().setName('woodermark').setDescription('Creates a cool meme!'),
+        //new SlashCommandBuilder().setName('woodermark').setDescription('Creates a cool meme!'),
         new SlashCommandBuilder().setName('sneed').setDescription('Replies with a sneed meme'),
         new SlashCommandBuilder().setName('gigachad').setDescription('Replies with a gigachad meme'),
         new SlashCommandBuilder().setName('vin').setDescription('Replies with a gavin meme'),
@@ -44,6 +44,7 @@ const commandRegister = (client) => {
             .setDescription('This is the killer')
             .setRequired(true)),
         new SlashCommandBuilder().setName('reactionrole').setDescription('Replies with buttons!'),
+        new SlashCommandBuilder().setName('f').setDescription('Pays respects!'),
         /* new SlashCommandBuilder()
         .setName('ticket')
         .setDescription('this command makes a ticket and gives you a link to it')

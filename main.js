@@ -34,6 +34,7 @@ var trueCount = 0;
 var pogCount = 0;
 var reCount = 0;
 var kCount = 0;
+var respectsPaid = 0;
 
 var pizzaTime = 0;
 var pizzaScore = 0;
@@ -46,6 +47,7 @@ var pizzaSecond = 134;
 var pizzaThird = 0;
 
 var Kpoop = 1;
+var praiseFunction = 1;
 
 
 
@@ -98,6 +100,22 @@ client.on('messageCreate', (message) =>{
         Kpoop = Kpoop;
       }
     }
+    {
+      let Praisewords = ['thank you skelebot', 'good bot', 'thanks skelebot', 'good job bot'];
+      let foundInText = false;
+
+      for (var i in Praisewords) {
+        if (message.content.toLowerCase().includes(Praisewords[i].toLowerCase())) foundInText = true;
+      }
+      if (foundInText) {
+        message.reply("👍");
+        
+      }
+      else{
+        praiseFunction = praiseFunction;
+      }
+    }
+    
 
 
     if(pizzaTime === 1 && !message.author.bot )
@@ -277,7 +295,12 @@ client.on('interactionCreate', async interaction => {
         dementiaTime = 1;
         interaction.reply({content: 'You know who else has dementia?'});
         break;
-      case 'woodermark':
+      case 'f':
+          respectsPaid =  respectsPaid + 1;
+          client.commands.get('f').execute(interaction, options, respectsPaid);
+        break;
+        
+/*       case 'woodermark':
         //client.commands.get('woodermark').execute(interaction, Canvas);
         const background = await Canvas.loadImage('./WoodFunnyMomentsGold.png');
         const canvas = Canvas.createCanvas(700, 250);
@@ -289,7 +312,7 @@ client.on('interactionCreate', async interaction => {
         break;
       case 'reactionrole':
           client.commands.get('reactionrole').execute(interaction, options);
-        break;
+        break; */
     
     }
 
