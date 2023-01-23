@@ -3,7 +3,7 @@ module.exports = {
     description:"this is a quote command!",
     execute(interaction, args){
 
-        number = 218;
+        number = 238;
         quoteRepeater = 0;
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (quoteNumber === quoteRepeater){
@@ -670,6 +670,67 @@ module.exports = {
         else if (quoteNumber === 218){
             interaction.reply("'GOD GAVE ME FORKS THEYRE CALLED FINGERS' - AJ");
         }
+        else if (quoteNumber === 219){
+            interaction.reply("'lemme smack those depressed cheeks' - JT");
+        }
+        else if (quoteNumber === 220){
+            interaction.reply("'you ruined your comedic timing by being here' - JT");
+        }
+        else if (quoteNumber === 221){
+            interaction.reply("'I want to make a black joke right now' - Gaver");
+        }
+        else if (quoteNumber === 222){
+            interaction.reply("'||there's a lot you can get for 40$ :FD_GoldHelloThere: ||' - JT");
+        }
+        else if (quoteNumber === 223){
+            interaction.reply("'i stan the folder' - JT");
+        }
+        else if (quoteNumber === 224){
+            interaction.reply("'my sphincters don't cooperate but that doesn't mean i blame them' - JT");
+        }
+        else if (quoteNumber === 225){
+            interaction.reply("'can't wait for the accidental sex he have in the bathroom at taco bell' - JT");
+        }
+        else if (quoteNumber === 226){
+            interaction.reply("'Please don't make this a class thing just answer the question' - JT");
+        }
+        else if (quoteNumber === 227){
+            interaction.reply("'I did throw Thomas Edison down an elevator shaft though' - The Wood");
+        }
+        else if (quoteNumber === 228){
+            interaction.reply("'Yknow I've always hated Matt for being so tall' - The Wood");
+        }
+        else if (quoteNumber === 229){
+            interaction.reply("'ACAB includes the SCP Foundation' - AJ");
+        }
+        else if (quoteNumber === 230){
+            interaction.reply("'don't worry it' - JT");
+        }
+        else if (quoteNumber === 231){
+            interaction.reply("'he's challenged a lot in life, gotta take the small victories' - JT");
+        }
+        else if (quoteNumber === 232){
+            interaction.reply("'I did a lot of trolling :FD_GanondorfShake:' - Schank");
+        }
+        else if (quoteNumber === 233){
+            interaction.reply("'baby's first Minecraft on hard difficulty' - Gaver");
+        }
+        else if (quoteNumber === 234){
+            interaction.reply("'you're*' - JT");
+        }
+        else if (quoteNumber === 235){
+            interaction.reply("'Well I didn't get the notifications and haven't been checking my phone because' - Gaver");
+        }
+        else if (quoteNumber === 236){
+            interaction.reply("'Though you haven't been following the HOA codes of The Shire' - The Wood");
+        }
+        else if (quoteNumber === 237){
+            interaction.reply("'doorvin moment' - JT");
+        }
+        else if (quoteNumber === 238){
+            interaction.reply("'I didn't build my house in a mountain to have noisy neighbors' - Schank");
+        }
+
      
 
 

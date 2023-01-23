@@ -4,7 +4,7 @@ module.exports = {
     execute(interaction, args){
 
         var randomizer = 0;
-        number = 399;
+        number = 402;
         imageNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (imageNumber === 69){
             interaction.reply({content: "I am all of you.",
