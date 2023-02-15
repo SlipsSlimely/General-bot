@@ -3,6 +3,8 @@ module.exports = {
     description:"this is a quote command!",
     execute(interaction, args){
 
+
+        // This command uses a randomizer to post text to the chat
         number = 238;
         quoteRepeater = 0;
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;

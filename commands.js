@@ -3,6 +3,9 @@ const { Routes } = require('discord-api-types/v9');
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const fs = require('node:fs');
 
+
+// The below lines of text are required to initialize slash commands in discord
+// without these discord won't let your commands work in the new slash system
 const commandRegister = (client) => {
     const commands = [
         new SlashCommandBuilder().setName('ping').setDescription('Replies with pong!'),

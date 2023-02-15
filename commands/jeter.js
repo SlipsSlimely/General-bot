@@ -3,6 +3,7 @@ module.exports = {
     description:"this is a jster command!",
     execute(interaction, args){
         
+        // This command uses a randomizer to post images to the chat
         var randomizer1 = 0;
         number = 58;
         //message.react('<:wokesmugjt:432811507588268043>');

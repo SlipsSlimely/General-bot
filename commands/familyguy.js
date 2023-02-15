@@ -3,6 +3,8 @@ module.exports = {
     description:"this command pulls a random family guy quote",
     execute(interaction, args){
 
+
+        // This command uses a randomizer to post text to the chat
         number = 34;
         //message.channel.startTyping();
         //message.react('<:Perhaps:507405452133400579>');

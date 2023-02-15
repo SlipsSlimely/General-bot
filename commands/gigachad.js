@@ -3,6 +3,7 @@ module.exports = {
     description:"this is a gigachad command!",
     execute(interaction, args){
         
+        // This command uses a randomizer to post images to the chat
         var randomizer4 = 0; 
         number = 26;
             //message.react('<:wokesmugjt:432811507588268043>');

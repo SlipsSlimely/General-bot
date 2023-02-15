@@ -3,6 +3,9 @@ module.exports ={
     name: 'help',
     description:"this is a help command!",
     execute(message, args){
+
+        // this command is now obsolete but posts all of the commmands the bot currently has 
+        // and informs users of stuff currently benig worked on
         number = 10;
         toddNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (toddNumber === 5){

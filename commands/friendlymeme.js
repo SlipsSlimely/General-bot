@@ -3,6 +3,8 @@ module.exports = {
     description:"this command pulls a random FD discord meme",
     execute(interaction, args){
 
+
+        // This command uses a randomizer to post images to the chat
         var randomizer = 0;
         number = 402;
         imageNumber = Math.floor(Math.random()*(number - 1 + 1))+1;

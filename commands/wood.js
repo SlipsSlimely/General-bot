@@ -3,6 +3,7 @@ module.exports = {
     description:"this is a wood command!",
     execute(interaction, args){
         
+        // This command uses a randomizer to post images to the chat
         var randomizer5 = 0;
         number = 43;
         //message.react('<:Pogvin:707040384613613588>');

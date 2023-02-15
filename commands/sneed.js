@@ -3,6 +3,8 @@ module.exports = {
     description:"this is a sneed command!",
     execute(interaction, args){
         
+
+        // This command uses a randomizer to post images to the chat
             var randomizer3 = 0;
             number = 63;
             //message.react('<a:Sneed:783268747061362699>');

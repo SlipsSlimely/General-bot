@@ -3,6 +3,8 @@ module.exports = {
     description:"this is a daily command",
     execute(interaction, args){
 
+
+        // this command links the user to a website, changing the URL daily using some date pulling code
         let currentDate = new Date();
         let cDay = currentDate.getDate();
         let cMonth = currentDate.getMonth() + 1;

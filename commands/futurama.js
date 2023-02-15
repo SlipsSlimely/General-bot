@@ -3,6 +3,8 @@ module.exports = {
     description:"this command pulls a random futurama quote",
     execute(interaction, args){
 
+
+        // This command uses a randomizer to post text to the chat
         number = 51;
         //message.channel.startTyping();
         //message.react('<:GoodNewsEveryone:504802485056176149>');
