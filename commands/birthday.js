@@ -3,14 +3,19 @@ module.exports = {
     description:"this is a birthday command!",
     execute(interaction, args){
 
+        // Setting up variables for the rest of the command, mostly self explanatory
         let currentDate = new Date();
         let cDay = currentDate.getDate();
         let cMonth = currentDate.getMonth() + 1;
         let cYear = currentDate.getFullYear();
 
+        // This sets up a randomizer that looks for a number between 1 and 10, used to add some surprise
+        // to this feature
         number = 10;
         Randomizer = Math.floor(Math.random()*(number - 1 + 1))+1;
         
+
+        // Below are a series of custom dates that when the bot gets summoned on it also shouts out there name
         if (cDay == 29 && cMonth == 3){
             if (Randomizer = 3){
                 interaction.reply({content: 'Happy Birthday Paul! ' + cMonth + "/" + cDay + "/" + cYear,

@@ -4,6 +4,9 @@ module.exports = {
     description:`this command shows you the total number of times most things have been called`,
     execute(interaction, options, killCount, kCount, jeterCount, woodCount, memeCount, quoteCount, vinCount, trueCount, familyCount, pogCount, reCount, futuramaCount){
 
+
+        // This feature specifically counts up the number of times other functions are called
+        // by users and then, when called, posts them for users to see
         const counterEmbed = new MessageEmbed()
         
             .setColor('#10128c')

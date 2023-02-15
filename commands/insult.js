@@ -9,10 +9,12 @@ module.exports = {
             person = (" ");
         }; 
 
-
+        // This sets up a randomizer that looks for a number between 1 and 10, used to add some surprise
+        // to this feature
         number = 10;
         insultNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
 
+        // Below are all of the insults currently possible to be called by the randomizer
         if (insultNumber === 1)
         {
             interaction.reply({content: `You Polynigmeon! ${person}` 

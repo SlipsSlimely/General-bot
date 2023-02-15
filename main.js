@@ -3,7 +3,7 @@ const {AttachmentBuilder, Client, MessageEmbed, Intents} = require('discord.js')
 const commandList = require('./commands.js');
 const client = new Discord.Client({intents: [Intents.FLAGS.GUILDS, "GUILDS", "GUILD_MESSAGES"]});
 require ("dotenv").config();
-const Canvas = require('@napi-rs/canvas');
+//const Canvas = require('@napi-rs/canvas');
 
 var fs = require('fs');
 const { waitForDebugger } = require('inspector');
