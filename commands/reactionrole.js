@@ -1,5 +1,6 @@
 const { ActionRowBuilder, MessageButton, ButtonStyle, MessageActionRow, MessageEmbed } = require('discord.js');
 module.exports = {
+    // This is currently a feature i'm developing, still a little buggy
     name: 'reactionrole',
     description: "Sets up a reaction role message!",
     async execute(interaction, args, Discord, client) {

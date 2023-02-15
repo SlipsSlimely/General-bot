@@ -18,6 +18,7 @@ for(const file of commandFiles){
     client.commands.set(command.name, command);
 }
 
+// From here to line 51 I am setting up tons of variables for the myriad things this bot does.
 var export1 = 'madememes/mememaker.jpg';
 var export2 = 'madememes/woodermark.jpg';
 var imgActive = 'madememes/image.jpg';
@@ -50,13 +51,16 @@ var Kpoop = 1;
 var praiseFunction = 1;
 
 
-
+// This is the text the bot puts out in the console when it initially starts up
 client.once('ready', () => {
     console.log('Skeleton Hunter, at your service!')
     commandList.commandRegister(client);
     client.user.setActivity("Game Time"); 
 })
 
+// From here to line 198 I have a series of functions that just check for specific words and phrases in all 
+// conversation in the Discord, when one of the triggers is read the bot immediately responds with
+// the appropriate reaction
 client.on('messageCreate', (message) =>{
 
 
@@ -195,6 +199,9 @@ client.on('messageCreate', (message) =>{
 
 });
 
+
+// From here to line 328 is the base programming telling the bot to open specific files when a user calls
+// that command
 client.on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return;
 
