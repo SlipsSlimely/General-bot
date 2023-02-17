@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const {AttachmentBuilder, Client, MessageEmbed, Intents} = require('discord.js');
+const {AttachmentBuilder, Client, MessageEmbed, Intents, time} = require('discord.js');
 const commandList = require('./commands.js');
 const client = new Discord.Client({intents: [Intents.FLAGS.GUILDS, "GUILDS", "GUILD_MESSAGES"]});
 require ("dotenv").config();
@@ -209,7 +209,7 @@ client.on('interactionCreate', async interaction => {
     
     switch (commandName) {
       case 'ping':
-        client.commands.get('ping').execute(interaction);
+        client.commands.get('ping').execute(interaction, client);
         break;
       case 'birthday':
         client.commands.get('birthday').execute(interaction);

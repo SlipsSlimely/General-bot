@@ -1,11 +1,14 @@
 module.exports = {
     name: 'ping',
     description:"this is a ping command!",
-    execute(interaction, args){
+    async execute(interaction, client){
+        const wait = require('node:timers/promises').setTimeout;
+
+        // this command tells the user what their ping is
+        await interaction.deferReply();
+        await wait(4000);
+        await interaction.editReply(`Pong!\nPonged back the ping in: ${Math.round(client.ws.ping)}ms`);
 
 
-        // this command posts the word pong but is planned to be updated to actually tell
-        // the user what their ping is
-        interaction.reply('Pong!');
     }
 }
