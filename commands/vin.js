@@ -3,7 +3,7 @@ module.exports = {
     description:"this is a gavin command!",
     execute(interaction, args){
 
-        // This command uses a randomizer to post images to the chat
+        // This command uses a randomizer to post images made in photoshop, of my friend
         var randomizer2 = 0;
         number = 53;
         //message.react('<:Pogvin:707040384613613588>');

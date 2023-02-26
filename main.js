@@ -121,7 +121,12 @@ client.on('messageCreate', (message) =>{
     }
     
 
-
+    /* 
+      The code block below activates when a user activates the Pizze Time command, when this is done
+       the bot posts a message with an image to announce that a game has started for players to participate in.
+       The bot then begins to  tally up a score that gets posted when the game ends.
+       It also posts images based on whether or not players beat a highscore or not.
+    */
     if(pizzaTime === 1 && !message.author.bot )
     {
         let pizzaVariance = ['pizza time', 'pizza time!', 'pizza time?', 'pizza time.'];

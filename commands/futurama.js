@@ -4,7 +4,7 @@ module.exports = {
     execute(interaction, args){
 
 
-        // This command uses a randomizer to post text to the chat
+        // This command uses a randomizer to post lines from the show Futurama to chat
         number = 51;
         //message.channel.startTyping();
         //message.react('<:GoodNewsEveryone:504802485056176149>');

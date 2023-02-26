@@ -4,7 +4,7 @@ module.exports = {
     execute(interaction, args){
 
 
-        // this command links the user to a website, changing the URL daily using some date pulling code
+        // this command links the user to a pokemon fan website, changing the URL daily using some date and time code
         let currentDate = new Date();
         let cDay = currentDate.getDate();
         let cMonth = currentDate.getMonth() + 1;

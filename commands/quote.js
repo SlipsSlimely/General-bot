@@ -4,7 +4,7 @@ module.exports = {
     execute(interaction, args){
 
 
-        // This command uses a randomizer to post text to the chat
+        // This command uses a randomizer to post text to the chat, the text is lines spoken from my friend group
         number = 238;
         quoteRepeater = 0;
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;

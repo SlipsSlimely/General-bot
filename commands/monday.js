@@ -4,7 +4,7 @@ module.exports = {
     execute(interaction, args){
 
 
-        // this command posts a single image 
+        // this command posts an image, the image is a garfield meme about mondays
         interaction.reply({
             files: [
                 "Mondays.jpg"

@@ -4,7 +4,7 @@ module.exports = {
     execute(interaction, args){
 
 
-        // this command just posts hello but using a randomizer will occasionally post a joke
+        // this command just posts hello but using a randomizer will occasionally post a joke based on Skyrim memes
         number = 10;
         toddNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (toddNumber === 5){
