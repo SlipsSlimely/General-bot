@@ -205,8 +205,9 @@ client.on('messageCreate', (message) =>{
 });
 
 
-// From here to line 328 is the base programming telling the bot to open specific files when a user calls
-// that command
+/* From here to line 328 is the base programming telling the bot to open specific files when a user calls
+that command
+Whenever a new command is created remember to add it here as well */
 client.on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return;
 

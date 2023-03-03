@@ -79,6 +79,7 @@ const commandRegister = (client) => {
         console.log('Started refreshing application (/) commands.');
 
         // add another one of these for each unique server skelebot goes to, replace the 2nd number with the server ID
+        // If these aren't updated the bot won't work in new servers it gets added to
         rest.put(
             Routes.applicationGuildCommands("497541741034078228", "590247114211197060"),
             { body: commands }
