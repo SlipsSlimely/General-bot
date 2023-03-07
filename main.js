@@ -312,6 +312,9 @@ client.on('interactionCreate', async interaction => {
           respectsPaid =  respectsPaid + 1;
           client.commands.get('f').execute(interaction, options, respectsPaid);
         break;
+      case 'reactionrole':
+          client.commands.get('reactionrole').execute(interaction, options);
+        break;
         
 /*       case 'woodermark':
         //client.commands.get('woodermark').execute(interaction, Canvas);

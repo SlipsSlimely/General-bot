@@ -4,7 +4,8 @@ module.exports = {
     name: 'reactionrole',
     description: "Sets up a reaction role message!",
     async execute(interaction, args, Discord, client) {
-        const channel = '1034327914977689650'; //Change this
+        const channel = '1034327914977689650'; //Change this to matchh the ID of the channel this will be live in
+
 /*         const acRole = message.guild.roles.cache.find(role => role.name === "Animal Crossing");
         const apexRole = message.guild.roles.cache.find(role => role.name === "Apex");
         const coreRole = message.guild.roles.cache.find(role => role.name === "Core Audience");
@@ -16,19 +17,6 @@ module.exports = {
         const uniteRole = message.guild.roles.cache.find(role => role.name === "Uniters");
         const kartRole = message.guild.roles.cache.find(role => role.name === "Karters"); */
 
-/*                                          //855231682457370696               
-        
-        const acEmoji = '🔵';  //855231682751889418
-        const apexEmoji = '🟤';                //855231682566029345
-        const coreEmoji = '🟢';
-        const streamEmoji = '🧑‍🤝‍🧑'; //855231682733801472
-        const smashEmoji = '⚔️';
-        const trainerEmoji = '🔘';  
-        const waifuEmoji = '🟠';  //855231682423554118
-        const minecraftEmoji = '🟣';  //855231682311356467
-        const uniteEmoji = '🔴';
-        const kartEmoji = '🔴';
- */
         const row = new MessageActionRow()
         .addComponents(
             new MessageButton()
@@ -73,19 +61,7 @@ module.exports = {
         interaction.reply({embeds: [roleEmbed], components: [row]});
 
  
-       /*  let messageEmbed = await message.channel.send(embed);
-        messageEmbed.react(acEmoji);
-        messageEmbed.react(apexEmoji);
-        messageEmbed.react(coreEmoji);
-        messageEmbed.react(streamEmoji);
-        messageEmbed.react(smashEmoji);
-        messageEmbed.react(trainerEmoji);
-        messageEmbed.react(waifuEmoji);
-        messageEmbed.react(minecraftEmoji);
-        messageEmbed.react(uniteEmoji);
-        messageEmbed.react(kartEmoji);
-
- 
+       /*  
         client.on('messageReactionAdd', async (reaction, user) => {
             if (reaction.message.partial) await reaction.message.fetch();
             if (reaction.partial) await reaction.fetch();
