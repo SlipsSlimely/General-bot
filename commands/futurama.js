@@ -213,6 +213,67 @@ module.exports = {
             interaction.reply("'Its Saturday night. I've got no date, a 2-liter bottle of Shasta, and my all Rush mixtape... Let's rock' - Philip J. Fry");
             
         }
+        else if (quoteNumber === 52){
+            interaction.reply("'That was so terrible, I think you gave me cancer! I don't care how popular you are, you will never work on my show!' - Calculon");
+            
+        }
+        else if (quoteNumber === 53){
+            interaction.reply("'We demand Bender!' - Leela");
+            
+        }
+        else if (quoteNumber === 54){
+            interaction.reply("'Calculon, old friend, I'm afraid I need your ears.' - Robot Devil");
+            
+        }
+        else if (quoteNumber === 55){
+            interaction.reply("'*beep*' - Boxy");
+            
+        }
+        else if (quoteNumber === 56){
+            interaction.reply("'Dream on, skin tube.' - Bender");
+            
+        }
+        else if (quoteNumber === 57){
+            interaction.reply("'I love stealin'; I love takin' things!' - Bender");
+            
+        }
+        else if (quoteNumber === 58){
+            interaction.reply("'I always said many things.' - Calculon");
+            
+        }
+        else if (quoteNumber === 59){
+            interaction.reply("'I'm Bender, baby! Please insert liquor!' - Bender");
+            
+        }
+        else if (quoteNumber === 60){
+            interaction.reply("'And so we say goodbye to our beloved pet, Nibbler, who's gone to a place where I, too, hope one day to go. The toilet.' - Professor Farnsworth");
+            
+        }
+        else if (quoteNumber === 61){
+            interaction.reply("'My manwich!' - Hermes");
+            
+        }
+        else if (quoteNumber === 62){
+            interaction.reply("'Oh, dear! She's stuck in an infinite loop, and he's an idiot! Well, that's love for you.' - Professor Farnsworth");
+            
+        }
+        else if (quoteNumber === 63){
+            interaction.reply("'I'm hungrier than a green snake in a sugar cane field.' - Hermes");
+            
+        }
+        else if (quoteNumber === 64){
+            interaction.reply("'You haven't seen the last of Barbados Slim! Now goodbye, forever!' - Barbados Slim");
+            
+        }
+        else if (quoteNumber === 65){
+            interaction.reply("'Oh, Lordy Lou! Help! Buddha! Zeus! God! One of you guys, do something! Help! Satan, you owe me!' - Professor Farnsworth");
+            
+        }
+        else if (quoteNumber === 66){
+            interaction.reply("'What? You've never seen a genius's wiener before?' - Cubert");
+            
+        }
+
 
     }
 }
