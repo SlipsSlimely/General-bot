@@ -5,7 +5,7 @@ module.exports = {
 
 
         // This command uses a randomizer to post text to the chat
-        number = 34;
+        number = 51;
         //message.channel.startTyping();
         //message.react('<:Perhaps:507405452133400579>');
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
@@ -145,74 +145,74 @@ module.exports = {
             interaction.reply("'Wheely Wheely stupid head, bet you wish you were dead!' - Peter Griffin");
             
         }
-        // else if (quoteNumber === 35){
-        //     interaction.reply("'A billion robots's lives are going to be extinguished! Ooh, the Jedis are going to feel this one...' - Hubert Farnsworth");
-        //     
-        // }
-        // else if (quoteNumber === 36){
-        //     interaction.reply("'Now conquer Earth you bastards!' - Mom");
-        //     
-        // }
-        // else if (quoteNumber === 37){
-        //     interaction.reply("'I'll tell you one thing! Nothing acts that cute without some ulterior motive!' - Nibbler");
-        //     
-        // }
-        // else if (quoteNumber === 38){
-        //     interaction.reply("'Ass ass ass ass ass ass ass!' - Bender");
-        //     
-        // }
-        // else if (quoteNumber === 39){
-        //     interaction.reply("'Move your freaking hoof, you goat!' - Mom");
-        //     
-        // }
-        // else if (quoteNumber === 40){
-        //     interaction.reply("'This show is awesome! When I grow up, I'm gonna have so much amnesia!' - Cubert Farnsworth");
-        //     
-        // }
-        // else if (quoteNumber === 41){
-        //     interaction.reply("'Hurray, a happy ending for the rich people.' - Dr. Zoidberg");
-        //     
-        // }
-        // else if (quoteNumber === 42){
-        //     interaction.reply("'Jewellery? It's jewellery. IT'S JEWELLERY PEOPLE!' - Amy Wong");
-        //     
-        // }
-        // else if (quoteNumber === 43){
-        //     interaction.reply("'Behold my handcrafted purity! The modern world can bite my splintery, wooden ass!' - Bender");
-        //     
-        // }
-        // else if (quoteNumber === 44){
-        //     interaction.reply("'You whanged my ship, you walnut-panelled idiot! - Hubert Farnsworth");
-        //     
-        // }
-        // else if (quoteNumber === 45){
-        //     interaction.reply("'NIXON'S BACK!' - Richard Nixon's Head");
-        //     
-        // }
-        // else if (quoteNumber === 46){
-        //     interaction.reply("'I'M THE PROFESSOR, WHY ISN'T ANYONE LISTENING TO ME?!' - Hubert Farnsworth");
-        //     
-        // }
-        // else if (quoteNumber === 47){
-        //     interaction.reply("'Hello. We're friends of Philip J. Fry. Oh, my God, is that a Captain Crunch casserole?' - Dr. Zoidberg");
-        //     
-        // }
-        // else if (quoteNumber === 48){
-        //     interaction.reply("'Professor, sprinkle us with wisdom from your mighty brain. How scared should we be?' - Hermes Conrad");
-        //     
-        // }
-        // else if (quoteNumber === 49){
-        //     interaction.reply("'PROFESSOR! LAVA! HOT!' - Hubert Farnsworth");
-        //     
-        // }
-        // else if (quoteNumber === 50){
-        //     interaction.reply("'Give science a chance!' - Dr. Ogden Wernstrom");
-        //     
-        // }
-        // else if (quoteNumber === 51){
-        //     interaction.reply("'Its Saturday night. I've got no date, a 2-liter bottle of Shasta, and my all Rush mixtape... Let's rock' - Philip J. Fry");
-        //     
-        // }
+        else if (quoteNumber === 35){
+            interaction.reply("'Well see. I got drunk, and then got my picture taken. So that way, when I get pulled over for drunk driving, I look the same as on license. You know. And then the copper... the copper'll say: 'Aah. You're fine. You're not drunk. This is you normal. I can tell you by the picture.'' - Peter Griffin");
+            
+        }
+        else if (quoteNumber === 36){
+            interaction.reply("'So everybody just gets to stick their big chef's spoon into my comedy gumbo, huh? Well no deal!' - Peter Griffin");
+            
+        }
+        else if (quoteNumber === 37){
+            interaction.reply("How's it going, Adolf?' - Brian Griffin");
+            
+        }
+        else if (quoteNumber === 38){
+            interaction.reply("'What the fuck, did you eat pussy backstage???' - Seth Rogen");
+            
+        }
+        else if (quoteNumber === 39){
+            interaction.reply("'Alright! This is the greatest Sunday tradition ever...except for getting all my cutaway gags ready for the week.' - Peter Griffin");
+            
+        }
+        else if (quoteNumber === 40){
+            interaction.reply("'You gonna need me this week?' - Darth Vader");
+            
+        }
+        else if (quoteNumber === 41){
+            interaction.reply("'I'm, um...here for your show.' - Death");
+            
+        }
+        else if (quoteNumber === 42){
+            interaction.reply("'This place gives me the creeps, like when I went to that pedophile opera.' - Peter Griffin");
+            
+        }
+        else if (quoteNumber === 43){
+            interaction.reply("'Ow!' - Cleveland Brown");
+            
+        }
+        else if (quoteNumber === 44){
+            interaction.reply("'Hey, wait, wait, wait, you cannot tell anyone I am here, for if humanity discovers am no longer lurking in the shadows, the consequences would be dire.' - Death");
+            
+        }
+        else if (quoteNumber === 45){
+            interaction.reply("'NIXON'S BACK!' - Richard Nixon's Head");
+            
+        }
+        else if (quoteNumber === 46){
+            interaction.reply("'I'M THE PROFESSOR, WHY ISN'T ANYONE LISTENING TO ME?!' - Hubert Farnsworth");
+            
+        }
+        else if (quoteNumber === 47){
+            interaction.reply("'Peter, he's not coming on to you. He's trying to tell you that you're healthy.' - Lois Griffin");
+            
+        }
+        else if (quoteNumber === 48){
+            interaction.reply("'No. Mommy's made peace with that.' - Lois Griffin");
+            
+        }
+        else if (quoteNumber === 49){
+            interaction.reply("'What did you make this cocoa with? Crap?' - Death");
+            
+        }
+        else if (quoteNumber === 50){
+            interaction.reply("'Could you repeat that, please, Peter? I believe I had something crazy in my ear.' - Cleveland Brown");
+            
+        }
+        else if (quoteNumber === 51){
+            interaction.reply("'Our top story tonight, the rules of Death no longer apply.' - Tom Tucker");
+            
+        }
 
     }
 }

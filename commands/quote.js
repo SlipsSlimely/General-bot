@@ -5,7 +5,7 @@ module.exports = {
 
 
         // This command uses a randomizer to post text to the chat, the text is lines spoken from my friend group
-        number = 238;
+        number = 256;
         quoteRepeater = 0;
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (quoteNumber === quoteRepeater){
@@ -732,7 +732,60 @@ module.exports = {
         else if (quoteNumber === 238){
             interaction.reply("'I didn't build my house in a mountain to have noisy neighbors' - Schank");
         }
-
+        else if (quoteNumber === 239){
+            interaction.reply("'schank makes me want to kill myself' - Gavin");
+        }
+        else if (quoteNumber === 240){
+            interaction.reply("'I need to start saying funnier things' - Schank");
+        }
+        else if (quoteNumber === 241){
+            interaction.reply("'Say something funny' - Ali");
+        }
+        else if (quoteNumber === 242){
+            interaction.reply("'well paul's fat ass clapped and turned the bot off i guess' - JT");
+        }
+        else if (quoteNumber === 243){
+            interaction.reply("'No' - Schank");
+        }
+        else if (quoteNumber === 244){
+            interaction.reply("'I GAVE COLTON THE FREDDIE MERCURY TREATMENT' - Gavin");
+        }
+        else if (quoteNumber === 245){
+            interaction.reply("'The rest of us will be blunt sure, but we deliver it in more optimistic tones. Whereas gavin will drop in and go: 17$ an hour is not liveable, lower your expectations' - Paul");
+        }
+        else if (quoteNumber === 246){
+            interaction.reply("'is saying to your manager that she's a pussy slaying girlboss sexual assault' - Ginger");
+        }
+        else if (quoteNumber === 247){
+            interaction.reply("'But watching Gavin eat those cookies made me even harder ' - Schank");
+        }
+        else if (quoteNumber === 248){
+            interaction.reply("'shit yourself, Downed' - Gavin");
+        }
+        else if (quoteNumber === 249){
+            interaction.reply("'Man with that you made me question which of us looks the most like Danny Devito' - Colton");
+        }
+        else if (quoteNumber === 250){
+            interaction.reply("'From YANKING IT TOO HARD TO TINKATON' - Paul");
+        }
+        else if (quoteNumber === 251){
+            interaction.reply("'You gotta clean the plate before you eat smh' - JT");
+        }
+        else if (quoteNumber === 252){
+            interaction.reply("'AND BREEDABLE' - Colton");
+        }
+        else if (quoteNumber === 253){
+            interaction.reply("'If you dont wanna shag your favorite, is it *really* your favorite?' - Downes");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'I love lolis' - Ali");
+        }
+        else if (quoteNumber === 255){
+            interaction.reply("'Poke poll wildin today' - Colton");
+        }
+        else if (quoteNumber === 256){
+            interaction.reply("'I mean, Who doesn't wanna fuck their favorite Pokemon' - Colton");
+        }
      
 
 
