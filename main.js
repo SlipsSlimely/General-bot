@@ -213,10 +213,10 @@ Client.on('interactionCreate', async interaction => {
 
     if (interaction.isButton()) {
       const buttonID = interaction.customId;
-      if (buttonID === '1') { // get button by customId set below
+      if (buttonID === '1') { 
           const member = interaction.member; // get member from the interaction - person who clicked the button
 
-          //console.log(member.roles.cache);
+          
 
           if (member.roles.cache.has('472500301279133697')) { // if they already have the role
               member.roles.remove('472500301279133697'); // remove it
@@ -232,10 +232,10 @@ Client.on('interactionCreate', async interaction => {
               })
           }
       }
-      else if (buttonID === '2') { // get button by customId set below
+      else if (buttonID === '2') { 
         const member = interaction.member; // get member from the interaction - person who clicked the button
 
-        //console.log(member.roles.cache);
+        
 
         if (member.roles.cache.has('763914397881466901')) { // if they already have the role
             member.roles.remove('763914397881466901'); // remove it
@@ -251,10 +251,10 @@ Client.on('interactionCreate', async interaction => {
             })
         }
     }
-    else if (buttonID === '3') { // get button by customId set below
+    else if (buttonID === '3') { 
       const member = interaction.member; // get member from the interaction - person who clicked the button
 
-      //console.log(member.roles.cache);
+      
 
       if (member.roles.cache.has('593883972652498968')) { // if they already have the role
           member.roles.remove('593883972652498968'); // remove it
@@ -270,10 +270,10 @@ Client.on('interactionCreate', async interaction => {
           })
       }
   }
-  else if (buttonID === '4') { // get button by customId set below
+  else if (buttonID === '4') { 
     const member = interaction.member; // get member from the interaction - person who clicked the button
 
-    //console.log(member.roles.cache);
+    
 
     if (member.roles.cache.has('603693326905901096')) { // if they already have the role
         member.roles.remove('603693326905901096'); // remove it
@@ -289,10 +289,10 @@ Client.on('interactionCreate', async interaction => {
         })
     }
 }
-else if (buttonID === '5') { // get button by customId set below
+else if (buttonID === '5') { 
   const member = interaction.member; // get member from the interaction - person who clicked the button
 
-  //console.log(member.roles.cache);
+  
 
   if (member.roles.cache.has('700804945699536916')) { // if they already have the role
       member.roles.remove('700804945699536916'); // remove it
@@ -308,10 +308,10 @@ else if (buttonID === '5') { // get button by customId set below
       })
   }
 }
-else if (buttonID === '6') { // get button by customId set below
+else if (buttonID === '6') { 
   const member = interaction.member; // get member from the interaction - person who clicked the button
 
-  //console.log(member.roles.cache);
+  
 
   if (member.roles.cache.has('578353610388406312')) { // if they already have the role
       member.roles.remove('578353610388406312'); // remove it
@@ -327,10 +327,10 @@ else if (buttonID === '6') { // get button by customId set below
       })
   }
 }
-else if (buttonID === '7') { // get button by customId set below
+else if (buttonID === '7') { 
   const member = interaction.member; // get member from the interaction - person who clicked the button
 
-  //console.log(member.roles.cache);
+
 
   if (member.roles.cache.has('757061544671445012')) { // if they already have the role
       member.roles.remove('757061544671445012'); // remove it
@@ -346,10 +346,10 @@ else if (buttonID === '7') { // get button by customId set below
       })
   }
 }
-else if (buttonID === '8') { // get button by customId set below
+else if (buttonID === '8') { 
   const member = interaction.member; // get member from the interaction - person who clicked the button
 
-  //console.log(member.roles.cache);
+ 
 
   if (member.roles.cache.has('873233003705426001')) { // if they already have the role
       member.roles.remove('873233003705426001'); // remove it
@@ -365,10 +365,10 @@ else if (buttonID === '8') { // get button by customId set below
       })
   }
 }
-else if (buttonID === '9') { // get button by customId set below
+else if (buttonID === '9') { 
   const member = interaction.member; // get member from the interaction - person who clicked the button
 
-  //console.log(member.roles.cache);
+
 
   if (member.roles.cache.has('903010664564555796')) { // if they already have the role
       member.roles.remove('903010664564555796'); // remove it
@@ -384,10 +384,10 @@ else if (buttonID === '9') { // get button by customId set below
       })
   }
 }
-else if (buttonID === '10') { // get button by customId set below
+else if (buttonID === '10') { 
   const member = interaction.member; // get member from the interaction - person who clicked the button
 
-  //console.log(member.roles.cache);
+
 
   if (member.roles.cache.has('956587965704962098')) { // if they already have the role
       member.roles.remove('956587965704962098'); // remove it
@@ -403,10 +403,10 @@ else if (buttonID === '10') { // get button by customId set below
       })
   }
 }
-else if (buttonID === '11') { // get button by customId set below
+else if (buttonID === '11') { 
   const member = interaction.member; // get member from the interaction - person who clicked the button
 
-  //console.log(member.roles.cache);
+
 
   if (member.roles.cache.has('1025577232212701305')) { // if they already have the role
       member.roles.remove('1025577232212701305'); // remove it
@@ -543,7 +543,7 @@ else if (buttonID === '11') { // get button by customId set below
 
 
 
-Client.on("messageCreate", async message => { // corrected your event listener should be messageCreate not message as message is deprecated
+Client.on("messageCreate", async message => { 
   if (message.content.toLowerCase() == "-createreactionrole") {
       if (message.author.bot) return;
 
