@@ -4,7 +4,7 @@ module.exports = {
     name: 'reactionrole',
     description: "Sets up a reaction role message!",
     async execute(interaction, args, Discord, client) {
-        const channel = '1034327914977689650'; //Change this to matchh the ID of the channel this will be live in
+        //const channel = '1034327914977689650'; //Change this to matchh the ID of the channel this will be live in
 
 /*         const acRole = message.guild.roles.cache.find(role => role.name === "Animal Crossing");
         const apexRole = message.guild.roles.cache.find(role => role.name === "Apex");
@@ -16,12 +16,36 @@ module.exports = {
         const minecraftRole = message.guild.roles.cache.find(role => role.name === "Block Heads");
         const uniteRole = message.guild.roles.cache.find(role => role.name === "Uniters");
         const kartRole = message.guild.roles.cache.find(role => role.name === "Karters"); */
+        Client.on('interactionCreate', async interaction => {
+            if (interaction.isButton()) {
+                const buttonID = interaction.customId;
+                if (buttonID === '1') { // get button by customId set below
+                    const member = interaction.member; // get member from the interaction - person who clicked the button
+        
+                    console.log(member.roles.cache);
+        
+                    if (member.roles.cache.has('772614934219456552')) { // if they already have the role
+                        member.roles.remove('772614934219456552'); // remove it
+                        return interaction.reply({
+                            content: 'Successfully removed role!',
+                            ephemeral: true
+                        });
+                    } else { // if they don't have the role
+                        member.roles.add('772614934219456552'); // add it
+                        return interaction.reply({
+                            content: 'Successfully added role!',
+                            ephemeral: true
+                        })
+                    }
+                }
+            }
+        });
 
         const row = new MessageActionRow()
         .addComponents(
             new MessageButton()
                 .setCustomId('1')
-                .setLabel('Animal Crossing')
+                .setLabel('Tank Wipes')
                 .setStyle('SUCCESS'),
             new MessageButton()
                 .setCustomId('2')

@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
-const {AttachmentBuilder, Client, MessageEmbed, Intents, time} = require('discord.js');
+const {AttachmentBuilder, MessageEmbed, Intents, time, ActionRowBuilder, MessageButton, ButtonStyle, MessageActionRow} = require('discord.js');
 const commandList = require('./commands.js');
-const client = new Discord.Client({intents: [Intents.FLAGS.GUILDS, "GUILDS", "GUILD_MESSAGES"]});
+const Client = new Discord.Client({intents: [Intents.FLAGS.GUILDS, "GUILDS", 'GUILD_MEMBERS', "GUILD_MESSAGES"]});
 require ("dotenv").config();
 //const Canvas = require('@napi-rs/canvas');
 
@@ -10,12 +10,12 @@ const { waitForDebugger } = require('inspector');
 const { SSL_OP_EPHEMERAL_RSA } = require('constants');
 
 
-client.commands = new Discord.Collection();
+Client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands/').filter(file=> file.endsWith('.js'));
 for(const file of commandFiles){
     const command = require(`./commands/${file}`);
 
-    client.commands.set(command.name, command);
+    Client.commands.set(command.name, command);
 }
 
 // From here to line 51 I am setting up tons of variables for the myriad things this bot does.
@@ -52,17 +52,17 @@ var praiseFunction = 1;
 
 
 // This is the text the bot puts out in the console when it initially starts up
-client.once('ready', () => {
+Client.once('ready', () => {
     console.log('Skeleton Hunter, at your service!')
-    commandList.commandRegister(client);
-    client.user.setActivity("Game Time"); 
+    commandList.commandRegister(Client);
+    Client.user.setActivity("Game Time"); 
 })
 
 // From here to line 198 I have a series of functions that just check for specific words and phrases in all 
 // conversation in the Discord, when one of the triggers is read the bot immediately responds with
 // the appropriate reaction
-client.on('messageCreate', (message) =>{
-
+Client.on('messageCreate', async message =>{
+    if (message.author.bot) return;
 
     if(message.content === 'RETARD' && !message.author.bot)
     {
@@ -208,79 +208,292 @@ client.on('messageCreate', (message) =>{
 /* From here to line 328 is the base programming telling the bot to open specific files when a user calls
 that command
 Whenever a new command is created remember to add it here as well */
-client.on('interactionCreate', async interaction => {
-    if (!interaction.isCommand()) return;
+Client.on('interactionCreate', async interaction => {
+    
+
+    if (interaction.isButton()) {
+      const buttonID = interaction.customId;
+      if (buttonID === '1') { // get button by customId set below
+          const member = interaction.member; // get member from the interaction - person who clicked the button
+
+          //console.log(member.roles.cache);
+
+          if (member.roles.cache.has('472500301279133697')) { // if they already have the role
+              member.roles.remove('472500301279133697'); // remove it
+              return interaction.reply({
+                  content: 'Successfully removed role!',
+                  ephemeral: true
+              });
+          } else { // if they don't have the role
+              member.roles.add('472500301279133697'); // add it
+              return interaction.reply({
+                  content: 'Successfully added role!',
+                  ephemeral: true
+              })
+          }
+      }
+      else if (buttonID === '2') { // get button by customId set below
+        const member = interaction.member; // get member from the interaction - person who clicked the button
+
+        //console.log(member.roles.cache);
+
+        if (member.roles.cache.has('763914397881466901')) { // if they already have the role
+            member.roles.remove('763914397881466901'); // remove it
+            return interaction.reply({
+                content: 'Successfully removed role!',
+                ephemeral: true
+            });
+        } else { // if they don't have the role
+            member.roles.add('763914397881466901'); // add it
+            return interaction.reply({
+                content: 'Successfully added role!',
+                ephemeral: true
+            })
+        }
+    }
+    else if (buttonID === '3') { // get button by customId set below
+      const member = interaction.member; // get member from the interaction - person who clicked the button
+
+      //console.log(member.roles.cache);
+
+      if (member.roles.cache.has('593883972652498968')) { // if they already have the role
+          member.roles.remove('593883972652498968'); // remove it
+          return interaction.reply({
+              content: 'Successfully removed role!',
+              ephemeral: true
+          });
+      } else { // if they don't have the role
+          member.roles.add('593883972652498968'); // add it
+          return interaction.reply({
+              content: 'Successfully added role!',
+              ephemeral: true
+          })
+      }
+  }
+  else if (buttonID === '4') { // get button by customId set below
+    const member = interaction.member; // get member from the interaction - person who clicked the button
+
+    //console.log(member.roles.cache);
+
+    if (member.roles.cache.has('603693326905901096')) { // if they already have the role
+        member.roles.remove('603693326905901096'); // remove it
+        return interaction.reply({
+            content: 'Successfully removed role!',
+            ephemeral: true
+        });
+    } else { // if they don't have the role
+        member.roles.add('603693326905901096'); // add it
+        return interaction.reply({
+            content: 'Successfully added role!',
+            ephemeral: true
+        })
+    }
+}
+else if (buttonID === '5') { // get button by customId set below
+  const member = interaction.member; // get member from the interaction - person who clicked the button
+
+  //console.log(member.roles.cache);
+
+  if (member.roles.cache.has('700804945699536916')) { // if they already have the role
+      member.roles.remove('700804945699536916'); // remove it
+      return interaction.reply({
+          content: 'Successfully removed role!',
+          ephemeral: true
+      });
+  } else { // if they don't have the role
+      member.roles.add('700804945699536916'); // add it
+      return interaction.reply({
+          content: 'Successfully added role!',
+          ephemeral: true
+      })
+  }
+}
+else if (buttonID === '6') { // get button by customId set below
+  const member = interaction.member; // get member from the interaction - person who clicked the button
+
+  //console.log(member.roles.cache);
+
+  if (member.roles.cache.has('578353610388406312')) { // if they already have the role
+      member.roles.remove('578353610388406312'); // remove it
+      return interaction.reply({
+          content: 'Successfully removed role!',
+          ephemeral: true
+      });
+  } else { // if they don't have the role
+      member.roles.add('578353610388406312'); // add it
+      return interaction.reply({
+          content: 'Successfully added role!',
+          ephemeral: true
+      })
+  }
+}
+else if (buttonID === '7') { // get button by customId set below
+  const member = interaction.member; // get member from the interaction - person who clicked the button
+
+  //console.log(member.roles.cache);
+
+  if (member.roles.cache.has('757061544671445012')) { // if they already have the role
+      member.roles.remove('757061544671445012'); // remove it
+      return interaction.reply({
+          content: 'Successfully removed role!',
+          ephemeral: true
+      });
+  } else { // if they don't have the role
+      member.roles.add('757061544671445012'); // add it
+      return interaction.reply({
+          content: 'Successfully added role!',
+          ephemeral: true
+      })
+  }
+}
+else if (buttonID === '8') { // get button by customId set below
+  const member = interaction.member; // get member from the interaction - person who clicked the button
+
+  //console.log(member.roles.cache);
+
+  if (member.roles.cache.has('873233003705426001')) { // if they already have the role
+      member.roles.remove('873233003705426001'); // remove it
+      return interaction.reply({
+          content: 'Successfully removed role!',
+          ephemeral: true
+      });
+  } else { // if they don't have the role
+      member.roles.add('873233003705426001'); // add it
+      return interaction.reply({
+          content: 'Successfully added role!',
+          ephemeral: true
+      })
+  }
+}
+else if (buttonID === '9') { // get button by customId set below
+  const member = interaction.member; // get member from the interaction - person who clicked the button
+
+  //console.log(member.roles.cache);
+
+  if (member.roles.cache.has('903010664564555796')) { // if they already have the role
+      member.roles.remove('903010664564555796'); // remove it
+      return interaction.reply({
+          content: 'Successfully removed role!',
+          ephemeral: true
+      });
+  } else { // if they don't have the role
+      member.roles.add('903010664564555796'); // add it
+      return interaction.reply({
+          content: 'Successfully added role!',
+          ephemeral: true
+      })
+  }
+}
+else if (buttonID === '10') { // get button by customId set below
+  const member = interaction.member; // get member from the interaction - person who clicked the button
+
+  //console.log(member.roles.cache);
+
+  if (member.roles.cache.has('956587965704962098')) { // if they already have the role
+      member.roles.remove('956587965704962098'); // remove it
+      return interaction.reply({
+          content: 'Successfully removed role!',
+          ephemeral: true
+      });
+  } else { // if they don't have the role
+      member.roles.add('956587965704962098'); // add it
+      return interaction.reply({
+          content: 'Successfully added role!',
+          ephemeral: true
+      })
+  }
+}
+else if (buttonID === '11') { // get button by customId set below
+  const member = interaction.member; // get member from the interaction - person who clicked the button
+
+  //console.log(member.roles.cache);
+
+  if (member.roles.cache.has('1025577232212701305')) { // if they already have the role
+      member.roles.remove('1025577232212701305'); // remove it
+      return interaction.reply({
+          content: 'Successfully removed role!',
+          ephemeral: true
+      });
+  } else { // if they don't have the role
+      member.roles.add('1025577232212701305'); // add it
+      return interaction.reply({
+          content: 'Successfully added role!',
+          ephemeral: true
+      })
+  }
+}
+  }
 
     const { commandName, options } = interaction;
     
     switch (commandName) {
       case 'ping':
-        client.commands.get('ping').execute(interaction, client);
+        Client.commands.get('ping').execute(interaction, Client);
         break;
       case 'birthday':
-        client.commands.get('birthday').execute(interaction);
+        Client.commands.get('birthday').execute(interaction);
         break;
       case 'coinflip':
-        client.commands.get('coinflip').execute(interaction);
+        Client.commands.get('coinflip').execute(interaction);
         break;
       case 'familyguy':
         familyCount = familyCount + 1;
-        client.commands.get('familyguy').execute(interaction);
+        Client.commands.get('familyguy').execute(interaction);
         break;
       case 'futurama':
         futuramaCount = futuramaCount + 1;
-        client.commands.get('futurama').execute(interaction);
+        Client.commands.get('futurama').execute(interaction);
         break;
       case 'hello':
-        client.commands.get('hello').execute(interaction);
+        Client.commands.get('hello').execute(interaction);
         break;
       case 'monday':
-        client.commands.get('monday').execute(interaction);
+        Client.commands.get('monday').execute(interaction);
         break;
       case 'quote':
         quoteCount = quoteCount + 1;
-        client.commands.get('quote').execute(interaction);
+        Client.commands.get('quote').execute(interaction);
         break;
       case 'friendlymeme':
         memeCount = memeCount + 1;
-        client.commands.get('friendlymeme').execute(interaction);
+        Client.commands.get('friendlymeme').execute(interaction);
         break;
       case 'cumzone':
-        client.commands.get('cumzone').execute(interaction);
+        Client.commands.get('cumzone').execute(interaction);
         break;
       case 'insult':
-        client.commands.get('insult').execute(interaction, options);
+        Client.commands.get('insult').execute(interaction, options);
         break;
       case 'wiki':
-        client.commands.get('wiki').execute(interaction, options);
+        Client.commands.get('wiki').execute(interaction, options);
         break;
       case 'gigachad':
-        client.commands.get('gigachad').execute(interaction, options);
+        Client.commands.get('gigachad').execute(interaction, options);
         break;
       case 'sneed':
-        client.commands.get('sneed').execute(interaction, options);
+        Client.commands.get('sneed').execute(interaction, options);
         break;
       case 'vin':
         vinCount = vinCount + 1;
-        client.commands.get('vin').execute(interaction, options);
+        Client.commands.get('vin').execute(interaction, options);
         break;
       case 'wood':
         woodCount = woodCount + 1;
-        client.commands.get('wood').execute(interaction, options);
+        Client.commands.get('wood').execute(interaction, options);
         break;
       case 'jeter':
         jeterCount = jeterCount + 1;
-        client.commands.get('jeter').execute(interaction, options);
+        Client.commands.get('jeter').execute(interaction, options);
         break;
       case 'todd':
-        client.commands.get('todd').execute(interaction, options);
+        Client.commands.get('todd').execute(interaction, options);
         break;
       case 'pufferfish':
-        client.commands.get('pufferfish').execute(interaction, options);
+        Client.commands.get('pufferfish').execute(interaction, options);
         break;
       case 'kill':
         killCount = killCount + 1;
-        client.commands.get('kill').execute(interaction, options, killCount);
+        Client.commands.get('kill').execute(interaction, options, killCount);
         break;
       case 'pizzatime':
         pizzaTime = 1;
@@ -299,10 +512,10 @@ client.on('interactionCreate', async interaction => {
         interaction.reply({embeds: [pizzaEmbed]});
         break;
       case 'serebii':
-          client.commands.get('serebii').execute(interaction, options);
+          Client.commands.get('serebii').execute(interaction, options);
         break;
       case 'counter':
-          client.commands.get('counter').execute(interaction, options, killCount, kCount, jeterCount, woodCount, memeCount, quoteCount, vinCount, trueCount, familyCount, pogCount, reCount, futuramaCount);
+          Client.commands.get('counter').execute(interaction, options, killCount, kCount, jeterCount, woodCount, memeCount, quoteCount, vinCount, trueCount, familyCount, pogCount, reCount, futuramaCount);
         break;
       case 'dementia':
         dementiaTime = 1;
@@ -310,14 +523,11 @@ client.on('interactionCreate', async interaction => {
         break;
       case 'f':
           respectsPaid =  respectsPaid + 1;
-          client.commands.get('f').execute(interaction, options, respectsPaid);
-        break;
-      case 'reactionrole':
-          client.commands.get('reactionrole').execute(interaction, options);
+          Client.commands.get('f').execute(interaction, options, respectsPaid);
         break;
         
-/*       case 'woodermark':
-        //client.commands.get('woodermark').execute(interaction, Canvas);
+ /*       case 'woodermark':
+        //Client.commands.get('woodermark').execute(interaction, Canvas);
         const background = await Canvas.loadImage('./WoodFunnyMomentsGold.png');
         const canvas = Canvas.createCanvas(700, 250);
         const context = canvas.getContext('2d');
@@ -325,21 +535,90 @@ client.on('interactionCreate', async interaction => {
         const attachment = new AttachmentBuilder(await canvas.encode('png'), { name: 'profile-image.png' });
     
         interaction.reply({ files: [attachment] });
-        break;
-      case 'reactionrole':
-          client.commands.get('reactionrole').execute(interaction, options);
         break; */
     
     }
-
-
-
 
 });
 
 
 
-/* client.on('message', message =>{
+Client.on("messageCreate", async message => { // corrected your event listener should be messageCreate not message as message is deprecated
+  if (message.content.toLowerCase() == "-createreactionrole") {
+      if (message.author.bot) return;
+
+      const row = new MessageActionRow()
+          .addComponents(
+            new MessageButton()
+                .setCustomId('1')
+                .setLabel('Core Audience')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('2')
+                .setLabel('Stream Team')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('3')
+                .setLabel('Smash Boys')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('4')
+                .setLabel('Trainer')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('5')
+                .setLabel('Animal Crossing')
+                .setStyle('SUCCESS'),
+          );
+        const row2 = new MessageActionRow()
+          .addComponents(
+            new MessageButton()
+                .setCustomId('6')
+                .setLabel('Waifu 4 U')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('7')
+                .setLabel('Block Heads')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('8')
+                .setLabel('Uniters')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('9')
+                .setLabel('Apex')
+                .setStyle('SUCCESS'),
+            new MessageButton()
+                .setCustomId('10')
+                .setLabel('Karters')
+                .setStyle('SUCCESS'),
+          );
+          const row3 = new MessageActionRow()
+          .addComponents(
+            new MessageButton()
+                .setCustomId('11')
+                .setLabel('Splatters')
+                .setStyle('SUCCESS'),
+          );
+      message.channel.send({
+          content: 'Please press the button for the role that you would like.',
+          components: [row]
+      })
+      message.channel.send({
+        content: 'Please press the button for the role that you would like.',
+        components: [row2]
+    })
+    message.channel.send({
+      content: 'Please press the button for the role that you would like.',
+      components: [row3]
+  })
+  }
+});
+
+
+
+
+/* Client.on('message', message =>{
 
 
     
@@ -381,7 +660,7 @@ client.on('interactionCreate', async interaction => {
 
     // setTimeout(updateTime, 1000);
     if(command === 'help'){
-        client.commands.get('help').execute(message,args);
+        Client.commands.get('help').execute(message,args);
     }
     if(command === 'ZaWarudo'){
         var counter = 1;
@@ -407,31 +686,7 @@ client.on('interactionCreate', async interaction => {
 
 
     }
-    if(command === 'pizzatime'){
-        const filter = m => m.author.id === message.author.id;
-        message.channel.send("pizza time!",
-        {files:["PizzaTime.png"]});
-        message.channel.awaitMessages(filter,{time: 1000}).then(async(collected)=>{
-            if(collected.first().content == 'pizza time!' || 'pizza time' || 'Pizza time'){
-                message.react("<a:pizza:>");
-            }
-            else {
-                message.channel.send(" ",
-                {files:["PizzaOver.png"]});
-        }
-        })
-        /*  pizzaTime = 1;
-        while (pizzaTime === 1){
-            if(message.content.includes("pizza time") && !message.author.bot || message.content.includes("pizza time!") && !message.author.bot){
-                message.channel.send("<a:pizza:>");
-            }
-            else if(!message.content.includes("pizza time") && !message.author.bot || !message.content.includes("pizza time!") && !message.author.bot){
-                message.channel.send(" ",
-                {files:["PizzaOver.png"]});
-                pizzaTime = 0;
-            } 
-        } */
-    /*}
+
     //testing this
     if(command === 'woodermark'){
         message.channel.startTyping();
@@ -523,5 +778,6 @@ client.on('interactionCreate', async interaction => {
 
 
 
-client.login(process.env.TOKEN)
+
+Client.login(process.env.TOKEN)
 
