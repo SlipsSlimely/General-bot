@@ -46,7 +46,6 @@ const commandRegister = (client) => {
             option.setName('killer')
             .setDescription('This is the killer')
             .setRequired(true)),
-        new SlashCommandBuilder().setName('reactionrole').setDescription('Replies with buttons!'),
         new SlashCommandBuilder().setName('f').setDescription('Pays respects!'),
         /* new SlashCommandBuilder()
         .setName('ticket')
