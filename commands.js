@@ -89,6 +89,11 @@ const commandRegister = (client) => {
             { body: commands }
         );
 
+        rest.put(
+            Routes.applicationGuildCommands("497541741034078228", "1098020873451090101"),
+            { body: commands }
+        );
+
         console.log('Successfully reloaded application (/) commands.');
     } catch (error) {
         console.error(error);
