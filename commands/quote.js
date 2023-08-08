@@ -5,7 +5,7 @@ module.exports = {
 
 
         // This command uses a randomizer to post text to the chat, the text is lines spoken from my friend group
-        number = 256;
+        number = 275;
         quoteRepeater = 0;
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (quoteNumber === quoteRepeater){
@@ -786,52 +786,64 @@ module.exports = {
         else if (quoteNumber === 256){
             interaction.reply("'I mean, Who doesn't wanna fuck their favorite Pokemon' - Colton");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 257){
             interaction.reply("'i'll get it if i get to sleep with gardevoir' - JT");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 258){
             interaction.reply("'some people should really just end it all' - Geenger");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 259){
             interaction.reply("'I jerk off to Gavin every night, my wrist is fucking made of fire hotter than satans asshole. I dont wanna hear excuses ' - Downes");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 260){
             interaction.reply("'NOOOOOOOO BRAZIL WILL BECOME A TOURIST'S PARADISE' - The Wood");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 261){
             interaction.reply("'I will burn your holy cities to the fucking ground' - Gavin");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 262){
             interaction.reply("'baby's first Minecraft on hard difficulty' - Gavin");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 263){
             interaction.reply("'Though you haven't been following the HOA codes of The Shire' - The Wood");
         }
-        else if (quoteNumber === 254){
-            interaction.reply("'I didn’t build my house in a mountain to have noisy neighbors' - Schank");
+        else if (quoteNumber === 264){
+            interaction.reply("'I didn't build my house in a mountain to have noisy neighbors' - Schank");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 265){
             interaction.reply("'I'm going to philosophically shove my foot up your ass' - Gavin");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 266){
             interaction.reply("'I love rimming' - Schank");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 267){
             interaction.reply("'Im a slut for america' - Gavin");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 268){
             interaction.reply("'James Thomas Rey is my favorite food' - Geenger");
         }
-        else if (quoteNumber === 254){
-            interaction.reply("'I’m gonna go home and drown my sorrows in flamin’ hot Cheetos' - JT");
+        else if (quoteNumber === 269){
+            interaction.reply("'I'm gonna go home and drown my sorrows in flamin' hot Cheetos' - JT");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 270){
             interaction.reply("'I like child porn' - Paul");
         }
-        else if (quoteNumber === 254){
+        else if (quoteNumber === 271){
             interaction.reply("'I can't wait to see Paul's reaction to all of this' - Gavin");
         }
-     
+        else if (quoteNumber === 272){
+            interaction.reply("'well JT is also a retard' - Gavin");
+        }
+        else if (quoteNumber === 273){
+            interaction.reply("'He said and I quote: “ 💀 “' - JT");
+        }
+        else if (quoteNumber === 274){
+            interaction.reply("'The Minecraft horses deserved it' - Matt");
+        }
+        else if (quoteNumber === 275){
+            interaction.reply("'A part of me wants to see a Barbie 3 where Ken is missing because he died in the Toyfinity War' - Downes");
+        }
+  
 
 
         
