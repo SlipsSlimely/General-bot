@@ -5,7 +5,7 @@ module.exports = {
 
 
         // This command uses a randomizer to post text to the chat
-        number = 51;
+        number = 52;
         //message.channel.startTyping();
         //message.react('<:Perhaps:507405452133400579>');
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
@@ -186,11 +186,11 @@ module.exports = {
             
         }
         else if (quoteNumber === 45){
-            interaction.reply("'NIXON'S BACK!' - Richard Nixon's Head");
+            interaction.reply("'Peter, no! It's a boy!' - Lois Griffin");
             
         }
         else if (quoteNumber === 46){
-            interaction.reply("'I'M THE PROFESSOR, WHY ISN'T ANYONE LISTENING TO ME?!' - Hubert Farnsworth");
+            interaction.reply("'I found my baby book! Here's the broken condom that led to my birth.' - Chris Griffin");
             
         }
         else if (quoteNumber === 47){
@@ -211,6 +211,10 @@ module.exports = {
         }
         else if (quoteNumber === 51){
             interaction.reply("'Our top story tonight, the rules of Death no longer apply.' - Tom Tucker");
+            
+        }
+        else if (quoteNumber === 52){
+            interaction.reply("'Ah, baby books. Nostalgic for the days of chafed nipples and episiotomies?' - Stewie Griffin");
             
         }
 
