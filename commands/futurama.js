@@ -5,7 +5,7 @@ module.exports = {
 
 
         // This command uses a randomizer to post lines from the show Futurama to chat
-        number = 51;
+        number = 66;
         //message.channel.startTyping();
         //message.react('<:GoodNewsEveryone:504802485056176149>');
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
