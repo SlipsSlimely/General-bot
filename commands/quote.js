@@ -786,6 +786,51 @@ module.exports = {
         else if (quoteNumber === 256){
             interaction.reply("'I mean, Who doesn't wanna fuck their favorite Pokemon' - Colton");
         }
+        else if (quoteNumber === 254){
+            interaction.reply("'i'll get it if i get to sleep with gardevoir' - JT");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'some people should really just end it all' - Geenger");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'I jerk off to Gavin every night, my wrist is fucking made of fire hotter than satans asshole. I dont wanna hear excuses ' - Downes");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'NOOOOOOOO BRAZIL WILL BECOME A TOURIST'S PARADISE' - The Wood");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'I will burn your holy cities to the fucking ground' - Gavin");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'baby's first Minecraft on hard difficulty' - Gavin");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'Though you haven't been following the HOA codes of The Shire' - The Wood");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'I didn’t build my house in a mountain to have noisy neighbors' - Schank");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'I'm going to philosophically shove my foot up your ass' - Gavin");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'I love rimming' - Schank");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'Im a slut for america' - Gavin");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'James Thomas Rey is my favorite food' - Geenger");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'I’m gonna go home and drown my sorrows in flamin’ hot Cheetos' - JT");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'I like child porn' - Paul");
+        }
+        else if (quoteNumber === 254){
+            interaction.reply("'I can't wait to see Paul's reaction to all of this' - Gavin");
+        }
      
 
 
