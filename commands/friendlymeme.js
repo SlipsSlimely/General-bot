@@ -6,7 +6,7 @@ module.exports = {
 
         // This command uses a randomizer to post images to the chat
         var randomizer = 0;
-        number = 402;
+        number = 405;
         imageNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (imageNumber === 69){
             interaction.reply({content: "I am all of you.",
