@@ -2,7 +2,7 @@ module.exports = {
     name: 'quote',
     description:"this is a quote command!",
     execute(interaction, args){
-
+        try{
 
         // This command uses a randomizer to post text to the chat, the text is lines spoken from my friend group
         number = 275;
@@ -849,4 +849,8 @@ module.exports = {
         
  
     }
+    catch{
+        interaction.reply({content: `Oops! The bot didn't like that quote, try again`});
+    }
+}
 }

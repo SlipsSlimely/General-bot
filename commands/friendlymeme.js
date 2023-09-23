@@ -2,7 +2,7 @@ module.exports = {
     name: 'friendlymeme',
     description:"this command pulls a random FD discord meme",
     execute(interaction, args){
-
+        try{
 
         // This command uses a randomizer to post images to the chat
         var randomizer = 0;
@@ -58,4 +58,8 @@ module.exports = {
         }
 
     }
+    catch{
+        interaction.reply({content: `Oops! The bot didn't like that image, try again`});
+    }
+}
 }

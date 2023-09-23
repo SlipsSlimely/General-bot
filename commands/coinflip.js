@@ -2,7 +2,7 @@ module.exports = {
     name: 'coinflip',
     description:"this is a coinflip command!",
     execute(interaction, args){
-
+        try{
 
         // This command uses a randomizer to post one of two options in chat:
         // heads or tails
@@ -15,4 +15,8 @@ module.exports = {
             interaction.reply({content: 'You got tails!',files:["./CoinFlip/Tails.png"]});
         }
     }
+    catch{
+        interaction.reply({content: `Oops! The bot didn't like that image, try again`});
+    }
+}
 }

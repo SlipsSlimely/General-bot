@@ -2,7 +2,7 @@ module.exports = {
     name: 'futurama',
     description:"this command pulls a random futurama quote",
     execute(interaction, args){
-
+        try{
 
         // This command uses a randomizer to post lines from the show Futurama to chat
         number = 66;
@@ -276,4 +276,8 @@ module.exports = {
 
 
     }
+    catch{
+        interaction.reply({content: `Oops! The bot didn't like that, try again`});
+    }
+}
 }

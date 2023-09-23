@@ -2,7 +2,7 @@ module.exports = {
     name: 'sneed',
     description:"this is a sneed command!",
     execute(interaction, args){
-        
+        try{
 
         // This command uses a randomizer to post simpsons memes to chat
             var randomizer3 = 0;
@@ -520,4 +520,9 @@ module.exports = {
                 }
             }
         }
+        catch{
+            interaction.reply({content: `Oops! The bot didn't like that image, try again`});
+        }
+    }
+
 }

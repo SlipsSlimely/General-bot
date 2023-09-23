@@ -2,7 +2,7 @@ module.exports = {
     name: 'wood',
     description:"this is a wood command!",
     execute(interaction, args){
-        
+        try{
         // This command uses a randomizer to post images to the chat
         var randomizer5 = 0;
         number = 43;
@@ -47,4 +47,9 @@ module.exports = {
 
         
     }
+    catch{
+        interaction.reply({content: `Oops! The bot didn't like that image, try again`});
+    }
+}
+
 }

@@ -2,7 +2,7 @@ module.exports = {
     name: 'vin',
     description:"this is a gavin command!",
     execute(interaction, args){
-
+        try{
         // This command uses a randomizer to post images made in photoshop, of my friend
         var randomizer2 = 0;
         number = 53;
@@ -45,5 +45,9 @@ module.exports = {
             randomizer2 = imageNumber;
         }
         
+    }
+    catch{
+        interaction.reply({content: `Oops! The bot didn't like that image, try again`});
+    }
     }
 }

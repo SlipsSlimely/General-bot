@@ -2,7 +2,7 @@ module.exports = {
     name: 'familyguy',
     description:"this command pulls a random family guy quote",
     execute(interaction, args){
-
+        try{
 
         // This command uses a randomizer to post text to the chat
         number = 52;
@@ -219,4 +219,8 @@ module.exports = {
         }
 
     }
+    catch{
+        interaction.reply({content: `Oops! The bot didn't like that, try again`});
+    }
+}
 }

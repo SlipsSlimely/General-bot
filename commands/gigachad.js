@@ -2,7 +2,7 @@ module.exports = {
     name: 'gigachad',
     description:"this is a gigachad command!",
     execute(interaction, args){
-        
+        try{
         // This command uses a randomizer to post images to the chat
         var randomizer4 = 0; 
         number = 26;
@@ -41,4 +41,8 @@ module.exports = {
         
         
     }
+    catch{
+        interaction.reply({content: `Oops! The bot didn't like that image, try again`});
+    }
+}
 }

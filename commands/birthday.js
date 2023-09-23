@@ -2,7 +2,7 @@ module.exports = {
     name: 'birthday',
     description:"this is a birthday command!",
     execute(interaction, args){
-
+        try{
         // Setting up variables for the rest of the command, mostly self explanatory
         let currentDate = new Date();
         let cDay = currentDate.getDate();
@@ -128,4 +128,8 @@ module.exports = {
             }); */
         }
     }
+    catch{
+        interaction.reply({content: `Oops! The bot didn't like that image, try again`});
+    }
+}
 }

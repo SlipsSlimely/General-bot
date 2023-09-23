@@ -2,7 +2,7 @@ module.exports = {
     name: 'jeter',
     description:"this is a jster command!",
     execute(interaction, args){
-        
+        try{
         // This command uses a randomizer to post images to the chat
         var randomizer1 = 0;
         number = 58;
@@ -45,4 +45,8 @@ module.exports = {
         }
         
     }
+    catch{
+        interaction.reply({content: `Oops! The bot didn't like that image, try again`});
+    }
+}
 }
