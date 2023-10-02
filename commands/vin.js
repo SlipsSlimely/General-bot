@@ -1,15 +1,16 @@
 module.exports = {
     name: 'vin',
     description:"this is a gavin command!",
-    execute(interaction, args){
+    async execute(interaction, args){
         try{
         // This command uses a randomizer to post images made in photoshop, of my friend
         var randomizer2 = 0;
         number = 53;
         //message.react('<:Pogvin:707040384613613588>');
         imageNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
+        await interaction.deferReply();
         if (imageNumber === 9){
-            interaction.reply({content: "I am your nightmares.",
+            await interaction.editReply({content: "I am your nightmares.",
                 files:["./VinMeme/"+imageNumber+".png"]})
                 randomizer2 = imageNumber;
         }
@@ -19,7 +20,7 @@ module.exports = {
                 Fixer = 5;
                 imageAdjuster = Math.floor(Math.random()*(Fixer - 1 + 1))+1;
                 imageNumber = imageNumber - imageAdjuster;
-                interaction.reply({files:["./VinMeme/"+imageNumber+".png"]});
+                await interaction.editReply({files:["./VinMeme/"+imageNumber+".png"]});
                 randomizer2 = imageNumber;
             }
             else if (imageNumber === 1 || imageNumber - 5 <= 1)
@@ -27,7 +28,7 @@ module.exports = {
                 Fixer = 5;
                 imageAdjuster = Math.floor(Math.random()*(Fixer - 1 + 1))+1;
                 imageNumber = imageNumber + imageAdjuster;
-                interaction.reply({files:["./VinMeme/"+imageNumber+".png"]});
+                await interaction.editReply({files:["./VinMeme/"+imageNumber+".png"]});
                 randomizer2 = imageNumber;
             }
             else 
@@ -35,19 +36,19 @@ module.exports = {
                 Fixer = 5;
                 imageAdjuster = Math.floor(Math.random()*(Fixer - 1 + 1))+1;
                 imageNumber = imageNumber + Fixer;
-                interaction.reply({files:["./VinMeme/"+imageNumber+".png"]});
+                await interaction.editReply({files:["./VinMeme/"+imageNumber+".png"]});
                 randomizer2 = imageNumber;
             }  
         }
         else
         {
-            interaction.reply({files:["./VinMeme/"+imageNumber+".png"]});
+            await interaction.editReply({files:["./VinMeme/"+imageNumber+".png"]});
             randomizer2 = imageNumber;
         }
         
     }
     catch{
-        interaction.reply({content: `Oops! The bot didn't like that image, try again`});
+        await interaction.editReply({content: `Oops! The bot didn't like that image, try again`});
     }
     }
 }

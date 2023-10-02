@@ -1,7 +1,7 @@
 module.exports = {
     name: 'birthday',
     description:"this is a birthday command!",
-    execute(interaction, args){
+    async execute(interaction, args){
         try{
         // Setting up variables for the rest of the command, mostly self explanatory
         let currentDate = new Date();
@@ -14,18 +14,18 @@ module.exports = {
         number = 10;
         Randomizer = Math.floor(Math.random()*(number - 1 + 1))+1;
         
-
+        await interaction.deferReply();
         // Below are a series of custom dates that when the bot gets summoned on it also shouts out there name
         if (cDay == 29 && cMonth == 3){
             if (Randomizer = 3){
-                interaction.reply({content: 'Happy Birthday Paul! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday Paul! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BirthVin.png"
                 ]
             });
             }
             else{
-                interaction.reply({content: 'Happy Birthday Paul! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday Paul! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BoulderBirthday.png"
                 ]
@@ -35,14 +35,14 @@ module.exports = {
         }
         else if (cDay == 29 && cMonth == 1){
             if (Randomizer = 3){
-                interaction.reply({content: 'Happy Birthday Kaleb! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday Kaleb! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BirthVin.png"
                 ]
             });
             }
             else{
-                interaction.reply({content: 'Happy Birthday Kaleb! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday Kaleb! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BoulderBirthday.png"
                 ]
@@ -52,14 +52,14 @@ module.exports = {
         }
         else if (cDay == 11 && cMonth == 12){
             if (Randomizer = 3){
-                interaction.reply({content: 'Happy Birthday Ginger! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday Ginger! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BirthVin.png"
                 ]
             });
             }
             else {
-                interaction.reply({content: 'Happy Birthday Ginger! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday Ginger! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BoulderBirthday.png"
                 ]
@@ -69,14 +69,14 @@ module.exports = {
         }
         else if (cDay == 21 && cMonth == 12){
             if (Randomizer = 3){
-                interaction.reply({content: 'Happy Birthday Downes! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday Downes! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BirthVin.png"
                 ]
             });
             }
             else {
-                interaction.reply({content: 'Happy Birthday Downes! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday Downes! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BoulderBirthday.png"
                 ]
@@ -86,14 +86,14 @@ module.exports = {
         }
         else if (cDay == 3 && cMonth == 11){
             if (Randomizer = 3){
-                interaction.reply({content: 'Happy Birthday JT! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday JT! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BirthVin.png"
                 ]
             });
             }
             else{
-                interaction.reply({content: 'Happy Birthday JT! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday JT! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BoulderBirthday.png"
                 ]
@@ -103,14 +103,14 @@ module.exports = {
         }
         else if (cDay == 26 && cMonth == 8){
             if (Randomizer = 3){
-                interaction.reply({content: 'Happy Birthday AJ! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday AJ! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BirthVin.png"
                 ]
             });
             }
             else {
-                interaction.reply({content: 'Happy Birthday AJ! ' + cMonth + "/" + cDay + "/" + cYear,
+                await interaction.editReply({content: 'Happy Birthday AJ! ' + cMonth + "/" + cDay + "/" + cYear,
                 files: [
                     "BoulderBirthday.png"
                 ]
@@ -119,9 +119,9 @@ module.exports = {
 
         }
         else{
-            interaction.reply({content: cMonth + "/" + cDay + "/" + cYear , files: ["BoulderBirthday.png"]});
-            //interaction.reply({files: ["BoulderBirthday.png"]});
-/*             //interaction.reply(cMonth + "/" + cDay + "/" + cYear, {
+            await interaction.editReply({content: cMonth + "/" + cDay + "/" + cYear , files: ["BoulderBirthday.png"]});
+            //await interaction.editReply({files: ["BoulderBirthday.png"]});
+/*             //await interaction.editReply(cMonth + "/" + cDay + "/" + cYear, {
                 files: [
                     "BoulderBirthday.png"
                 ]
@@ -129,7 +129,7 @@ module.exports = {
         }
     }
     catch{
-        interaction.reply({content: `Oops! The bot didn't like that image, try again`});
+        await interaction.editReply({content: `Oops! The bot didn't like that image, try again`});
     }
 }
 }
