@@ -1,7 +1,7 @@
 module.exports = {
     name: 'familyguy',
     description:"this command pulls a random family guy quote",
-    execute(interaction, args){
+    async execute(interaction, args){
         try{
 
         // This command uses a randomizer to post text to the chat
@@ -9,6 +9,7 @@ module.exports = {
         //message.channel.startTyping();
         //message.react('<:Perhaps:507405452133400579>');
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
+        await interaction.deferReply();
         if (quoteNumber === 1){
             interaction.reply("'I have an idea so smart that my head would explode if I even began to know what I was talking about.' - Peter Griffin");
             

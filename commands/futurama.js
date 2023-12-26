@@ -1,7 +1,7 @@
 module.exports = {
     name: 'futurama',
     description:"this command pulls a random futurama quote",
-    execute(interaction, args){
+    async execute(interaction, args){
         try{
 
         // This command uses a randomizer to post lines from the show Futurama to chat
@@ -9,6 +9,7 @@ module.exports = {
         //message.channel.startTyping();
         //message.react('<:GoodNewsEveryone:504802485056176149>');
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
+        await interaction.deferReply();
         if (quoteNumber === 1){
             interaction.reply("'Hey... what smells like blue?' - Philip J. Fry");
             

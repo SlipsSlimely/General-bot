@@ -2,11 +2,12 @@ const {Client, MessageEmbed} = require('discord.js');
 module.exports = {
     name: `counter`,
     description:`this command shows you the total number of times most things have been called`,
-    execute(interaction, options, killCount, kCount, jeterCount, woodCount, memeCount, quoteCount, vinCount, trueCount, familyCount, pogCount, reCount, futuramaCount){
+    async execute(interaction, options, killCount, kCount, jeterCount, woodCount, memeCount, quoteCount, vinCount, trueCount, familyCount, pogCount, reCount, futuramaCount){
 
 
         // This feature specifically counts up the number of times other functions are called
         // by users and then, when called, posts them for users to see
+        await interaction.deferReply();
         const counterEmbed = new MessageEmbed()
         
             .setColor('#10128c')

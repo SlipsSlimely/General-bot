@@ -1,10 +1,11 @@
 module.exports = {
     name: 'cumzone',
     description:"this is a silly command!",
-    execute(interaction, args){
+    async execute(interaction, args){
         
 
         // This command just posts a single emoji for users
+        await interaction.deferReply();
             interaction.reply('<a:CoomT:763569529879920671>');
         
     }

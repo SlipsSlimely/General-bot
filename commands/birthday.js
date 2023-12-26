@@ -33,6 +33,40 @@ module.exports = {
             }
 
         }
+        else if (cDay == 30 && cMonth == 8){
+            if (Randomizer = 3){
+                await interaction.editReply({content: 'Happy Birthday Matt! ' + cMonth + "/" + cDay + "/" + cYear,
+                files: [
+                    "BirthVin.png"
+                ]
+            });
+            }
+            else{
+                await interaction.editReply({content: 'Happy Birthday Matt! ' + cMonth + "/" + cDay + "/" + cYear,
+                files: [
+                    "BoulderBirthday.png"
+                ]
+            });
+            }
+
+        }
+        else if (cDay == 26 && cMonth == 10){
+            if (Randomizer = 3){
+                await interaction.editReply({content: 'Happy Birthday Gaver! ' + cMonth + "/" + cDay + "/" + cYear,
+                files: [
+                    "BirthVin.png"
+                ]
+            });
+            }
+            else{
+                await interaction.editReply({content: 'Happy Birthday Gaver! ' + cMonth + "/" + cDay + "/" + cYear,
+                files: [
+                    "BoulderBirthday.png"
+                ]
+            });
+            }
+
+        }
         else if (cDay == 29 && cMonth == 1){
             if (Randomizer = 3){
                 await interaction.editReply({content: 'Happy Birthday Kaleb! ' + cMonth + "/" + cDay + "/" + cYear,
