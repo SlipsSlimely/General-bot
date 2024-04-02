@@ -5,7 +5,7 @@ module.exports = {
         try{
 
         // This command uses a randomizer to post text to the chat, the text is lines spoken from my friend group
-        number = 275;
+        number = 346;
         quoteRepeater = 0;
         quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         if (quoteNumber === quoteRepeater){
