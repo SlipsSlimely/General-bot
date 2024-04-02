@@ -49,6 +49,8 @@ var pizzaThird = 0;
 
 var Kpoop = 1;
 var praiseFunction = 1;
+var rageFunction = 1;
+var chillinFunction = 1;
 
 
 // This is the text the bot puts out in the console when it initially starts up
@@ -58,7 +60,7 @@ Client.once('ready', () => {
     Client.user.setActivity("Game Time"); 
 })
 
-// From here to line 198 I have a series of functions that just check for specific words and phrases in all 
+// From here to line 237 I have a series of functions that just check for specific words and phrases in all 
 // conversation in the Discord, when one of the triggers is read the bot immediately responds with
 // the appropriate reaction
 Client.on('messageCreate', async message =>{
@@ -117,6 +119,36 @@ Client.on('messageCreate', async message =>{
       }
       else{
         praiseFunction = praiseFunction;
+      }
+    }
+    {
+      let Ragewords = ['fuck you skelebot skelebot', 'bad bot', 'bad skelebot'];
+      let foundInText = false;
+
+      for (var i in Ragewords) {
+        if (message.content.toLowerCase().includes(Ragewords[i].toLowerCase())) foundInText = true;
+      }
+      if (foundInText) {
+        message.reply("<:FD_TheWoodThreaten:527396312312709120>");
+        
+      }
+      else{
+        rageFunction = rageFunction;
+      }
+    }
+    {
+      let Chillinwords = ['image0-36-1-1','image0_1-1'];
+      let foundInText = false;
+
+      for (var i in Chillinwords) {
+        if (message.content.toLowerCase().includes(Chillinwords[i].toLowerCase())) foundInText = true;
+      }
+      if (foundInText) {
+        message.reply("<@398688623278686218>");
+        
+      }
+      else{
+        chillinFunction = chillinFunction;
       }
     }
     
