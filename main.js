@@ -51,7 +51,7 @@ var Kpoop = 1;
 var praiseFunction = 1;
 var rageFunction = 1;
 var chillinFunction = 1;
-
+var dwaiFunction = 1;
 
 // This is the text the bot puts out in the console when it initially starts up
 Client.once('ready', () => {
@@ -149,6 +149,21 @@ Client.on('messageCreate', async message =>{
       }
       else{
         chillinFunction = chillinFunction;
+      }
+    }
+    {
+      let dwaiwords = ['dwai','dont worry about it','don`t worry about it'];
+      let foundInText = false;
+
+      for (var i in dwaiwords) {
+        if (message.content.toLowerCase().includes(dwaiwords[i].toLowerCase())) foundInText = true;
+      }
+      if (foundInText) {
+        message.reply("<:FD_smugjt:432811531969888258>");
+        
+      }
+      else{
+        dwaiFunction = dwaiFunction;
       }
     }
     
