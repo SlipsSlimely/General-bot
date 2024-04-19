@@ -6,7 +6,7 @@ module.exports = {
 
         // This command just posts a single emoji for users
         await interaction.deferReply();
-            interaction.reply('<a:CoomT:763569529879920671>');
+            interaction.editreply('<a:CoomT:763569529879920671>');
         
     }
 }

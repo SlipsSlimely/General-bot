@@ -28,6 +28,6 @@ module.exports = {
                 {name: 'Times Pog was said:', value: ' ' + pogCount},
             )
 
-        interaction.reply({embeds: [counterEmbed]});
+            await interaction.editReply({embeds: [counterEmbed]});
         }
     }

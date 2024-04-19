@@ -11,14 +11,14 @@ module.exports = {
 
         await interaction.deferReply();
         if (headsortails === 1){
-            interaction.reply({content: 'You got heads!',files:["./CoinFlip/Heads.png"]});
+            await interaction.editReply({content: 'You got heads!',files:["./CoinFlip/Heads.png"]});
         }
         else{
-            interaction.reply({content: 'You got tails!',files:["./CoinFlip/Tails.png"]});
+            await interaction.editReply({content: 'You got tails!',files:["./CoinFlip/Tails.png"]});
         }
     }
     catch{
-        interaction.reply({content: `Oops! The bot didn't like that image, try again`});
+        await interaction.editReply({content: `Oops! The bot didn't like that image, try again`});
     }
 }
 }
