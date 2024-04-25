@@ -9,10 +9,10 @@ module.exports = {
         toddNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         await interaction.deferReply();
         if (toddNumber === 5){
-            interaction.reply('Buy Skyrim!');
+            await interaction.editReply('Buy Skyrim!');
         }
         else{
-            interaction.reply('Hello!');
+            await interaction.editReply('Hello!');
         }
     }
 }
