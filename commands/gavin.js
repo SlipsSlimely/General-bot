@@ -10,7 +10,7 @@ module.exports = {
         await interaction.deferReply();
         const gavinEmbed = new MessageEmbed()
         
-        .setColor('#10128c')
+        .setColor('#d4af37')
         .setTitle("Gavin's Powers, Stats, and Abilities")
         .setDescription('Organized by origin')
         .addFields(

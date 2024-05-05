@@ -15,9 +15,9 @@ module.exports = {
         .setDescription('Organized by origin')
         .addFields(
             {name: 'Generic Powers:', 
-            value: 'Ultra Instinct, can bestow Stands, Tier Sense, Tier Sense, One For All, Wood Clan Reality Warping'},
+            value: 'Ultra Instinct, can bestow Stands, Tier Sense, One For All, Wood Clan Reality Warping'},
             {name: 'Bleach Powers:', 
-            value: 'Instant Regeneration, Time Manipulation, Reiatsu level 400,000, Kido Proficiency 15, Hado No. 1 Sho, Hado No. 63 Raikoho, Bakudo No. 1 Sai, Bakudo No. 62 Hyapporankan, Hadō #73. Soren Sōkatsui, Bakudō #79. Kuyō Shibari, Bakudō #81. Dankū, Bakudō #26. Kyokkō, Zanpakuto: Dokubutsu Oni (controls plants), Bankai: ???'},
+            value: 'Instant Regeneration (weakened), Time Manipulation (weakened), Reiatsu level 400,000, Kido Proficiency 15, Hado No. 1 Sho, Hado No. 63 Raikoho, Bakudo No. 1 Sai, Bakudo No. 62 Hyapporankan, Hadō #73. Soren Sōkatsui, Bakudō #79. Kuyō Shibari, Bakudō #81. Dankū, Bakudō #26. Kyokkō, Zanpakuto: Dokubutsu Oni (controls plants), Bankai: ???'},
             {name: `JoJo's Bizarre Adventure Powers:`, 
             value: 'Stand; Bohemian Father: allows the user to control sound'},
         )

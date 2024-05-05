@@ -10,7 +10,7 @@ module.exports = {
         await interaction.deferReply();
         const akiraEmbed = new MessageEmbed()
         
-        .setColor('#00FF00')
+        .setColor('#44D7A8')
         .setTitle("Akira's Powers, Stats, and Abilities")
         .setDescription('Organized by origin')
         .addFields(
