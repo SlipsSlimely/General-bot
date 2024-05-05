@@ -572,6 +572,30 @@ else if (buttonID === '11') {
           respectsPaid =  respectsPaid + 1;
           Client.commands.get('f').execute(interaction, options, respectsPaid);
         break;
+      case 'profile':
+        if (interaction.options.getString() === 'colton') {
+          Client.commands.get('colton').execute(interaction, options);
+        }
+        else if (interaction.options.getSubcommand() === 'paul') {
+          Client.commands.get('paul').execute(interaction, options);
+        }
+        else if (interaction.options.getSubcommand() === 'jt') {
+          Client.commands.get('jt').execute(interaction, options);
+        }
+        else if (interaction.options.getSubcommand() === 'downes') {
+          Client.commands.get('downes').execute(interaction, options);
+        }
+        else if (interaction.options.getSubcommand() === 'schank') {
+          Client.commands.get('schank').execute(interaction, options);
+        }
+        else if (interaction.options.getSubcommand() === 'akira') {
+          Client.commands.get('akira').execute(interaction, options);
+        }
+        else if (interaction.options.getSubcommand() === 'gavin') {
+          Client.commands.get('gavin').execute(interaction, options);
+        }
+        break;
+
         
  /*       case 'woodermark':
         //Client.commands.get('woodermark').execute(interaction, Canvas);

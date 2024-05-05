@@ -1,6 +1,7 @@
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
 const { SlashCommandBuilder } = require('@discordjs/builders');
+//const { SlashCommandBuilder } = require('discord.js');
 const fs = require('node:fs');
 
 
@@ -47,6 +48,36 @@ const commandRegister = (client) => {
             .setDescription('This is the killer')
             .setRequired(true)),
         new SlashCommandBuilder().setName('f').setDescription('Pays respects!'),
+        new SlashCommandBuilder().setName('profile').setDescription('Pulls up a specific users profile!')
+        .addSubcommand(subcommand =>
+            subcommand
+            .setName('jt')
+            .setDescription(`displays JT's profile`))
+        .addSubcommand(subcommand =>
+            subcommand
+            .setName('paul')
+            .setDescription(`displays Paul's profile`))
+        .addSubcommand(subcommand =>
+            subcommand
+            .setName('colton')
+            .setDescription(`displays Colton's profile`))
+        .addSubcommand(subcommand =>
+            subcommand
+            .setName('downes')
+            .setDescription(`displays Downes' profile`))
+        .addSubcommand(subcommand =>
+            subcommand
+            .setName('schank')
+            .setDescription(`displays Schank's profile`))
+        .addSubcommand(subcommand =>
+            subcommand
+            .setName('akira')
+            .setDescription(`displays Akira's profile`))
+        .addSubcommand(subcommand =>
+            subcommand
+            .setName('gavin')
+            .setDescription(`displays Gavin's profile`))
+            
         /* new SlashCommandBuilder()
         .setName('ticket')
         .setDescription('this command makes a ticket and gives you a link to it')
@@ -99,4 +130,4 @@ const commandRegister = (client) => {
         console.error(error);
     }
 };
-exports.commandRegister = commandRegister;
+exports.commandRegister = commandRegister; 
