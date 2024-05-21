@@ -1,1070 +1,382 @@
-module.exports = {
+module.exports = {      //discord.js stuff i think
     name: 'quote',
-    description:"this is a quote command!",
+    description:"This is a quote commmand!",
     execute(interaction, args){
-        try{
-
-        // This command uses a randomizer to post text to the chat, the text is lines spoken from my friend group
-        number = 346;
-        quoteRepeater = 0;
-        quoteNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
-        if (quoteNumber === quoteRepeater){
-            quoteNumber = quoteNumber + 5;
-            if (quoteNumber === number){
-                quoteNumber = quoteNumber - 6;
-            }
-        }
-        quoteRepeater = quoteNumber;
-
-
-        if (quoteNumber === 1){
-            interaction.reply('"RETARD" - Everyone');
-            ///randomizer3 = quoteNumber;
-        }
-        else if (quoteNumber === 2){ //&& quoteNumber != randomizer3){
-            interaction.reply("'Legality hasn't stopped me before' - Fug");
-        }
-        else if (quoteNumber === 3){
-            interaction.reply("'I Unironically love Teen Titans Go and I cannot wait for the movie' - Paul");
-        }
-        else if (quoteNumber === 4){
-            interaction.reply("'Silence dead child before I stuff you in a suit' - The Wood");
-        }
-        else if (quoteNumber === 5){
-            interaction.reply("'Mah Fangers' - Schank");
-        }
-        else if (quoteNumber === 6){
-            interaction.reply("'i get to vore children' - JT");
-        }
-        else if (quoteNumber === 7){
-            interaction.reply("'I already have the INFINITE GAY' - Paul");
-        }
-        else if (quoteNumber === 8){
-            interaction.reply("'Dont reject Todd Howard Gavin' - Fug");
-        }
-        else if (quoteNumber === 9){
-            interaction.reply("'The Dwagon is mine fuckboy :HelloThereGrabsAndTakesYouToTheL:' - Fug");
-        }
-        else if (quoteNumber === 10){
-            interaction.reply("'I'm the king of tards' - Gavin");
-        }
-        else if (quoteNumber === 11){
-            interaction.reply("'Cum inside it's fun inside :hellothere:' - JT");
-        }
-        else if (quoteNumber === 12){
-            interaction.reply("'Bionicle, I think you mean, BIONATHICC' - The Wood");
-        }
-        else if (quoteNumber === 13){
-            interaction.reply("'Wow that's fucked up lol' - Gavin");
-        }
-        else if (quoteNumber === 14){
-            interaction.reply("'GONNA KILL GINGER NOW BECAUSE UPSET' - Gavin");
-        }
-        else if (quoteNumber === 15){
-            interaction.reply("'BEGONE WITH YOU' - Gavin");
-        }
-        else if (quoteNumber === 16){
-            interaction.reply("'/immediately goes simp' - Ali");
-        }
-        else if (quoteNumber === 17){
-            interaction.reply("'***These onions are too liquid.*** ***____I must remove the liquid____***' - Ali");
-        }
-        else if (quoteNumber === 18){
-            interaction.reply("'10/10 meme' - matt");
-        }
-        else if (quoteNumber === 19){
-            interaction.reply("'my teeth are currently being kicked in' - matt");
-        }
-        else if (quoteNumber === 20){
-            interaction.reply("'I may or may not have whaled to get her' - matt");
-        }
-        else if (quoteNumber === 21){
-            interaction.reply("'There's my posting for the month' - Kyle");
-        }
-        else if (quoteNumber === 22){
-            interaction.reply("'What does a Walmart vest get me' - Kyle");
-        }
-        else if (quoteNumber === 23){
-            interaction.reply("'Dont spoil the surprise' - Kyle");
-        }
-        else if (quoteNumber === 24){
-            interaction.reply("'( ͡° ʖ̯ ͡°)╭∩╮' - The Wood");
-        }
-        else if (quoteNumber === 25){
-            interaction.reply("'Ayyyyyy lmaonaise' - The Wood");
-        }
-        else if (quoteNumber === 26){
-            interaction.reply("'I'll show you tomorrow' - The Wood");
-        }
-        else if (quoteNumber === 27){
-            interaction.reply("'I too am just a kid' - Ali");
-        }
-        else if (quoteNumber === 28){
-            interaction.reply("'The Coltonpocolyps' - Ali");
-        }
-        else if (quoteNumber === 29){
-            interaction.reply("'I have no idea' - JT");
-        }
-        else if (quoteNumber === 30){
-            interaction.reply("'The longer my life goes on the more I think all star would be a song I would write' - JT");
-        }
-        else if (quoteNumber === 31){
-            interaction.reply("'I have no idea' - JT");
-        }
-        else if (quoteNumber === 32){
-            interaction.reply("'Wacc' - Paul");
-        }
-        else if (quoteNumber === 33){
-            interaction.reply("'FUCK YOU' - Paul");
-        }
-        else if (quoteNumber === 34){
-            interaction.reply("'This is now a famous Youtuber AMA' - Fug");
-        }
-        else if (quoteNumber === 35){
-            interaction.reply("'Roleplay? Lets do it. UwU xD rawr imma foxy boiiii xDDDDD' - Fug");
-        }
-        else if (quoteNumber === 36){
-            interaction.reply("'destructo fidget spinner' - Schank");
-        }
-        else if (quoteNumber === 37){
-            interaction.reply("'get this filth out of here' - Schank");
-        }
-        else if (quoteNumber === 38){
-            interaction.reply("'My waifu freeza or my husbando broly' - Schank");
-        }
-        else if (quoteNumber === 39){
-            interaction.reply("'How do I send links to this chat' - The Wood");
-        }
-        else if (quoteNumber === 40){
-            interaction.reply("'I am dumb' - The Wood");
-        }
-        else if (quoteNumber === 41){
-            interaction.reply("'I want to cum inside your Mickey Mouse Clubhouse' - JT");
-        }
-        else if (quoteNumber === 42){
-            interaction.reply("'I hate Matt, but matt is great' - Ali");
-        }
-        else if (quoteNumber === 43){
-            interaction.reply("'10/10 matts' - Ali");
-        }
-        else if (quoteNumber === 44){
-            interaction.reply("'HORSE' - Akira");
-        }
-        else if (quoteNumber === 45){
-            interaction.reply("'Well, first you join tinder' - Ali");
-        }
-        else if (quoteNumber === 46){
-            interaction.reply("'Cant nut, gavin's mayor' - Ali");
-        }
-        else if (quoteNumber === 47){
-            interaction.reply("'I'm crying laughing at my own joke' - Ali");
-        }
-        else if (quoteNumber === 48){
-            interaction.reply("'Don't do that you'll get addicted' - Ali");
-        }
-        else if (quoteNumber === 49){
-            interaction.reply("'god I wish that were me' - JT");
-        }
-        else if (quoteNumber === 50){
-            interaction.reply("'You'll make a fine rug cat!' - The Wood");
-        }
-        else if (quoteNumber === 51){
-            interaction.reply("'I always come back' - Toddbot");
-        }
-        else if (quoteNumber === 52){
-            interaction.reply("'Like your sense of humor' - JT");
-        }
-        else if (quoteNumber === 53){
-            interaction.reply("'Colton if I die you can have my switch' - matt");
-        }
-        else if (quoteNumber === 54){
-            interaction.reply("'Cringe List (updated): matt > Downes > Ali > Paul > Ginger > JT > Me > Schank > Colton' - Gavin");
-        }
-        else if (quoteNumber === 55){
-            interaction.reply("'Like if Paul was shorter and anorexic' - Ali");
-        }
-        else if (quoteNumber === 56){
-            interaction.reply("'Poggers!' - Everyone");
-        }
-        else if (quoteNumber === 57){
-            interaction.reply("'The Darkest AJ' - Paul");
-        }
-        else if (quoteNumber === 58){
-            interaction.reply("'Spoilers for 2022, a year that just started: Gavin fuckin dies' - AJ");
-        }
-        else if (quoteNumber === 59){
-            interaction.reply("'TRUE.' -JT");
-        }
-        else if (quoteNumber === 60){
-            interaction.reply("'An Alolan Ninetails is voring you' - AJ");
-        }
-        else if (quoteNumber === 61){
-            interaction.reply("'Pokemon: The FBI wants to know your location' - AJ");
-        }
-        else if (quoteNumber === 62){
-            interaction.reply("'My IQ is in Comic Sans' - AJ");
-        }
-        else if (quoteNumber === 63){
-            interaction.reply("'I am the Virgin Retard' - Gavin");
-        }
-        else if (quoteNumber === 64){
-            interaction.reply("'Tardsus' - Downes");
-        }
-        else if (quoteNumber === 65){
-            interaction.reply("'What's vernors, is that a soda?' - JT");
-        }
-        else if (quoteNumber === 66){
-            interaction.reply("'I WANNA ROLEPLAY SEXING CHILDREB' - Ginger");
-        }
-        else if (quoteNumber === 67){
-            interaction.reply("'There were only 2 things Chair-Sama was wary of Peter Griffin’s cutaway gags and the unlikely yet highly terrifying event that 2 Ferroseeds appeared beside him while sleeping' - Schank");
-        }
-        else if (quoteNumber === 68){
-            interaction.reply("'You are fucking cancer sometimes man lmao' - Paul");
-        }
-        else if (quoteNumber === 69){
-            interaction.reply("'WW3 is going to be about gaming' - Downes");
-        }
-        else if (quoteNumber === 70){
-            interaction.reply("'I agree that emoji looks like it wants to sell me air' - The Wood");
-        }
-        else if (quoteNumber === 71){
-            interaction.reply("'don't just ok me you backwards door placing fuck' - Gavin");
-        }
-        else if (quoteNumber === 72){
-            interaction.reply("'You are always going to be one step behind the Lovable cartoon sitcom dad Peter Griffin' - Schank");
-        }
-        else if (quoteNumber === 73){
-            interaction.reply("'TARDVIN SMASH' - Tardvin");
-        }
-        else if (quoteNumber === 74){
-            interaction.reply("'JT and SugarCookievin gonna have some steamy nights together UwU' - Schank");
-        }
-        else if (quoteNumber === 75){
-            interaction.reply("'The chaos blades crave blood, unfortunately for Kratos, when he cuts you all he'll get is blubber' - Downes");
-        }
-        else if (quoteNumber === 76){
-            interaction.reply("'Did I also mention that you found being in Bawabawa extremely hawt' - Schank");
-        }
-        else if (quoteNumber === 77){
-            interaction.reply("'Wanna fuck in it?' - Colton");
-        }
-        else if (quoteNumber === 78){
-            interaction.reply("'Can't wait for the inevitable Family Guy movie' - Colton");
-        }
-        else if (quoteNumber === 79){
-            interaction.reply("'Can I come with? I wanna live stream me eating J.T's coloesseum' - Colton");
-        }
-        else if (quoteNumber === 80){
-            interaction.reply("'This has devolved so fast' - JT");
-        }
-        else if (quoteNumber === 81){
-            interaction.reply("'WI'll take two of each gender' - JT");
-        }
-        else if (quoteNumber === 82){
-            interaction.reply("'and I love Epstein' - Ginger");
-        }
-        else if (quoteNumber === 83){
-            interaction.reply("'Ripperoni' - Colton");
-        }
-        else if (quoteNumber === 84){
-            interaction.reply("'Widdle baby needs a ride' - Gavin");
-        }
-        else if (quoteNumber === 85){
-            interaction.reply("'I'll just get Colton really inebriated and convince him to pass you instead' - Gavin");
-        }
-        else if (quoteNumber === 86){
-            interaction.reply("'My boys are all growing up' - Gavin");
-        }
-        else if (quoteNumber === 87){
-            interaction.reply("'Because I have long monopoly' - JT");
-        }
-        else if (quoteNumber === 88){
-            interaction.reply("'ALL I SAID WAS HE HAS A PUNCHABLE FACE' - JT");
-        }
-        else if (quoteNumber === 89){
-            interaction.reply("'you do know my very openly homosexual manager who reads yaoi would fuck him vary eagerly, right?' - JT");
-        }
-        else if (quoteNumber === 90){
-            interaction.reply("'JT hates gays and ballet players, confirmed' - Gavin");
-        }
-        else if (quoteNumber === 91){
-            interaction.reply("'Colton if I die you can have my switch' - matt");
-        }
-        else if (quoteNumber === 92){
-            interaction.reply("'Cringe list (updated): matt > Downes > Ali > Paul > Ginger > JT > Me > Schank > Colton' - Gavin");
-        }
-        else if (quoteNumber === 93){
-            interaction.reply("'Roxanne Wolf is so hot. Never in the history of gaming has there been a hotter character. She is more than a robot wolf to me, she is a person. She is a little tease but she's basically my wife. The devs know what they did with that wolf. The aesthetic paired with her demeanor make her such an attractive character. Nothing gets me going better than a punk rock wolf chick. Every inch of her is so hot. Her thighs up to her midriff and her eyes. Every inch of her is perfection incarnate. I would save the game and let her catch me just to feel the intimacy between us. I crave more than lustful fantasies with her, I seek deep romantic involvement. The craftsmanship of her character surpasses everything I expected from this game. Her tone of voice and language choice formats her character. The choice of clothes with short shorts and the crop top which reveal her milky thighs and delectable midriff compliment her punk rock personality more. She is my wife, and nothing dissuades me from this' - Downes");
-        }
-        else if (quoteNumber === 94){
-            interaction.reply("'im just here for the chaos' - Gavin");
-        }
-        else if (quoteNumber === 95){
-            interaction.reply("'Yup, that's going in the bot' - Paul");
-        }
-        else if (quoteNumber === 96){
-            interaction.reply("'look JT i know we all hate K-Pop but gay is okay' - Gavin");
-        }
-        else if (quoteNumber === 97){
-            interaction.reply("'paul is farming for funny' - Gavin");
-        }
-        else if (quoteNumber === 98){
-            interaction.reply("'i'll kill' - JT");
-        }
-        else if (quoteNumber === 99){
-            interaction.reply("'put that in the bot paul, right fucking now' - Gavin");
-        }
-        else if (quoteNumber === 100){
-            interaction.reply("'anyway fuck kpop im going back to my cave of sickness and despair' - Gavin");
-        }
-        else if (quoteNumber === 101){
-            interaction.reply("'Why do people make fun of skin milk :SufferT' - JT");
-        }
-        else if (quoteNumber === 102){
-            interaction.reply("'I'll take shit both Paul and Ali say to me for 1000' - Downes");
-        }
-        else if (quoteNumber === 103){
-            interaction.reply("':goldhellothere: It's Paul, good luck 'Gaymer'  I eat kids like you for breakfast,:GiornoDrink: no bitches, only pros, ya know what I mean? :thinkjojo: Mario Kart 4 lyfe!!!! We on that grinddd :mechanical_arm:' - Paul");
-        }
-        else if (quoteNumber === 104){
-            interaction.reply("'I can't drink my damn milkshakes from there bc it's thicker than jeter' - Ali");
-        }
-        else if (quoteNumber === 105){
-            interaction.reply("'waifus =/= whore' - JT");
-        }
-        else if (quoteNumber === 106){
-            interaction.reply("'I would let all my wives CBT/Dick Flatten me' - Downes");
-        }
-        else if (quoteNumber === 107){
-            interaction.reply("'QHY IS MY PHONE AGAONST ME TODAY' - Ali");
-        }
-        else if (quoteNumber === 108){
-            interaction.reply("'CLARIFY FOR US LORD JETER' - Ali");
-        }
-        else if (quoteNumber === 109){
-            interaction.reply("'this is a problem again' - JT");
-        }
-        else if (quoteNumber === 110){
-            interaction.reply("'ClOuDed By AnGeR' - JT");
-        }
-        else if (quoteNumber === 111){
-            interaction.reply("'jT YOUR INSANE' - Ali");
-        }
-        else if (quoteNumber === 112){
-            interaction.reply("'Well lucky for you I am math' - Colton");
-        }
-        else if (quoteNumber === 113){
-            interaction.reply("'King Tardvin, if I may' - Gavin");
-        }        
-        else if (quoteNumber === 114){
-            interaction.reply("'My goals are beyond your comprehension' - Colton");
-        }       
-        else if (quoteNumber === 115){
-            interaction.reply("'2022 Cringe List: Ginger > Kaleb > JT > Ali > Annika > Paul > Colton > Schank > Gavin > matt > Downes' - Gavin");
-        }        
-        else if (quoteNumber === 116){
-            interaction.reply("'CRINGE' - Everyone");
-        }        
-        else if (quoteNumber === 117){
-            interaction.reply("'kaleb is omega ultra super level cringe. my source is that I made it the fuck up' - Gavin");
-        }        
-        else if (quoteNumber === 118){
-            interaction.reply("'after further consideration I declare ginger the most cringe because of the genshin impact cosplays :WoodDrip:' - Gavin");
-        }        
-        else if (quoteNumber === 119){
-            interaction.reply("'we have a lolicon server' - Ginger");
-        }        
-        else if (quoteNumber === 120){
-            interaction.reply("'Can't make a disney.com profile without parents permission is pretty cringe' - AJ");
-        }        
-        else if (quoteNumber === 121){
-            interaction.reply("'BEING A MINOR? CRINGE' - AJ");
-        }        
-        else if (quoteNumber === 122){
-            interaction.reply("'Mans doesn't season eggs. That's cringe asf' - AJ");
-        }
-        else if (quoteNumber === 123){
-            interaction.reply("'well i didnt want to be white either but here we are' - Gavin");
-        }  
-        else if (quoteNumber === 124){
-            interaction.reply("'IM GONNA COMMIT HOMICIDE' - Gavin");
-        }  
-        else if (quoteNumber === 125){
-            interaction.reply("'My little Poussy' - JT");
-        }  
-        else if (quoteNumber === 126){
-            interaction.reply("'Neigh, replies God' - Fug");
-        }  
-        else if (quoteNumber === 127){
-            interaction.reply("'Thank God almighty, I can have peace at last gavin' - Gavin");
-        }  
-        else if (quoteNumber === 128){
-            interaction.reply("'What if you killed yourself, but god said: Sussy houssy mare stalionvin' - JT");
-        }  
-        else if (quoteNumber === 129){
-            interaction.reply("'Sweet horse dreams, Marevin' - AJ");
-        }  
-        else if (quoteNumber === 130){
-            interaction.reply("'I crave the sweet release of death' - Gavin");
-        }  
-        else if (quoteNumber === 131){
-            interaction.reply("'The void beckons me closer every day' - Gavin");
-        }  
-        else if (quoteNumber === 132){
-            interaction.reply("'It calls to me and I must answer' - Gavin");
-        }  
-        else if (quoteNumber === 133){
-            interaction.reply("'what's the matter gavin, no bitches?' - JT");
-        }  
-        else if (quoteNumber === 134){
-            interaction.reply("you see that lizard? get him' - Fug");
-        }  
-        else if (quoteNumber === 135){
-            interaction.reply("'You're dead. Stay dead' - AJ");
-        }  
-        else if (quoteNumber === 136){
-            interaction.reply("'gotta get someone who looks at me like colton looks at gavin killing himself' - Kaleb");
-        }  
-        else if (quoteNumber === 137){
-            interaction.reply("'i will personally fucking suffocate people with my obesity who dare to tell me they use these around me' - JT");
-        }  
-        else if (quoteNumber === 138){
-            interaction.reply("'February 28th is the server's anniversary' - JT");
-        }  
-        else if (quoteNumber === 139){
-            interaction.reply("'Vore is Paul's favorite, Choose something else' - Schank");
-        }  
-        else if (quoteNumber === 140){
-            interaction.reply("'Just make a bowl of ice and water, Like a sad version of cereal' - Schank");
-        }  
-        else if (quoteNumber === 141){
-            interaction.reply("'Oliver has 15 uncles. I split JT into 42 pieces and unfortunately some survived' - Paul");
-        }  
-        else if (quoteNumber === 142){
-            interaction.reply("'IGNORE MY FAT FINGERING' - JT");
-        }          
-        else if (quoteNumber === 143){
-            interaction.reply("'Do it fatty no balls' - JT");
-        }  
-        else if (quoteNumber === 144){
-            interaction.reply("'everything I say makes zero sense and is so fucking stupid that it's funny' - Gavin");
-        }  
-        else if (quoteNumber === 145){
-            interaction.reply("you people are degenerate incels :FD_CheemsWeird:' - Kaleb");
-        }  
-        else if (quoteNumber === 146){
-            interaction.reply("'But to be fair, the rear meat is something I'm more partial to' - JT");
-        }          
-        else if (quoteNumber === 147){
-            interaction.reply("'Man I'm about to get my sinussy penetrated and man I don't wanna' - The Wood");
-        }  
-        else if (quoteNumber === 148){
-            interaction.reply("'says the man who said his anal limit was nothing' - JT");
-        }  
-        else if (quoteNumber === 149){
-            interaction.reply("'Schank-Senpai at your service' - Schank");
-        }  
-        else if (quoteNumber === 150){
-            interaction.reply("'Colton if I die you can have my switch' - matt");
-        }  
-        else if (quoteNumber === 151){
-            interaction.reply("'Welcome to Cultural Geography 101 with Paul' - Gavin");
-        }  
-        else if (quoteNumber === 152){
-            interaction.reply("'Did you know they're singing in Black?' - Paul");
-        }  
-        else if (quoteNumber === 153){
-            interaction.reply("'I just walk' - The Wood");
-        }  
-        else if (quoteNumber === 154){
-            interaction.reply("'bananas a fucking weird' - JT");
-        }  
-        else if (quoteNumber === 155){
-            interaction.reply("'Had a dream where I ate a whole box of pencils' - JT");
-        }  
-        else if (quoteNumber === 156){
-            interaction.reply("'sorry we don't know obscure porn' - Akira");
-        }  
-        else if (quoteNumber === 157){
-            interaction.reply("'gay people 🙄' - JT");
-        }  
-        else if (quoteNumber === 158){
-            interaction.reply("'this is NOT going to end well' - JT");
-        }  
-        else if (quoteNumber === 159){
-            interaction.reply("'unfortunately, steven is a real person' - Akira");
-        }  
-        else if (quoteNumber === 160){
-            interaction.reply("'put the minor in a maid outfit' - Ali");
-        }  
-        else if (quoteNumber === 161){
-            interaction.reply("'sensitive' - Akira");
-        }  
-        else if (quoteNumber === 162){
-            interaction.reply("'ey yo sounding is pretty underrated' - JT");
-        }  
-        else if (quoteNumber === 163){
-            interaction.reply("'Why is everyone except me getting pizza' - Gavin");
-        }  
-        else if (quoteNumber === 164){
-            interaction.reply("'What did the cheese do' - The Wood");
-        }  
-        else if (quoteNumber === 165){
-            interaction.reply("'I just got karma'd by the block of cheese I'm eating fuck' - Paul");
-        }  
-        else if (quoteNumber === 166){
-            interaction.reply("'Neigh, replies God' - Fug");
-        }  
-        else if (quoteNumber === 167){
-            interaction.reply("'IM GONNA COMMIT HOMICIDE' - Gavin");
-        }  
-        else if (quoteNumber === 168){
-            interaction.reply("'My little Poussy' - JT");
-        }  
-        else if (quoteNumber === 169){
-            interaction.reply("'the spirit of mental retardation :FD_SuperTardvin:' - Gavin");
-        }  
-        else if (quoteNumber === 170){
-            interaction.reply("'Cars is unironically better than all of those movies' - Fug");
-        }  
-        else if (quoteNumber === 171){
-            interaction.reply("'grug eat cheese. grug like taste.' - Fug");
-        }  
-        else if (quoteNumber === 172){
-            interaction.reply("'You know, I wanted to meme on Paul about caring too much about Pokemon Lore. And then we do shit like this and I start thinking Paul is the normal one here.' - Fug");
-        }  
-        else if (quoteNumber === 173){
-            interaction.reply("'You could make a carpet out of your leg hair' - JT");
-        }  
-        else if (quoteNumber === 174){
-            interaction.reply("'god fucking chimps is so hard :FD_godwhy:' - Akira");
-        }  
-        else if (quoteNumber === 175){
-            interaction.reply("'Mare Gavin omg he's a female horse' - Fug");
-        }
-        else if (quoteNumber === 176){
-            interaction.reply("'im gonna do your mom on purpose' - Kaleb");
-        }
-        else if (quoteNumber === 177){
-            interaction.reply("'I was only pretending to be retarded' - Downes");
-        }
-        else if (quoteNumber === 178){
-            interaction.reply("'My favorite part of Pokemon Unite was when Schank said 'Its Pupin time!' And proceeded to Pupe all over the enemy team' - Downes");
-        }
-        else if (quoteNumber === 179){
-            interaction.reply("'MOMMY' - Downes");
-        }
-        else if (quoteNumber === 180){
-            interaction.reply("'Sure thing diversity hire' - The Wood");
-        }
-        else if (quoteNumber === 181){
-            interaction.reply("'I wanna slurp Downes' mustache' - Akira");
-        }
-        else if (quoteNumber === 182){
-            interaction.reply("'croak before you stroke' - Gaver");
-        }
-        else if (quoteNumber === 183){
-            interaction.reply("'I make good choices' - Paul");
-        }
-        else if (quoteNumber === 184){
-            interaction.reply("'This really says a lot about society' - Downes");
-        }
-        else if (quoteNumber === 185){
-            interaction.reply("'the sleep you dumb' - Akira");
-        }
-        else if (quoteNumber === 186){
-            interaction.reply("'i dont read' - Gaver");
-        }
-        else if (quoteNumber === 187){
-            interaction.reply("'JT is the honorary horseman of the retardpocalypse for this take' - Gaver");
-        }
-        else if (quoteNumber === 188){
-            interaction.reply("'fake news, Downes is incel' - Akira");
-        }
-        else if (quoteNumber === 189){
-            interaction.reply("'i sure do love loli porn' - Paul");
-        }
-        else if (quoteNumber === 190){
-            interaction.reply("'AJ was suducing jt' - Akira");
-        }
-        else if (quoteNumber === 191){
-            interaction.reply("'Paul is to be antagonized by his past sins forever' - Downes");
-        }
-        else if (quoteNumber === 192){
-            interaction.reply("'do not throw my son into a camp fire' - AJ");
-        }
-        else if (quoteNumber === 193){
-            interaction.reply("'Jt do you know how dicks form' - AJ");
-        }
-        else if (quoteNumber === 194){
-            interaction.reply("'do i look like i've grown any dicks recently?' - JT");
-        }
-        else if (quoteNumber === 195){
-            interaction.reply("'YOU LAUGH LOUD AS FUCK' - Paul");
-        }
-        else if (quoteNumber === 196){
-            interaction.reply("'HELP HES HITTING ME' - AJ");
-        }
-        else if (quoteNumber === 197){
-            interaction.reply("'get to banging, fat boy' - AJ");
-        }
-        else if (quoteNumber === 198){
-            interaction.reply("'this is out of my comfort zone' - JT");
-        }
-        else if (quoteNumber === 199){
-            interaction.reply("'This gives me an idea for a kill command' - Paul");
-        }
-        else if (quoteNumber === 200){
-            interaction.reply("'i have my own desk to bang god damn it' - JT");
-        }
-        else if (quoteNumber === 201){
-            interaction.reply("'lemme see your dick' - JT");
-        }
-        else if (quoteNumber === 202){
-            interaction.reply("'So let's let you keep the government away while the men get the work done' - The Wood");
-        }
-        else if (quoteNumber === 203){
-            interaction.reply("'God I hate that so much Your a fucking retard that should have there life subscription cancelled' - Schank");
-        }
-        else if (quoteNumber === 204){
-            interaction.reply("'I'm homie-sexual' - JT");
-        }
-        else if (quoteNumber === 205){
-            interaction.reply("'Please sir, a singular pog?' - AJ");
-        }
-        else if (quoteNumber === 206){
-            interaction.reply("'Your cousin killed the cheese' - The Wood");
-        }
-        else if (quoteNumber === 207){
-            interaction.reply("'We love racism here' - Gaver");
-        }
-        else if (quoteNumber === 208){
-            interaction.reply("'but legality ruins them' - AJ");
-        }
-        else if (quoteNumber === 209){
-            interaction.reply("'IM RETARDED NOOOOOOOOO' - Gaver");
-        }
-        else if (quoteNumber === 210){
-            interaction.reply("'im not a smasher' - Akira");
-        }
-        else if (quoteNumber === 211){
-            interaction.reply("'Remember when JTs hair literally came to life and ran across the floor' - Schank");
-        }
-        else if (quoteNumber === 212){
-            interaction.reply("'IM ONOBILE' - Akira");
-        }
-        else if (quoteNumber === 213){
-            interaction.reply("'Unless in the unlikely event any other member of this server that has penis has a sexual interaction with a female' - Schank");
-        }
-        else if (quoteNumber === 214){
-            interaction.reply("'he's challenged a lot in life, gotta take the small victories' - JT");
-        }
-        else if (quoteNumber === 215){
-            interaction.reply("'please stop spreading your horny' - JT");
-        }
-        else if (quoteNumber === 216){
-            interaction.reply("'imma eat thousands of raw almonds and apple seeds' - AJ");
-        }
-        else if (quoteNumber === 217){
-            interaction.reply("'OH NO CONFLICTING POINTS OF INTEREST' - JT");
-        }
-        else if (quoteNumber === 218){
-            interaction.reply("'GOD GAVE ME FORKS THEYRE CALLED FINGERS' - AJ");
-        }
-        else if (quoteNumber === 219){
-            interaction.reply("'lemme smack those depressed cheeks' - JT");
-        }
-        else if (quoteNumber === 220){
-            interaction.reply("'you ruined your comedic timing by being here' - JT");
-        }
-        else if (quoteNumber === 221){
-            interaction.reply("'I want to make a black joke right now' - Gaver");
-        }
-        else if (quoteNumber === 222){
-            interaction.reply("'||there's a lot you can get for 40$ :FD_GoldHelloThere: ||' - JT");
-        }
-        else if (quoteNumber === 223){
-            interaction.reply("'i stan the folder' - JT");
-        }
-        else if (quoteNumber === 224){
-            interaction.reply("'my sphincters don't cooperate but that doesn't mean i blame them' - JT");
-        }
-        else if (quoteNumber === 225){
-            interaction.reply("'can't wait for the accidental sex he have in the bathroom at taco bell' - JT");
-        }
-        else if (quoteNumber === 226){
-            interaction.reply("'Please don't make this a class thing just answer the question' - JT");
-        }
-        else if (quoteNumber === 227){
-            interaction.reply("'I did throw Thomas Edison down an elevator shaft though' - The Wood");
-        }
-        else if (quoteNumber === 228){
-            interaction.reply("'Yknow I've always hated Matt for being so tall' - The Wood");
-        }
-        else if (quoteNumber === 229){
-            interaction.reply("'ACAB includes the SCP Foundation' - AJ");
-        }
-        else if (quoteNumber === 230){
-            interaction.reply("'don't worry it' - JT");
-        }
-        else if (quoteNumber === 231){
-            interaction.reply("'he's challenged a lot in life, gotta take the small victories' - JT");
-        }
-        else if (quoteNumber === 232){
-            interaction.reply("'I did a lot of trolling :FD_GanondorfShake:' - Schank");
-        }
-        else if (quoteNumber === 233){
-            interaction.reply("'baby's first Minecraft on hard difficulty' - Gaver");
-        }
-        else if (quoteNumber === 234){
-            interaction.reply("'you're*' - JT");
-        }
-        else if (quoteNumber === 235){
-            interaction.reply("'Well I didn't get the notifications and haven't been checking my phone because' - Gaver");
-        }
-        else if (quoteNumber === 236){
-            interaction.reply("'Though you haven't been following the HOA codes of The Shire' - The Wood");
-        }
-        else if (quoteNumber === 237){
-            interaction.reply("'doorvin moment' - JT");
-        }
-        else if (quoteNumber === 238){
-            interaction.reply("'I didn't build my house in a mountain to have noisy neighbors' - Schank");
-        }
-        else if (quoteNumber === 239){
-            interaction.reply("'schank makes me want to kill myself' - Gavin");
-        }
-        else if (quoteNumber === 240){
-            interaction.reply("'I need to start saying funnier things' - Schank");
-        }
-        else if (quoteNumber === 241){
-            interaction.reply("'Say something funny' - Ali");
-        }
-        else if (quoteNumber === 242){
-            interaction.reply("'well paul's fat ass clapped and turned the bot off i guess' - JT");
-        }
-        else if (quoteNumber === 243){
-            interaction.reply("'No' - Schank");
-        }
-        else if (quoteNumber === 244){
-            interaction.reply("'I GAVE COLTON THE FREDDIE MERCURY TREATMENT' - Gavin");
-        }
-        else if (quoteNumber === 245){
-            interaction.reply("'The rest of us will be blunt sure, but we deliver it in more optimistic tones. Whereas gavin will drop in and go: 17$ an hour is not liveable, lower your expectations' - Paul");
-        }
-        else if (quoteNumber === 246){
-            interaction.reply("'is saying to your manager that she's a pussy slaying girlboss sexual assault' - Ginger");
-        }
-        else if (quoteNumber === 247){
-            interaction.reply("'But watching Gavin eat those cookies made me even harder ' - Schank");
-        }
-        else if (quoteNumber === 248){
-            interaction.reply("'shit yourself, Downed' - Gavin");
-        }
-        else if (quoteNumber === 249){
-            interaction.reply("'Man with that you made me question which of us looks the most like Danny Devito' - Colton");
-        }
-        else if (quoteNumber === 250){
-            interaction.reply("'From YANKING IT TOO HARD TO TINKATON' - Paul");
-        }
-        else if (quoteNumber === 251){
-            interaction.reply("'You gotta clean the plate before you eat smh' - JT");
-        }
-        else if (quoteNumber === 252){
-            interaction.reply("'AND BREEDABLE' - Colton");
-        }
-        else if (quoteNumber === 253){
-            interaction.reply("'If you dont wanna shag your favorite, is it *really* your favorite?' - Downes");
-        }
-        else if (quoteNumber === 254){
-            interaction.reply("'I love lolis' - Ali");
-        }
-        else if (quoteNumber === 255){
-            interaction.reply("'Poke poll wildin today' - Colton");
-        }
-        else if (quoteNumber === 256){
-            interaction.reply("'I mean, Who doesn't wanna fuck their favorite Pokemon' - Colton");
-        }
-        else if (quoteNumber === 257){
-            interaction.reply("'i'll get it if i get to sleep with gardevoir' - JT");
-        }
-        else if (quoteNumber === 258){
-            interaction.reply("'some people should really just end it all' - Geenger");
-        }
-        else if (quoteNumber === 259){
-            interaction.reply("'I jerk off to Gavin every night, my wrist is fucking made of fire hotter than satans asshole. I dont wanna hear excuses ' - Downes");
-        }
-        else if (quoteNumber === 260){
-            interaction.reply("'NOOOOOOOO BRAZIL WILL BECOME A TOURIST'S PARADISE' - The Wood");
-        }
-        else if (quoteNumber === 261){
-            interaction.reply("'I will burn your holy cities to the fucking ground' - Gavin");
-        }
-        else if (quoteNumber === 262){
-            interaction.reply("'baby's first Minecraft on hard difficulty' - Gavin");
-        }
-        else if (quoteNumber === 263){
-            interaction.reply("'Though you haven't been following the HOA codes of The Shire' - The Wood");
-        }
-        else if (quoteNumber === 264){
-            interaction.reply("'I didn't build my house in a mountain to have noisy neighbors' - Schank");
-        }
-        else if (quoteNumber === 265){
-            interaction.reply("'I'm going to philosophically shove my foot up your ass' - Gavin");
-        }
-        else if (quoteNumber === 266){
-            interaction.reply("'I love rimming' - Schank");
-        }
-        else if (quoteNumber === 267){
-            interaction.reply("'Im a slut for america' - Gavin");
-        }
-        else if (quoteNumber === 268){
-            interaction.reply("'James Thomas Rey is my favorite food' - Geenger");
-        }
-        else if (quoteNumber === 269){
-            interaction.reply("'I'm gonna go home and drown my sorrows in flamin' hot Cheetos' - JT");
-        }
-        else if (quoteNumber === 270){
-            interaction.reply("'I like child porn' - Paul");
-        }
-        else if (quoteNumber === 271){
-            interaction.reply("'I can't wait to see Paul's reaction to all of this' - Gavin");
-        }
-        else if (quoteNumber === 272){
-            interaction.reply("'well JT is also a retard' - Gavin");
-        }
-        else if (quoteNumber === 273){
-            interaction.reply("'He said and I quote: “ 💀 “' - JT");
-        }
-        else if (quoteNumber === 274){
-            interaction.reply("'The Minecraft horses deserved it' - Matt");
-        }
-        else if (quoteNumber === 275){
-            interaction.reply("'A part of me wants to see a Barbie 3 where Ken is missing because he died in the Toyfinity War' - Downes");
-        }
-        else if (quoteNumber === 276){
-            interaction.reply("'Mfw my car lets it rip unprompted' - Paul");
-        }
-        else if (quoteNumber === 277){
-            interaction.reply("'you ask way too much of me' - Gavin");
-        }
-        else if (quoteNumber === 278){
-            interaction.reply("'God, our holy father who art in heaven, I have witnessed the gifts you have bestowed upon my neighbors. I pray that you will bestow your great gifts upon myself as well, amen' - Gavin");
-        }
-        else if (quoteNumber === 279){
-            interaction.reply("'My privacy concerns disappearing if Paul does something funny with it ' - Downes");
-        }
-        else if (quoteNumber === 280){
-            interaction.reply("'Paul should make a bot that saves all messages and does like a cleverbot thing with them' - JT");
-        }
-        else if (quoteNumber === 281){
-            interaction.reply("'“No shit, that's a fucking christmas“' - Paul");
-        }
-        else if (quoteNumber === 282){
-            interaction.reply("'Yeah when Peter Griffin killed me I actually died but I'm so fucking stupid that I don't understand the meaning of death so I persist' - Gavin");
-        }
-        else if (quoteNumber === 283){
-            interaction.reply("'Bro I'm sorry you got the preschooler palette and gotta have the appy juice' - The Wood");
-        }
-        else if (quoteNumber === 284){
-            interaction.reply("'Paul got so mad at Monopoly that he killed himself' - Gavin");
-        }
-        else if (quoteNumber === 284){
-            interaction.reply("'at least you're having fun' - JT");
-        }
-        else if (quoteNumber === 285){
-            interaction.reply("'JT was infected, hes putting random Us into words' - Matt");
-        }
-        else if (quoteNumber === 286){
-            interaction.reply("'JT after his house collapses on him: <:FD_PeterDead:979204724182106122>' - Schank");
-        }
-        else if (quoteNumber === 287){
-            interaction.reply("'JT PANCAKES LETZ GOO' - AJ");
-        }
-        else if (quoteNumber === 288){
-            interaction.reply("'if yall don't hear from me mother nature has claimed my body and soul' - Gavin");
-        }
-        else if (quoteNumber === 289){
-            interaction.reply("'God I have no idea it's so fucking big lmao' - JT");
-        }
-        else if (quoteNumber === 290){
-            interaction.reply("'Why must you ketchup squirt on my party' - JT");
-        }
-        else if (quoteNumber === 291){
-            interaction.reply("'Paul passes you the boof what's the next move' - The Wood");
-        }
-        else if (quoteNumber === 292){
-            interaction.reply("'I'm thinking about stopping everything when I get into college' - Gavin");
-        }
-        else if (quoteNumber === 293){
-            interaction.reply("'You have no horse in this race fucker' - The Wood");
-        }
-        else if (quoteNumber === 294){
-            interaction.reply("'Paul “Will Stay Up Till 10pm to Game with the Boys but Won't Stay Up to Watch Hazbin with His Wife“ Bahdouchi' - AJ");
-        }
-        else if (quoteNumber === 295){
-            interaction.reply("'avatar is just very bland and forgettable' - Akira");
-        }
-        else if (quoteNumber === 296){
-            interaction.reply("'this line of conversation cannot persist in this timeline' - Gavin");
-        }
-        else if (quoteNumber === 297){
-            interaction.reply("'the bats sole purpose is to destroy the fridge, if it dies, it will have died an honorable death' - JT");
-        }
-        else if (quoteNumber === 298){
-            interaction.reply("'if you don't have fun when people (gavin) are talking about killing themselves in the same conversation then you're in the wrong place' - JT");
-        }
-        else if (quoteNumber === 299){
-            interaction.reply("'I was going to say that I'm going to go drown myself in my tub but my tub can't fit my fat ass so nevermind' - Gavin");
-        }
-        else if (quoteNumber === 300){
-            interaction.reply("'I know what you're fucking thinking you god damn rat bastard' - Gavin");
-        }
-        else if (quoteNumber === 301){
-            interaction.reply("'i feel like we're on the edge of something we shouldn't cross' - JT");
-        }
-        else if (quoteNumber === 302){
-            interaction.reply("'I would kill a man and his entire family for a lifetime supply of nacho fries' - Gavin");
-        }
-        else if (quoteNumber === 303){
-            interaction.reply("'we're being guy bros' - JT");
-        }
-        else if (quoteNumber === 304){
-            interaction.reply("'baul but *my* taco bell' - JT");
-        }
-        else if (quoteNumber === 305){
-            interaction.reply("'I have pizza. But wifey needs food ' - Paul");
-        }
-        else if (quoteNumber === 306){
-            interaction.reply("'JT will fund my act of terrorism' - Gavin");
-        }
-        else if (quoteNumber === 307){
-            interaction.reply("'I will have you know that I have $10' - Gavin");
-        }
-        else if (quoteNumber === 308){
-            interaction.reply("'I'm going to use all of my money to get gas to go to Muskegon and drive my fuckin SUV through your living room' - Gavin");
-        }
-        else if (quoteNumber === 309){
-            interaction.reply("'I wonder what the quote total is at this point' - Gavin");
-        }
-        else if (quoteNumber === 310){
-            interaction.reply("'I have a condition called selective blindness, it allows me to be blind to your bullshit' - Gavin");
-        }
-        else if (quoteNumber === 311){
-            interaction.reply("'Inside you are four jeters' - AJ");
-        }
-        else if (quoteNumber === 312){
-            interaction.reply("'I love Wark beverages on a colj day' - AJ");
-        }
-        else if (quoteNumber === 313){
-            interaction.reply("'your good name my fat fucking dump truck sized XXL ass' - Gavin");
-        }
-        else if (quoteNumber === 314){
-            interaction.reply("'goddamn longhorned nose gang' - Gavin");
-        }
-        else if (quoteNumber === 315){
-            interaction.reply("'we have fun here' - JT");
-        }
-        else if (quoteNumber === 316){
-            interaction.reply("'<a:FD_rocksus:1031762279156432927> Your parents should never be inside you' - Schank");
-        }
-        else if (quoteNumber === 317){
-            interaction.reply("'I want to let you know that i'm really fucking stupid' - JT");
-        }
-        else if (quoteNumber === 318){
-            interaction.reply("'Colton going ultra instinct just so he can carry my fat ass onto a plane:' - Gavin");
-        }
-        else if (quoteNumber === 319){
-            interaction.reply("'A NEW REQUEST HAS TOUCHED THE BEACON' - AJ");
-        }
-        else if (quoteNumber === 320){
-            interaction.reply("'whatever you say computer wizard' - JT");
-        }
-        else if (quoteNumber === 321){
-            interaction.reply("'MEET 'N FUCK DISCORD????????' - The Wood");
-        }
-        else if (quoteNumber === 322){
-            interaction.reply("'bro you don't even need a condom to rape someone what a stupid ass invention' - JT");
-        }
-        else if (quoteNumber === 323){
-            interaction.reply("'I hate you' - Gavin");
-        }
-        else if (quoteNumber === 324){
-            interaction.reply("'oh i can't read got it' - JT");
-        }
-        else if (quoteNumber === 325){
-            interaction.reply("'Vault tech you bastards how low will you let us sink in Gavin's retardation radiation' - The Wood");
-        }
-        else if (quoteNumber === 326){
-            interaction.reply("'OH BOY KILLING I LOVE KILLING' - The Wood");
-        }
-        else if (quoteNumber === 327){
-            interaction.reply("'i'd drink the shit out of my own juice' - JT");
-        }
-        else if (quoteNumber === 328){
-            interaction.reply("'Super sexual bridal parties are so trashy to me' - AJ");
-        }
-        else if (quoteNumber === 329){
-            interaction.reply("'Alright, Im clowned up, time to liberate ' - Downes");
-        }
-        else if (quoteNumber === 330){
-            interaction.reply("'2023 Cringe List: AJ > Geengar > Stephen > JT > Paul > Kaleb > Deja > Matt > Schank > Downes > Gavin > Leathan > Colton > Annika ' - Gavin");
-        }
-        else if (quoteNumber === 331){
-            interaction.reply("'when you feel her bulge' - Downes");
-        }
-        else if (quoteNumber === 332){
-            interaction.reply("'Hell hath no fury' - JT");
-        }
-        else if (quoteNumber === 333){
-            interaction.reply("'Look at those kissable mii lips' - The Wood");
-        }
-        else if (quoteNumber === 334){
-            interaction.reply("'“I would dead. I would be dead.”- Schank' - JT");
-        }
-        else if (quoteNumber === 335){
-            interaction.reply("'JAMES. THOMAS.' - AJ");
-        }
-        else if (quoteNumber === 336){
-            interaction.reply("'You are a traitor to Super Earth and will be tried for treason' - The Wood");
-        }
-        else if (quoteNumber === 337){
-            interaction.reply("'someone: pokemon unite isn't fun me: ah, another tally then.' - JT");
-        }
-        else if (quoteNumber === 338){
-            interaction.reply("'I did a lot of trolling <a:FD_GanondorfShake:1051712680068665355>' - Schank");
-        }
-        else if (quoteNumber === 339){
-            interaction.reply("'you're*' - JT");
-        }
-        else if (quoteNumber === 340){
-            interaction.reply("'Kill yourself <:FD_Yes:741438796746457260>' - JT");
-        }
-        else if (quoteNumber === 341){
-            interaction.reply("'the enamel pins i licked as a kid' - JT");
-        }
-        else if (quoteNumber === 342){
-            interaction.reply("'swallowing is also for convenience <:FD_GuessIllDie:511766400558432256>' - JT");
-        }
-        else if (quoteNumber === 343){
-            interaction.reply("'SON BRING GREAT DISHONOR ONTO STUDIO GHIBRI. SHAMEFUR DISPRAY.' - Downes");
-        }
-        else if (quoteNumber === 344){
-            interaction.reply("'Guess love really makes a man bust his nut' - AJ");
-        }
-        else if (quoteNumber === 345){
-            interaction.reply("'We are a quotable bunch' - AJ");
-        }
-        else if (quoteNumber === 346){
-            interaction.reply("'The demons in the server are growing stronger' - The Wood");
-        }
 
         
- 
+        
+        const quotes = ['"RETARD" - Everyone'                 // This command uses a randomizer to secect a quote to post to chat.
+, `"Legality hasn't stopped me before" - Downes`                                    
+, `"I Unironically love Teen Titans Go and I cannot wait for the movie" - Paul`     // Just add new quotes inside at the end of the array (the brackets([])) 
+, '"Silence dead child before I stuff you in a suit" - The Wood'                    // with a , (comma) and a   (space) and everything should work fine.
+, '"Mah Fangers" - Schank'                                                          // Or don't, I'm not your parent or caretaker.
+, '"i get to vore children" - J. T.'
+, '"I already have the INFINITE GAY" - Paul'
+, '"Dont reject Todd Howard Gavin" - Downes'
+, '"The Dwagon is mine fuckboy :HelloThereGrabsAndTakesYouToTheL:" - Downes'    //has emoji
+, `"I'm the king of tards" - Gavin`
+, `"Cum inside it's fun inside :hellothere:" - J. T.`   //has emoji
+, '"Bionicle, I think you mean, BIONATHICC" - The Wood'
+, `"Wow that's fucked up lol" - Gavin`
+, '"GONNA KILL GINGER NOW BECAUSE UPSET" - Gavin'
+, '"BEGONE WITH YOU" - Gavin'
+, '"/immediately goes simp" - AJ'
+, '"***These onions are too liquid.*** ***____I must remove the liquid____***" - AJ'
+, '"10/10 meme" - matt'
+, '"my teeth are currently being kicked in" - matt'
+, '"I may or may not have whaled to get her" - matt'
+, `"There's my posting for the month" - Kyle`
+, '"What does a Walmart vest get me" - Kyle'
+, '"Dont spoil the surprise" - Kyle'
+, '"( ͡° ʖ̯ ͡°)╭∩╮" - The Wood'
+, '"Ayyyyyy lmaonaise" - The Wood'
+, `"I'll show you tomorrow" - The Wood`
+, '"I too am just a kid" - AJ'
+, '"The Coltonpocolyps" - AJ'
+, '"I have no idea" - J. T.'
+, '"The longer my life goes on the more I think all star would be a song I would write" - J. T.'
+, '"Wacc" - Paul'
+, '"FUCK YOU" - Paul'
+, '"This is now a famous Youtuber AMA" - Downes'
+, '"Roleplay? Lets do it. UwU xD rawr imma foxy boiiii xDDDDD" - Downes'
+, '"destructo fidget spinner" - Schank'
+, '"get this filth out of here" - Schank'
+, '"My waifu freeza or my husbando broly" - Schank'
+, '"How do I send links to this chat" - The Wood'
+, '"I am dumb" - The Wood'
+, `"I'm gonna cum inside your Mickey Mouse Clubhouse" - J. T.`
+, '"I hate Matt, but matt is great" - AJ'
+, '"10/10 matts" - AJ'
+, '"HORSE" - Akira'
+, '"Well, first you join tinder" - AJ'
+, `"Cant nut, gavin's mayor" - AJ`
+, `"I'm crying laughing at my own joke" - AJ`
+, `"Don't do that you'll get addicted" - AJ`
+, '"god I wish that were me" - J. T.'
+, `"You'll make a fine rug cat!" - The Wood`
+, '"I always come back" - Toddbot'
+, '"Like your sense of humor" - J. T.'
+, '"Colton if I die you can have my switch" - matt'
+, '"Cringe List (updated): matt > Downes > Ali > Paul > Ginger > JT > Me > Schank > Colton" - Gavin'
+, '"Like if Paul was shorter and anorexic" - AJ'
+, '"Poggers!" - Everyone'
+, '"The Darkest AJ" - Paul'
+, '"Spoilers for 2022, a year that just started: Gavin fuckin dies" - AJ'
+, '"TRUE." - J. T.'
+, '"An Alolan Ninetails is voring you" - AJ'
+, '"Pokemon: The FBI wants to know your location" - AJ'
+, '"My IQ is in Comic Sans" - AJ'
+, '"I am the Virgin Retard" - Gavin'
+, '"Tardsus" - Downes'
+, `"What's vernors, is that a soda?" - J. T.`
+, '"I WANNA ROLEPLAY SEXING CHILDREB" - Akira'
+, `"There were only 2 things Chair-Sama was wary of Peter Griffin’s cutaway gags and the unlikely yet highly terrifying event that 2 Ferroseeds appeared beside him while sleeping" - Schank`
+, '"You are fucking cancer sometimes man lmao" - Paul'
+, '"WW3 is going to be about gaming" - Downes'
+, '"I agree that emoji looks like it wants to sell me air" - The Wood'
+, `"don't just ok me you backwards door placing fuck" - Gavin`
+, '"You are always going to be one step behind the Lovable cartoon sitcom dad Peter Griffin" - Schank'
+, '"TARDVIN SMASH" - Gavin'
+, '"JT and SugarCookievin gonna have some steamy nights together UwU" - Schank'
+, `"The chaos blades crave blood, unfortunately for Kratos, when he cuts you all he'll get is blubber" - Downes`
+, '"Did I also mention that you found being in Bawabawa extremely hawt" - Schank'
+, '"Wanna fuck in it?" - The Wood'
+, `"Can't wait for the inevitable Family Guy movie" - The Wood`
+, `"Can I come with? I wanna live stream me eating J.T's coloesseum" - The Wood`
+, '"This has devolved so fast" - J. T.'
+, `"We'll take two of each gender" - J. T.`
+, '"and I love Epstein" - Akira'
+, '"Ripperoni" - The Wood'
+, '"Widdle baby needs a ride" - Gavin'
+, `"I'll just get Colton really inebriated and convince him to pass you instead" - Gavin`
+, '"My boys are all growing up" - Gavin'
+, '"Because I have long monopoly" - J. T.'
+, '"ALL I SAID WAS HE HAS A PUNCHABLE FACE" - J. T.'
+, '"you do know my very openly homosexual manager who reads yaoi would fuck him vary eagerly, right?" - J. T.'
+, '"JT hates gays and ballet players, confirmed" - Gavin'
+, `"Roxanne Wolf is so hot. Never in the history of gaming has there been a hotter character. She is more than a robot wolf to me, she is a person. She is a little tease but she's basically my wife. The devs know what they did with that wolf. The aesthetic paired with her demeanor make her such an attractive character. Nothing gets me going better than a punk rock wolf chick. Every inch of her is so hot. Her thighs up to her midriff and her eyes. Every inch of her is perfection incarnate. I would save the game and let her catch me just to feel the intimacy between us. I crave more than lustful fantasies with her, I seek deep romantic involvement. The craftsmanship of her character surpasses everything I expected from this game. Her tone of voice and language choice formats her character. The choice of clothes with short shorts and the crop top which reveal her milky thighs and delectable midriff compliment her punk rock personality more. She is my wife, and nothing dissuades me from this" - Downes`
+, '"im just here for the chaos" - Gavin'
+, `"Yup, that's going in the bot" - Paul`
+, '"look JT i know we all hate K-Pop but gay is okay" - Gavin'
+, '"paul is farming for funny" - Gavin'
+, `"i'll kill" - J. T.`
+, '"put that in the bot paul, right fucking now" - Gavin'
+, '"anyway fuck kpop im going back to my cave of sickness and despair" - Gavin'
+, '"Why do people make fun of skin milk :FD_SufferT:" - J. T.' // has emoji
+, `"I'll take shit both Paul and Ali say to me for 1000" - Downes`
+, `":goldhellothere: It's Paul, good luck 'Gaymer'  I eat kids like you for breakfast,:GiornoDrink: no bitches, only pros, ya know what I mean? :thinkjojo: Mario Kart 4 lyfe!!!! We on that grinddd :mechanical_arm:" - Paul`  //has emoji
+, `"I can't drink my damn milkshakes from there bc it's thicker than jeter" - AJ`
+, '"waifus =/= whore" - J. T.'
+, '"I would let all my wives CBT/Dick Flatten me" - Downes'
+, '"QHY IS MY PHONE AGAONST ME TODAY" - AJ'
+, '"CLARIFY FOR US LORD JETER" - AJ'
+, '"this is a problem again" - J. T.'
+, '"ClOuDed By AnGeR" - J. T.'
+, '"jT YOUR INSANE" - AJ'
+, '"Well lucky for you I am math" - The Wood'
+, '"King Tardvin, if I may" - Gavin'
+, '"My goals are beyond your comprehension" - The Wood'
+, '"2022 Cringe List: Ginger > Kaleb > JT > Ali > Annika > Paul > Colton > Schank > Gavin > matt > Downes" - Gavin'
+, '"CRINGE" - Everyone'
+, '"kaleb is omega ultra super level cringe. my source is that I made it the fuck up" - Gavin'
+, '"after further consideration I declare ginger the most cringe because of the genshin impact cosplays :WoodDrip:" - Gavin'    //has emoji
+, '"we have a lolicon server" - Akira'
+, `"Can't make a disney.com profile without parents permission is pretty cringe" - AJ`
+, '"BEING A MINOR? CRINGE" - AJ'
+, `"Mans doesn't season eggs. That's cringe asf" - AJ`
+, '"well i didnt want to be white either but here we are" - Gavin'
+, '"IM GONNA COMMIT HOMICIDE" - Gavin'
+, '"My little Poussy" - J. T.'
+, '"Neigh, replies God" - Downes'
+, '"Thank God almighty, I can have peace at last gavin" - Gavin'
+, '"What if you killed yourself, but god said: Sussy houssy mare stalionvin" - J. T.'
+, '"Sweet horse dreams, Marevin" - AJ'
+, '"I crave the sweet release of death" - Gavin'
+, '"The void beckons me closer every day" - Gavin'
+, '"It calls to me and I must answer" - Gavin'
+, `"what's the matter gavin, no bitches?" - J. T.`
+, '"you see that lizard? get him" - Downes'
+, `"You're dead. Stay dead" - AJ`
+, '"gotta get someone who looks at me like colton looks at gavin killing himself" - Kaleb'
+, '"i will personally fucking suffocate people with my obesity who dare to tell me they use these around me" - J. T.'
+, `"February 28th is the server's anniversary" - J. T.`
+, `"Vore is Paul's favorite, Choose something else" - Schank`
+, '"Just make a bowl of ice and water, Like a sad version of cereal" - Schank'
+, '"Oliver has 15 uncles. I split JT into 42 pieces and unfortunately some survived" - Paul'
+, '"IGNORE MY FAT FINGERING" - J. T.'
+, '"Do it fatty no balls" - J. T.'
+, `"everything I say makes zero sense and is so fucking stupid that it's funny" - Gavin`
+, '"you people are degenerate incels :FD_CheemsWeird:" - Kaleb' //has emoji
+, `"But to be fair, the rear meat is something I'm more partial to" - J. T.`
+, `"Man I'm about to get my sinussy penetrated and man I don't wanna" - The Wood`
+, '"says the man who said his anal limit was nothing" - J. T.'
+, '"Schank-Senpai at your service" - Schank'
+, '"Welcome to Cultural Geography 101 with Paul" - Gavin'
+, `"Did you know they're singing in Black?" - Paul`
+, '"I just walk" - The Wood'
+, '"bananas a fucking weird" - J. T.'
+, '"Had a dream where I ate a whole box of pencils" - J. T.'
+, `"sorry we don't know obscure porn" - Akira`
+, '"gay people 🙄" - J. T.'
+, '"this is NOT going to end well" - J. T.'
+, '"unfortunately, steven is a real person" - Akira'
+, '"put the minor in a maid outfit" - AJ'
+, '"sensitive" - Akira'
+, '"ey yo sounding is pretty underrated" - J. T.'
+, '"Why is everyone except me getting pizza" - Gavin'
+, '"What did the cheese do" - The Wood'
+, `"I just got karma'd by the block of cheese I'm eating fuck" - Paul`
+, '"Neigh, replies God" - Downes'
+, '"the spirit of mental retardation :FD_SuperTardvin:" - Gavin'    //has emoji
+, '"Cars is unironically better than all of those movies" - Downes'
+, '"grug eat cheese. grug like taste." - Downes'
+, '"You know, I wanted to meme on Paul about caring too much about Pokemon Lore. And then we do shit like this and I start thinking Paul is the normal one here." - Downes'
+, '"You could make a carpet out of your leg hair" - J. T.'
+, '"god fucking chimps is so hard :FD_godwhy:" - Akira' //has emoji
+, `"Mare Gavin omg he's a female horse" - Downes`
+, '"im gonna do your mom on purpose" - Kaleb'
+, '"I was only pretending to be retarded" - Downes'
+, `"My favorite part of Pokemon Unite was when Schank said 'Its Pupin time!' And proceeded to Pupe all over the enemy team" - Downes`
+, '"MOMMY" - Downes'
+, '"Sure thing diversity hire" - The Wood'
+, `"I wanna slurp Downes' mustache" - Akira`
+, '"croak before you stroke" - Gavin'
+, '"I make good choices" - Paul'
+, '"This really says a lot about society" - Downes'
+, '"the sleep you dumb" - Akira'
+, '"i dont read" - Gavin'
+, '"JT is the honorary horseman of the retardpocalypse for this take" - Gavin'
+, '"fake news, Downes is incel" - Akira'
+, 'i sure do love loli porn" - Paul'
+, '"AJ was suducing jt" - Akira'
+, '"Paul is to be antagonized by his past sins forever" - Downes'
+, '"do not throw my son into a camp fire" - AJ'
+, '"Jt do you know how dicks form" - AJ'
+, `"do i look like i've grown any dicks recently?" - J. T.`
+, '"YOU LAUGH LOUD AS FUCK" - Paul'
+, '"HELP HES HITTING ME" - AJ'
+, '"get to banging, fat boy" - AJ'
+, '"this is out of my comfort zone" - J. T.'
+, '"This gives me an idea for a kill command" - Paul'
+, '"i have my own desk to bang god damn it" - J. T.'
+, '"lemme see your dick" - J. T.'
+, `"So let's let you keep the government away while the men get the work done" - The Wood`
+, '"God I hate that so much Your a fucking retard that should have there life subscription cancelled" - Schank'
+, `"I'm homie-sexual" - J. T.`
+, '"Please sir, a singular pog?" - AJ'
+, '"Your cousin killed the cheese" - The Wood'
+, '"We love racism here" - Gavin'
+, '"but legality ruins them" - AJ'
+, '"IM RETARDED NOOOOOOOOO" - Gavin'
+, '"im not a smasher" - Akira'
+, '"Remember when JTs hair literally came to life and ran across the floor" - Schank'
+, '"IM ONOBILE" - Akira'
+, '"Unless in the unlikely event any other member of this server that has penis has a sexual interaction with a female" - Schank'
+, `"he's challenged a lot in life, gotta take the small victories" - J. T.`
+, '"please stop spreading your horny" - J. T.'
+, '"imma eat thousands of raw almonds and apple seeds" - AJ'
+, '"OH NO CONFLICTING POINTS OF INTEREST" - J. T.'
+, '"GOD GAVE ME FORKS THEYRE CALLED FINGERS" - AJ'
+, '"lemme smack those depressed cheeks" - J. T.'
+, '"you ruined your comedic timing by being here" - J. T.'
+, '"I want to make a black joke right now" - Gavin'
+, `"||there's a lot you can get for 40$ :FD_GoldHelloThere: ||" - J. T.`
+, '"i stan the folder" - J. T.'
+, `"my sphincters don't cooperate but that doesn't mean i blame them" - J. T.`
+, `"can't wait for the accidental sex he have in the bathroom at taco bell" - J. T.`
+, `"Please don't make this a class thing just answer the question" - J. T.`
+, '"I did throw Thomas Edison down an elevator shaft though" - The Wood'
+, `"Yknow I've always hated Matt for being so tall" - The Wood`
+, '"ACAB includes the SCP Foundation" - AJ'
+, `"don't worry it" - J. T.`
+, '"I did a lot of trolling :FD_GanondorfShake:" - Schank'  //has emoji
+, `"baby's first Minecraft on hard difficulty" - Gavin`
+, `"you're*" - J. T.`
+, `"Well I didn't get the notifications and haven't been checking my phone because" - Gavin`
+, `"Though you haven't been following the HOA codes of The Shire" - The Wood`
+, '"doorvin moment" - J. T.'
+, `"I didn't build my house in a mountain to have noisy neighbors" - Schank`
+, '"schank makes me want to kill myself" - Gavin'
+, '"I need to start saying funnier things" - Schank'
+, '"Say something funny" - AJ'
+, `"well paul's fat ass clapped and turned the bot off i guess" - J. T.`
+, '"No" - Schank'
+, '"I GAVE COLTON THE FREDDIE MERCURY TREATMENT" - Gavin'
+, '"The rest of us will be blunt sure, but we deliver it in more optimistic tones. Whereas gavin will drop in and go: 17$ an hour is not liveable, lower your expectations" - Paul'
+, `"is saying to your manager that she's a pussy slaying girlboss sexual assault" - Akira`
+, '"But watching Gavin eat those cookies made me even harder" - Schank'
+, '"shit yourself, Downed" - Gavin'
+, '"Man with that you made me question which of us looks the most like Danny Devito" - The Wood'
+, '"From YANKING IT TOO HARD TO TINKATON" - Paul'
+, '"You gotta clean the plate before you eat smh" - J. T.'
+, '"AND BREEDABLE" - The Wood'
+, '"If you dont wanna shag your favorite, is it *really* your favorite?" - Downes'
+, '"I love lolis" - AJ'
+, '"Poke poll wildin today" - The Wood'
+, `"I mean, Who doesn't wanna fuck their favorite Pokemon" - The Wood`
+, `"i'll get it if i get to sleep with gardevoir" - J. T.`
+, '"some people should really just end it all" - Akira'
+, '"I jerk off to Gavin every night, my wrist is fucking made of fire hotter than satans asshole. I dont wanna hear excuses" - Downes'
+, `"NOOOOOOOO BRAZIL WILL BECOME A TOURIST'S PARADISE" - The Wood`
+, '"I will burn your holy cities to the fucking ground" - Gavin'
+, `"Though you haven't been following the HOA codes of The Shire" - The Wood`
+, `"I'm going to philosophically shove my foot up your ass" - Gavin`
+, '"I love rimming" - Schank'
+, '"Im a slut for america" - Gavin'
+, '"James Thomas Rey is my favorite food" - Akira'
+, `"I'm gonna go home and drown my sorrows in flamin' hot Cheetos' - J. T.`
+, '"I like child porn" - Paul'
+, `"I can't wait to see Paul's reaction to all of this" - Gavin`
+, '"well JT is also a retard" - Gavin'
+, '"He said and I quote: “ 💀 “" - J. T.'
+, '"The Minecraft horses deserved it" - matt'
+, '"A part of me wants to see a Barbie 3 where Ken is missing because he died in the Toyfinity War" - Downes'
+, '"Mfw my car lets it rip unprompted" - Paul'
+, '"you ask way too much of me" - Gavin'
+, '"God, our holy father who art in heaven, I have witnessed the gifts you have bestowed upon my neighbors. I pray that you will bestow your great gifts upon myself as well, amen" - Gavin'
+, '"My privacy concerns disappearing if Paul does something funny with it" - Downes'
+, '"Paul should make a bot that saves all messages and does like a cleverbot thing with them" - J. T.'
+, `"“No shit, that's a fucking christmas“" - Paul`
+, `"Yeah when Peter Griffin killed me I actually died but I'm so fucking stupid that I don't understand the meaning of death so I persist" - Gavin`
+, `"Bro I'm sorry you got the preschooler palette and gotta have the appy juice" - The Wood`
+, '"Paul got so mad at Monopoly that he killed himself" - Gavin'
+, `"at least you're having fun" - J. T.`
+, '"JT was infected, hes putting random Us into words" - matt'
+, '"JT after his house collapses on him: <:FD_PeterDead:979204724182106122>" - Schank'  //has emoji
+, '"JT PANCAKES LETZ GOO" - AJ'
+, `"if yall don't hear from me mother nature has claimed my body and soul" - Gavin`
+, `"God I have no idea it's so fucking big lmao" - J. T.`
+, '"Why must you ketchup squirt on my party" - J. T.'
+, `"Paul passes you the boof what's the next move" - The Wood`
+, `"I'm thinking about stopping everything when I get into college" - Gavin`
+, '"You have no horse in this race fucker" - The Wood'
+, `"Paul “Will Stay Up Till 10pm to Game with the Boys but Won't Stay Up to Watch Hazbin with His Wife“ Bahdouchi" - AJ`
+, '"avatar is just very bland and forgettable" - Akira'
+, '"this line of conversation cannot persist in this timeline" - Gavin'
+, '"the bats sole purpose is to destroy the fridge, if it dies, it will have died an honorable death" - J. T.'
+, `"if you don't have fun when people (gavin) are talking about killing themselves in the same conversation then you're in the wrong place" - J. T.`
+, `"I was going to say that I'm going to go drown myself in my tub but my tub can't fit my fat ass so nevermind" - Gavin`
+, `"I know what you're fucking thinking you god damn rat bastard" - Gavin`
+, `"i feel like we're on the edge of something we shouldn't cross" - J. T.`
+, '"I would kill a man and his entire family for a lifetime supply of nacho fries" - Gavin'
+, `"we're being guy bros" - J. T.`
+, '"baul but *my* taco bell" - J. T.'
+, '"I have pizza. But wifey needs food" - Paul'
+, '"JT will fund my act of terrorism" - Gavin'
+, '"I will have you know that I have $10" - Gavin'
+, `"I'm going to use all of my money to get gas to go to Muskegon and drive my fuckin SUV through your living room" - Gavin`
+, '"I wonder what the quote total is at this point" - Gavin'
+, '"I have a condition called selective blindness, it allows me to be blind to your bullshit" - Gavin'
+, '"Inside you are four jeters" - AJ'
+, '"I love Wark beverages on a colj day" - AJ'
+, ':your good name my fat fucking dump truck sized XXL ass" - Gavin'
+, '"goddamn longhorned nose gang" - Gavin'
+, '"we have fun here" - J. T.'
+, '"<a:FD_rocksus:1031762279156432927> Your parents should never be inside you" - Schank'   //has emoji
+, `"I want to let you know that i'm really fucking stupid" - J. T.`
+, '"Colton going ultra instinct just so he can carry my fat ass onto a plane:" - Gavin'
+, '"A NEW REQUEST HAS TOUCHED THE BEACON" - AJ'
+, '"whatever you say computer wizard" - J. T.'
+, `"MEET 'N FUCK DISCORD????????" - The Wood`
+, `"bro you don't even need a condom to rape someone what a stupid ass invention" - J. T.`
+, '"I hate you" - Gavin'
+, `"oh i can't read got it" - J. T.`
+, `"Vault tech you bastards how low will you let us sink in Gavin's retardation radiation" - The Wood`
+, '"OH BOY KILLING I LOVE KILLING" - The Wood'
+, `"i'd drink the shit out of my own juice" - J. T.`
+, '"Super sexual bridal parties are so trashy to me" - AJ'
+, '"Alright, Im clowned up, time to liberate" - Downes'
+, '"2023 Cringe List: AJ > Geengar > Stephen > JT > Paul > Kaleb > Deja > Matt > Schank > Downes > Gavin > Leathan > Colton > Annika" - Gavin'
+, '"when you feel her bulge" - Downes'
+, '"Hell hath no fury" - J. T.'
+, '"Look at those kissable mii lips" - The Wood'
+, '“I would dead. I would be dead.”- Schank'
+, '"JAMES. THOMAS." - AJ'   // >:(
+, '"You are a traitor to Super Earth and will be tried for treason" - The Wood'
+, `"someone: pokemon unite isn't fun me: ah, another tally then." - J. T.`
+, '"Kill yourself <:FD_Yes:741438796746457260>" - J. T.'
+, '"the enamel pins i licked as a kid" - J. T.'
+, '"swallowing is also for convenience <:FD_GuessIllDie:511766400558432256>" - J. T.'   //has emoji
+, '"SON BRING GREAT DISHONOR ONTO STUDIO GHIBRI. SHAMEFUR DISPRAY." - Downes'
+, '"Guess love really makes a man bust his nut" - AJ'
+, '"We are a quotable bunch" - AJ'  //SO TRUE
+, '"The demons in the server are growing stronger" - The Wood'
+, `Oops! The bot didn't like that quote, try again - skelebot ` //adding for conedic effect
+, `"I can't handle all of these fucking degenerates" - Gavin`
+, '"God, I am not your strongest soldier, please stop sending me your hardest battles" - Gavin'
+, '"You may not be the strongest *But you are the tardest*" - The Wood'
+, `"Every time I saw Matt trying to not hit the ceiling of Paul's basement it reminded me of Mr. Incredible trying to fit into his first car" - Gavin`
+, `"He's got social anxiety just give him some time" - The Wood`
+, '"gavin is the name of disabilities" - J. T.'
+, '"JFVKOPDIWHVIR0 [EH BVNIR0PWE3QVG" - AJ'
+, '"Colton commits kill, colorized 2022" - Paul'
+, `"Skelebot was born to outdo it's creator" - Paul`
+, '"Skelebot, the Chtonic trickster" - AJ'
+, `"i don't want to yank schank" - J. T.`
+, '"hey will rapidly decompose without a constant stream of cheese" - J. T.'
+, '"Dementia still works lmfao" - Paul'
+, '"i keep the peace" - J. T.'
+, '"Every yeti goes boom out on indian broadway next day to ignite obtuse bomb signals" - J. T.'
+, '"True Slavery is badass" - Schank'
+, '"God everyone in this server is a dumbass. I love all of you" - matt'
+, '"we could reanact broke back mountain 👀" - J. T.'   // has emoji
+, `"I'm going to steal a 2005 Toyota Camri and ramp it into your dorm"- Gavin`
+, `"I feel like I'm in a fucking fever dream" - Gavin`
+, `"This right here is specifically a reference to one of the many rules in the Friendly Compendium specifically the 34th rule if you can't remember it I'd look up friendly rule 34 to remind yourself" - The Wood`
+, `"."- AJ`
+, '"Gavin is a man of the people, ergo, he throws it back for the people." - Downes'
+, `"I'm going to strip you of your imagination, prepare for lobotomy" - Gavin`
+, '"Imagine the three way that could happen" - J. T.'
+, '"CHRI" - The Wood'
+, '"Go ahead, come kill me" - Paul'
+, `"Gavin’s just afraid of it because it’ll make him fat" - J. T.`
+, '":kittyCRY: rip jt his last words "blussy"" - Kaleb'  // has emoji
+, '"Could Ichibe rename himself to SpongeBob to beat SpongeBob" - Schank'
+, '"ali with another epic society post lets go" - J. T.'
+, '"Wish I knew someone who would send me titty pics" - Schank'];
+let quoteCount = quotes.length;    //gets the length of the array
+randQuote = Math.floor(Math.random()*(quoteCount));   //creates the random selection based off of the length of the array
+interaction.reply(quotes[randQuote]);
+// console.log(quotes[randQuote])  //for non-bot testing
     }
-    catch{
-        interaction.reply({content: `Oops! The bot didn't like that quote, try again`});
-    }
-}
 }

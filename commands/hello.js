@@ -4,6 +4,12 @@ module.exports = {
     async execute(interaction, args){
 
 
+        const array = ['Hello'];
+        let arrayLen = array.length;
+        randArray = Math.floor(Math.random()*(arrayLen - 1 + 1));
+        console.log(randArray);
+        console.log(array[randArray]);
+
         // this command just posts hello but using a randomizer will occasionally post a joke based on Skyrim memes
         number = 10;
         toddNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
@@ -12,7 +18,7 @@ module.exports = {
             await interaction.editReply('Buy Skyrim!');
         }
         else{
-            await interaction.editReply('Hello!');
+            await interaction.editReply(' ' + array[randArray]);
         }
     }
 }
