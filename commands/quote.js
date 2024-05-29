@@ -373,6 +373,13 @@ module.exports = {      //discord.js stuff i think
 , '":kittyCRY: rip jt his last words "blussy"" - Kaleb'  // has emoji
 , '"Could Ichibe rename himself to SpongeBob to beat SpongeBob" - Schank'
 , '"ali with another epic society post lets go" - J. T.'
+, '"COOMIE CLICKER IS NOW A ROUGE-LIKE" - AJ'
+, '"If there’s one thing about anime, it’s that everyone is hot" - Schank'
+, '"If you got cream pied Could you then say you have a cummy ache?" - Schank'
+, '"SHUT THE FUCK UP DADBOT" - Gavin'
+, '"YOU MADE ME CHOKE ON MY VAPE YOU RAT BASTARD" - AJ'
+, '"I’m going to beat the both of you to death with a prybar" - Gavin'
+, '"I AM NOT THE ONE WHO CHILLS" - Gavin'
 , '"Wish I knew someone who would send me titty pics" - Schank'];
 let quoteCount = quotes.length;    //gets the length of the array
 randQuote = Math.floor(Math.random()*(quoteCount));   //creates the random selection based off of the length of the array
