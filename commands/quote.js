@@ -416,9 +416,10 @@ module.exports = {      //discord.js stuff i think
 , '"He said fucks you dyslexic retard" - AJ'
 , '"I AM A SLUT FOR BREAKFAST CRUNCH WRAPS" - The Wood'
 , '"I think Paul is soliciting prostitution" - The Wood'
-, '"I AM NOT THE ONE WHO CHILLS" - Gavin'
-, '"I AM NOT THE ONE WHO CHILLS" - Gavin'
-, '"I AM NOT THE ONE WHO CHILLS" - Gavin'
+, '"I said I have milk and combos to sustain me" - J. T.'
+, '"Domnut" - The Wood'
+, '"it tore me a new asshole alright" - J. T.'
+, '"it didn’t make things worse surprisingly" - J. T.'
 , '"Wish I knew someone who would send me titty pics" - Schank'];
 let quoteCount = quotes.length;    //gets the length of the array
 randQuote = Math.floor(Math.random()*(quoteCount));   //creates the random selection based off of the length of the array
