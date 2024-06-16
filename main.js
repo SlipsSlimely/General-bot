@@ -595,6 +595,12 @@ else if (buttonID === '11') {
           Client.commands.get('gavin').execute(interaction, options);
         }
         break;
+      case 'honoredone':
+          Client.commands.get('honoredone').execute(interaction);
+          break;
+      case 'killyourself':
+          Client.commands.get('killyourself').execute(interaction);
+          break;
 
         
  /*       case 'woodermark':

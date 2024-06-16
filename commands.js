@@ -76,7 +76,9 @@ const commandRegister = (client) => {
         .addSubcommand(subcommand =>
             subcommand
             .setName('gavin')
-            .setDescription(`displays Gavin's profile`))
+            .setDescription(`displays Gavin's profile`)),
+        new SlashCommandBuilder().setName('honoredone').setDescription('Posts a specific meme.'),
+        new SlashCommandBuilder().setName('killyourself').setDescription('Posts a specific meme.'),
             
         /* new SlashCommandBuilder()
         .setName('ticket')
