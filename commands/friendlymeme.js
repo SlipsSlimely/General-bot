@@ -6,7 +6,7 @@ module.exports = {
 
         // This command uses a randomizer to post images to the chat
         var randomizer = 0;
-        number = 462;
+        number = 487;
         imageNumber = Math.floor(Math.random()*(number - 1 + 1))+1;
         await interaction.deferReply();
         if (imageNumber === 69){
@@ -24,6 +24,14 @@ module.exports = {
             randomizer = imageNumber;
         }
         else if (imageNumber === 373){
+            await interaction.editReply({files:["./FriendlyMeme/"+imageNumber+".gif"]});
+            randomizer = imageNumber;
+        }
+        else if (imageNumber === 466){
+            await interaction.editReply({files:["./FriendlyMeme/"+imageNumber+".gif"]});
+            randomizer = imageNumber;
+        }
+        else if (imageNumber === 487){
             await interaction.editReply({files:["./FriendlyMeme/"+imageNumber+".gif"]});
             randomizer = imageNumber;
         }
