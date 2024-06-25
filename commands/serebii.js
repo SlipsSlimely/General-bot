@@ -79,7 +79,7 @@ module.exports = {
             Month = 'December';
         }
         
-            interaction.reply('https://serebii.net/news/2023/'+cDay+'-'+Month+'-'+cYear+'.shtml');
+            interaction.reply('https://serebii.net/news/'+cYear+'/'+cDay+'-'+Month+'-'+cYear+'.shtml');
         
     }
 }
