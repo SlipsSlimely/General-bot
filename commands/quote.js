@@ -392,7 +392,7 @@ module.exports = {      //discord.js stuff i think
 , '"Buc-ee, make my tummy not do the hurting" - AJ'
 , '"I haven’t said goodbye to Buc-ee" - AJ'
 , '"Go to the Messiah. Go to the Messiah Matt!" - AJ'
-, '"I’m gonna wake up in a cold sweat dreaming about Buc-ee" -matt'
+, '"I’m gonna wake up in a cold sweat dreaming about Buc-ee" - matt'
 , '“Buc-ee’s doesn’t need my identity.” - The Wood'
 , '"Horses have caves, if you know what I mean" - J. T.'
 , '"Now it’s both" - Paul'
@@ -418,8 +418,16 @@ module.exports = {      //discord.js stuff i think
 , '"I think Paul is soliciting prostitution" - The Wood'
 , '"I said I have milk and combos to sustain me" - J. T.'
 , '"Domnut" - The Wood'
+, '"10 foot goth women" - The Wood'
+, '"This is making me want to start a Friendly Suicide Pact" - matt'
 , '"it tore me a new asshole alright" - J. T.'
+, '"my retardation is apart of my impeccable and illustrious charm" - Gavin'
+, '"This is a form of retardation beyond even my abilities" - Gavin'
 , '"it didn’t make things worse surprisingly" - J. T.'
+, '"Yeah Paul and J.T notorious chain smokers" - The Wood'
+, '"On God whoever invented toilet paper that turns red when you’re done wiping deserves a Nobel Prize" - The Wood'
+, '"Jt is just a little guy" - Deja'
+, '"you needed to be beaten harder as a child" - Gavin'
 , '"Wish I knew someone who would send me titty pics" - Schank'];
 let quoteCount = quotes.length;    //gets the length of the array
 randQuote = Math.floor(Math.random()*(quoteCount));   //creates the random selection based off of the length of the array
