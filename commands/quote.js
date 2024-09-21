@@ -427,6 +427,7 @@ module.exports = {      //discord.js stuff i think
 , '"Yeah Paul and J.T notorious chain smokers" - The Wood'
 , '"On God whoever invented toilet paper that turns red when you’re done wiping deserves a Nobel Prize" - The Wood'
 , '"Jt is just a little guy" - Deja'
+, '"I do not condone beating children, but deserved" - matt'
 , '"you needed to be beaten harder as a child" - Gavin'
 , '"Wish I knew someone who would send me titty pics" - Schank'];
 let quoteCount = quotes.length;    //gets the length of the array
