@@ -152,6 +152,23 @@ module.exports = {
             }
 
         }
+        else if (cDay == 6 && cMonth == 9){
+            if (Randomizer = 3){
+                await interaction.editReply({content: 'Happy Birthday Woody! ' + cMonth + "/" + cDay + "/" + cYear,
+                files: [
+                    "BirthVin.png"
+                ]
+            });
+            }
+            else {
+                await interaction.editReply({content: 'Happy Birthday Woody! ' + cMonth + "/" + cDay + "/" + cYear,
+                files: [
+                    "BoulderBirthday.png"
+                ]
+            });
+            }
+
+        }
         else{
             await interaction.editReply({content: cMonth + "/" + cDay + "/" + cYear , files: ["BoulderBirthday.png"]});
             //await interaction.editReply({files: ["BoulderBirthday.png"]});
