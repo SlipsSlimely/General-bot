@@ -47,6 +47,15 @@ const commandRegister = (client) => {
             option.setName('killer')
             .setDescription('This is the killer')
             .setRequired(true)),
+        new SlashCommandBuilder().setName('christmascopypasta').setDescription('Replies with an edit of a popular copypasta.')
+        .addStringOption(option =>
+            option.setName('event')
+            .setDescription('This is the event you wish to reference')
+            .setRequired(true))
+        .addStringOption(option =>
+            option.setName('time')
+            .setDescription('This is how far away said event is in time')
+            .setRequired(true)),
         new SlashCommandBuilder().setName('f').setDescription('Pays respects!'),
         new SlashCommandBuilder().setName('profile').setDescription('Pulls up a specific users profile!')
         .addSubcommand(subcommand =>

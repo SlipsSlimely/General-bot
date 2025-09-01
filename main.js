@@ -107,7 +107,7 @@ Client.on('messageCreate', async message =>{
       }
     }
     {
-      let Praisewords = ['thank you skelebot', 'good bot', 'thanks skelebot', 'good job bot'];
+      let Praisewords = ['thank you skelebot', 'good bot', 'thanks skelebot', 'good job bot', 'thanks bot'];
       let foundInText = false;
 
       for (var i in Praisewords) {
@@ -122,7 +122,7 @@ Client.on('messageCreate', async message =>{
       }
     }
     {
-      let Ragewords = ['fuck you skelebot skelebot', 'bad bot', 'bad skelebot'];
+      let Ragewords = ['fuck you skelebot skelebot', 'bad bot', 'bad skelebot', 'fuck you bot', 'dumb bot'];
       let foundInText = false;
 
       for (var i in Ragewords) {
@@ -560,6 +560,9 @@ else if (buttonID === '11') {
         break;
       case 'serebii':
           Client.commands.get('serebii').execute(interaction, options);
+        break;
+      case 'christmascopypasta':
+          Client.commands.get('christmascopypasta').execute(interaction, options);
         break;
       case 'counter':
           Client.commands.get('counter').execute(interaction, options, killCount, kCount, jeterCount, woodCount, memeCount, quoteCount, vinCount, trueCount, familyCount, pogCount, reCount, futuramaCount);
